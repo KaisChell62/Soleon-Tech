@@ -1,0 +1,762 @@
+{
+  "common": {
+    "welcome": "欢迎",
+    "description": "Premium Digital Partner",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "首页",
+    "agency": "公司",
+    "services": "服务",
+    "portfolio": "作品集",
+    "pricing": "价格",
+    "faq": "常见问题",
+    "expertise": "专业能力",
+    "contact": "联系",
+    "start": "开始"
+  },
+  "faq": {
+    "title": "常见",
+    "highlight": "问题",
+    "subtitle": "关于我们的流程和服务，您需要了解的一切。",
+    "timeline": {
+      "question": "一个项目平均需要多长时间？",
+      "answer": "取决于复杂程度。企业网站通常需要3-4周，而复杂的SaaS应用可能需要2-3个月。"
+    },
+    "cost": {
+      "question": "价格是如何计算的？",
+      "answer": "我们根据开发时间、功能复杂度和所需设计水平提供定制报价。没有隐藏费用。"
+    },
+    "support": {
+      "question": "你们提供上线后的支持吗？",
+      "answer": "是的，我们提供30天免费支持来修复任何错误。之后，我们提供月度维护套餐。"
+    },
+    "tech": {
+      "question": "你们使用什么技术？",
+      "answer": "我们是React、Node.js和TypeScript（Web端）以及React Native或Swift/Kotlin（移动端）方面的专家。"
+    },
+    "seo": {
+      "question": "SEO优化包含在内吗？",
+      "answer": "我们所有的网站都针对SEO进行了技术优化（速度、标签、结构）。我们还提供高级SEO文案服务。"
+    },
+    "badge": "常见问题与支持",
+    "categories": {
+      "all": "全部",
+      "process": "流程",
+      "pricing": "价格",
+      "tech": "技术",
+      "support": "支持"
+    },
+    "results": "个问题",
+    "process": {
+      "question": "你们的开发流程是什么？",
+      "answer": "我们遵循敏捷方法论，包含4个关键阶段：审计与策略、UX/UI设计、迭代开发以及上线后持续支持。每个阶段都包含客户验收。"
+    },
+    "payment": {
+      "question": "你们接受哪些付款方式？",
+      "answer": "我们接受银行转账、信用卡和PayPal。付款通常按里程碑分期：签约30%、项目中期40%、交付时30%。"
+    },
+    "design": {
+      "question": "设计流程是怎样的？",
+      "answer": "我们从线框图和用户流程开始，然后在Figma中创建高保真原型。每个步骤都经过您的确认后再进入开发阶段。"
+    },
+    "security": {
+      "question": "你们如何保障数据安全？",
+      "answer": "安全从项目第一天起就被融入其中。我们实施HTTPS、数据加密、GDPR合规，并遵循OWASP最佳实践。"
+    },
+    "revision": {
+      "question": "包含多少次修改？",
+      "answer": "每个项目阶段包含最多2轮修改。额外的修改可以按透明的小时费率安排。"
+    },
+    "cta": {
+      "title": "还有更多问题？",
+      "subtitle": "我们的团队随时帮助您明确需求。",
+      "button": "联系我们"
+    }
+  },
+  "home": {
+    "badge": "新锐数字代理",
+    "cta_project": "Start Project",
+    "cta_contact": "Contact Us",
+    "hero": {
+      "title": "数字体验，",
+      "subtitle": "重新定义。",
+      "description": "我们打造身临其境的数字体验，推动您的品牌走向未来。",
+      "cta_primary": "探索服务",
+      "cta_secondary": "启动项目"
+    },
+    "features": {
+      "title": "为什么选择我们？",
+      "subtitle": "设计、性能与战略的完美结合。",
+      "strategy": {
+        "title": "战略规划",
+        "desc": "提供深入的市场分析和数据驱动的策略，确保业务持续增长。"
+      },
+      "global": {
+        "title": "全球视野",
+        "desc": "真正国际化的视角，提供适应全球市场和本土文化的解决方案。"
+      },
+      "tech": {
+        "title": "前沿技术",
+        "desc": "采用 React 19, Node.js 等顶尖技术栈，实现极致性能。"
+      },
+      "mobile": {
+        "title": "移动优先",
+        "desc": "从手机到桌面大屏，提供无缝且响应迅速的流畅体验。"
+      }
+    },
+    "process": {
+      "title": "我们的流程",
+      "steps": {
+        "discovery": {
+          "title": "1. 探索",
+          "desc": "需求分析。"
+        },
+        "design": {
+          "title": "2. 设计",
+          "desc": "UI/UX 原型。"
+        },
+        "dev": {
+          "title": "3. 开发",
+          "desc": "高质量代码。"
+        },
+        "launch": {
+          "title": "4. 发布",
+          "desc": "部署上线。"
+        }
+      }
+    },
+    "cta_final": {
+      "title": "Ready?",
+      "button": "Get Quote"
+    }
+  },
+  "services": {
+    "title": "专业服务",
+    "subtitle": "交互式解决方案。",
+    "web": {
+      "title": "网站开发",
+      "desc": "高性能体验。"
+    },
+    "mobile": {
+      "title": "移动应用",
+      "desc": "iOS 和 Android。",
+      "features": {
+        "native": "Native",
+        "cross": "Cross-platform",
+        "uiux": "UI/UX"
+      }
+    },
+    "logo": {
+      "title": "品牌设计",
+      "desc": "Logo 与 VI。",
+      "features": {
+        "vector": "Vector",
+        "guidelines": "Guidelines",
+        "revisions": "Revisions"
+      }
+    },
+    "preview": {
+      "phone": {
+        "welcome_back": "欢迎回来！",
+        "uptime": "运行时间",
+        "new_users": "新用户",
+        "revenue": "总收入",
+        "growth": "+12% this week",
+        "role_1": "Designer",
+        "role_2": "Developer"
+      },
+      "web": {
+        "nav_new": "新品",
+        "nav_men": "男士",
+        "nav_women": "女士",
+        "hero_tag": "新系列",
+        "hero_title_1": "RUN THE",
+        "hero_title_2": "STREETS.",
+        "btn_shop": "立即购买"
+      },
+      "logo": {
+        "config": "配置器",
+        "live": "预览",
+        "shape": "形状",
+        "color": "颜色",
+        "modern": "Modern",
+        "classic": "Classic",
+        "tech": "Tech"
+      }
+    }
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "24小时内回复。",
+    "badge": "联系我们",
+    "detected": "检测来自",
+    "info": {
+      "hq": "Paris",
+      "availability": "Worldwide",
+      "email_label": "Email",
+      "quote": "Work with love.",
+      "quote_role": "Inspiration",
+      "location": "地址",
+      "hours": "办公时间",
+      "timezone": "巴黎时间",
+      "response": "通常在2小时内回复"
+    },
+    "form": {
+      "name": "姓名",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "留言",
+      "send": "发送",
+      "success": "已发送！",
+      "error": "Error",
+      "sending": "您的消息正在发送，请稍候。",
+      "sending_title": "发送中...",
+      "success_title": "消息已发送！",
+      "success_desc": "我们将在24小时内回复您。",
+      "language": "您的语言 *",
+      "required_fields": "所有字段都是必填项"
+    },
+    "steps": {
+      "info": "信息",
+      "details": "详情",
+      "send": "发送"
+    }
+  },
+  "portfolio": {
+    "title": "作品集",
+    "subtitle": "发现我们的创新项目",
+    "categories": {
+      "all": "全部",
+      "web": "网站",
+      "mobile": "移动端",
+      "design": "设计"
+    },
+    "viewProject": "查看项目",
+    "project": {
+      "overview": "概述",
+      "problem": "问题与目标",
+      "challenge": "挑战",
+      "goal": "目标",
+      "solution": "解决方案",
+      "technologies": "技术",
+      "results": "成果",
+      "team": "团队",
+      "related": "相关项目",
+      "back": "返回作品集",
+      "liveDemo": "查看在线演示",
+      "creationProcess": "创作过程",
+      "highFidelity": "高保真设计",
+      "wireframes": "线框图与草图",
+      "techTools": "技术与工具",
+      "notFound": "项目未找到",
+      "cta": {
+        "title": "这个项目是否给您带来灵感？",
+        "subtitle": "让我们讨论如何将您的愿景变为现实。",
+        "startProject": "开始项目",
+        "seeMore": "查看其他项目"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "为什么选择",
+    "brand": "Soleon Tech",
+    "subtitle": "一家年轻、灵活且充满激情的机构。没有空洞的承诺——只有干净的代码、精美的设计和对您项目的全身心投入。",
+    "commitments": "我们的承诺",
+    "approach": "我们的方法",
+    "stats": {
+      "custom": {
+        "value": "100%",
+        "label": "定制代码",
+        "desc": "没有模板。每个项目都是独一无二的。"
+      },
+      "direct": {
+        "value": "98%",
+        "label": "满意度",
+        "desc": "我们的客户不断回头并推荐我们。"
+      },
+      "passion": {
+        "value": "∞",
+        "label": "热情",
+        "desc": "精通并热爱技术。"
+      },
+      "response": {
+        "value": "24h",
+        "label": "最快响应",
+        "desc": "保证及时沟通。"
+      }
+    },
+    "methodology": {
+      "audit": {
+        "title": "审计与策略",
+        "desc": "在编写任何代码之前，我们分析您的现有设置并定义明确的KPI。"
+      },
+      "design": {
+        "title": "UX/UI 设计",
+        "desc": "以用户为中心的界面设计，专注于转化，通过原型验证。"
+      },
+      "dev": {
+        "title": "开发",
+        "desc": "干净、经过测试、有文档的代码。迭代交付，定期演示。"
+      },
+      "launch": {
+        "title": "发布与支持",
+        "desc": "优化部署，主动监控，持续的发布后支持。"
+      }
+    }
+  },
+  "pricing": {
+    "title": "投资于",
+    "highlight": "卓越",
+    "subtitle": "透明定价，适应您成长的每个阶段。没有隐藏费用，没有惊喜。",
+    "recommended": "推荐",
+    "perProject": "/项目",
+    "start": "开始",
+    "faq": {
+      "title": "常见问题",
+      "q1": {
+        "question": "按小时还是固定价格？",
+        "answer": "我们更倾向于固定价格以保证预算。维护方面，我们使用小时包。"
+      },
+      "q2": {
+        "question": "项目中途可以更换方案吗？",
+        "answer": "当然可以。我们的报价是可扩展的。您只需支付按比例的差额。"
+      }
+    }
+  },
+  "security": {
+    "status": "系统运行正常",
+    "title": "安全不是可选项。",
+    "subtitle": "这是我们的",
+    "highlight": "标准",
+    "description": "我们从设计阶段就集成安全性。所有项目都包含主动保护、强加密和法律合规。",
+    "compliance": "合规与标准",
+    "badges": [
+      "GDPR 合规",
+      "OWASP Top 10",
+      "ISO 27001 就绪",
+      "99.9% 正常运行"
+    ],
+    "standards": {
+      "encryption": {
+        "title": "端到端加密",
+        "desc": "所有敏感数据在传输和存储时都使用 AES-256 加密。",
+        "category": "基础设施"
+      },
+      "auth": {
+        "title": "多因素认证",
+        "desc": "内置 MFA 选项以保护用户访问。",
+        "category": "代码"
+      },
+      "monitoring": {
+        "title": "24/7 监控",
+        "desc": "持续异常监控，实时警报。",
+        "category": "流程"
+      },
+      "backup": {
+        "title": "自动备份",
+        "desc": "每日备份，长期保留和恢复测试。",
+        "category": "基础设施"
+      }
+    }
+  },
+  "international": {
+    "badge": "全球可用",
+    "title1": "全球",
+    "highlight1": "布局",
+    "title2": "。本地",
+    "highlight2": "专业",
+    "title3": "。",
+    "subtitle": "我们在3大洲支持客户。我们的团队适应您的时区和文化需求。",
+    "stats": {
+      "support": {
+        "title": "24/7 支持",
+        "desc": "团队分布在多个时区，最大限度提高响应速度。"
+      },
+      "multilingual": {
+        "title": "多语言",
+        "desc": "法语、英语、西班牙语和德语的文档和沟通。"
+      },
+      "hubs": {
+        "title": "旧金山 & 巴黎",
+        "desc": "战略中心，连接硅谷创新与欧洲设计。"
+      }
+    },
+    "locations": "我们的战略中心",
+    "remote": {
+      "title": "远程优先，人性化永远",
+      "desc": "我们的分布式文化使我们能够招聘全球最优秀的人才，不受地理限制。",
+      "stat": "远程 & 高效"
+    }
+  },
+  "liveBoard": {
+    "status": "实时项目跟踪",
+    "title": "客户仪表板",
+    "subtitle": "实时跟踪项目进度。",
+    "addTask": "+ 添加任务"
+  },
+  "configurator": {
+    "title": "创建您的定制报价",
+    "subtitle": "配置您的理想项目，获取即时估算。",
+    "summary": "摘要",
+    "empty": "选择选项查看详情...",
+    "total": "预估总价",
+    "included": "包含",
+    "submit": "获取报价",
+    "disclaimer": "非约束性指示性估算。",
+    "badge": "定制报价",
+    "from": "起步价",
+    "month": "月",
+    "monthly": "每月费用"
+  },
+  "about": {
+    "title": "我们构建",
+    "highlight": "未来",
+    "title2": "数字。",
+    "subtitle": "Soleon Tech 源于一个简单的观察：大多数机构出售时间。我们出售影响力。",
+    "team": "架构师",
+    "values": {
+      "precision": {
+        "title": "精确",
+        "desc": "每个像素都重要。每行代码都有目的。"
+      },
+      "velocity": {
+        "title": "速度",
+        "desc": "我们快速交付，不破坏任何东西。"
+      },
+      "passion": {
+        "title": "热情",
+        "desc": "我们只接受让我们兴奋的项目。"
+      },
+      "excellence": {
+        "title": "卓越",
+        "desc": "\"够好\"是我们的敌人。"
+      }
+    }
+  },
+  "blog": {
+    "title": "洞察",
+    "subtitle": "来自专家的分析、趋势和反馈。",
+    "readArticle": "阅读文章",
+    "read": "阅读"
+  },
+  "careers": {
+    "title": "加入",
+    "highlight": "精英",
+    "subtitle": "我们正在寻找拒绝现状的聪明人才。远程工作、有竞争力的薪资和刺激的项目。",
+    "apply": "申请",
+    "spontaneous": "没有匹配的职位？",
+    "spontaneousLink": "发送自荐申请。"
+  },
+  "terms": {
+    "title": "法律声明与条款",
+    "sections": [
+      {
+        "title": "1. 网站发布者",
+        "content": "Soleon Tech 网站由 Soleon Tech SAS 发布。"
+      },
+      {
+        "title": "2. 托管",
+        "content": "网站由 Vercel Inc. 托管。"
+      },
+      {
+        "title": "3. 知识产权",
+        "content": "网站上的所有元素均为 Soleon Tech 的专有财产。"
+      },
+      {
+        "title": "4. 个人数据 (GDPR)",
+        "content": "Soleon Tech 确保数据收集符合 GDPR。"
+      },
+      {
+        "title": "5. 责任限制",
+        "content": "Soleon Tech 对访问网站期间造成的损害不承担责任。"
+      }
+    ]
+  },
+  "demoEco": {
+    "brand": "EcoMarket",
+    "tagline": "可持续食品的未来。",
+    "shopNow": "立即购买",
+    "featured": "今日收获",
+    "addToCart": "加入购物车",
+    "cart": "您的购物车",
+    "total": "小计",
+    "checkout": "安全结账",
+    "emptyCart": "您的购物车是空的。",
+    "freeDelivery": "免费送货",
+    "organic": "100% 有机",
+    "fresh": "极速保鲜",
+    "secure": "安全",
+    "reviews": "条评价",
+    "categories": "分类",
+    "all": "所有产品",
+    "fruits": "水果",
+    "vegetables": "蔬菜",
+    "dairy": "乳制品"
+  },
+  "footer": {
+    "services": {
+      "title": "服务",
+      "main": "服务",
+      "configurator": "配置器",
+      "security": "安全",
+      "international": "国际化"
+    },
+    "agency": {
+      "title": "公司",
+      "about": "关于我们",
+      "why_us": "为什么选择我们",
+      "careers": "加入我们",
+      "blog": "博客",
+      "client_area": "客户中心",
+      "contact": "联系我们"
+    },
+    "legal": {
+      "privacy": "隐私政策",
+      "terms": "服务条款"
+    },
+    "description": "将您的想法转化为卓越的数字体验。",
+    "social": "社交媒体",
+    "copyright": "© {{year}} Soleon Tech. 保留所有权利。"
+  },
+  "global": {
+    "cta": {
+      "title": "准备好将业务拓展到全球了吗？",
+      "description": "加入12位信赖Soleon Tech国际数字战略的客户行列。",
+      "button": "启动全球项目"
+    },
+    "culture": {
+      "western_label": "西方界面",
+      "asian_label": "亚洲界面",
+      "title": "文化适配",
+      "subtitle": "设计并非放之四海而皆准。我们根据当地习惯调整界面。",
+      "explanation": {
+        "asian": "集成设计：超级应用与高信息密度。亚洲用户体验注重对整个生态系统的即时访问。",
+        "western": "极简设计：留白空间与线性流程。西方用户体验注重清晰度和专注力。"
+      }
+    },
+    "timezone": {
+      "label": {
+        "paris": "总部与战略",
+        "new_york": "工程开发",
+        "tokyo": "支持与质保"
+      },
+      "uptime": {
+        "title": "全天候运行",
+        "desc": "班次之间无停机。"
+      },
+      "delivery": {
+        "title": "更快交付",
+        "desc": "您休息时工作仍在继续。"
+      },
+      "compliance": {
+        "title": "本地合规",
+        "desc": "每个地区都有专家。"
+      },
+      "title": "时区优势",
+      "subtitle": "凭借全球分布，您的项目全天候推进。",
+      "paris": "巴黎",
+      "new_york": "纽约",
+      "tokyo": "东京",
+      "dubai": "迪拜",
+      "sydney": "悉尼"
+    },
+    "title": "我们的专业",
+    "highlight": "无界限",
+    "subtitle": "本地专业知识，全球覆盖。我们根据目标受众的文化特点调整每个项目。",
+    "trust": {
+      "title": "全球信赖",
+      "clients": "满意客户",
+      "countries": "覆盖国家",
+      "projects": "交付项目",
+      "satisfaction": "满意度"
+    }
+  },
+  "packs": {
+    "type": {
+      "title": "项目类型",
+      "landing": "着陆页",
+      "landing_desc": "为转化优化的单页面。",
+      "showcase": "展示网站（5页）",
+      "showcase_desc": "全面展示您的业务。",
+      "ecommerce": "电子商务",
+      "ecommerce_desc": "包含目录和支付管理的在线商店。",
+      "saas": "Web App / SaaS",
+      "saas_desc": "定制复杂的商业应用程序。"
+    },
+    "design": {
+      "title": "设计级别",
+      "standard": "标准（模板）",
+      "standard_desc": "对现有模板的整洁适配。",
+      "custom": "定制设计",
+      "custom_desc": "独特的艺术方向和完整的原型。"
+    },
+    "features": {
+      "title": "功能与附加组件",
+      "cms": "CMS（内容管理）",
+      "seo": "高级SEO套餐",
+      "analytics": "分析与追踪",
+      "i18n": "多语言",
+      "auth": "会员区 / 认证",
+      "payment": "支付集成（Stripe）"
+    },
+    "maintenance": {
+      "title": "每月维护（可选）",
+      "none": "无",
+      "pro": "技术支持和更新"
+    }
+  },
+  "privacy": {
+    "title": "隐私政策",
+    "subtitle": "我们承诺以最严格的标准保护您的个人数据。",
+    "last_update": "最后更新：{{date}}",
+    "sections": {
+      "intro": {
+        "title": "简介",
+        "content": "在Soleon Tech，保护您的个人数据是绝对优先事项。本隐私政策解释了我们收集哪些信息、如何使用这些信息以及您作为用户的权利。"
+      },
+      "data_collection": {
+        "title": "收集的数据",
+        "content": "我们仅收集我们服务正常运行所需的信息：",
+        "details": [
+          "身份信息：姓名、名字、电子邮件地址",
+          "导航数据：cookies、访问的页面、会话持续时间",
+          "通信数据：通过联系表单发送的消息",
+          "技术信息：IP地址、浏览器、操作系统"
+        ]
+      },
+      "data_usage": {
+        "title": "数据使用",
+        "content": "您的数据专门用于：",
+        "details": [
+          "回复您的请求并提供我们的服务",
+          "改善我们网站的用户体验",
+          "发送相关通信（经您同意）",
+          "分析流量并优化我们的性能"
+        ]
+      },
+      "data_sharing": {
+        "title": "数据共享",
+        "content": "我们永远不会出售您的个人数据。它们只能与以下方共享：",
+        "details": [
+          "我们的技术服务提供商（托管、分析）在严格合同下",
+          "在法律义务的情况下向法律当局",
+          "经您明确同意与选定的合作伙伴"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies及类似技术",
+        "content": "我们使用cookies来改善您的浏览体验。您可以随时通过浏览器设置管理您的偏好。使用的cookies类型：",
+        "details": [
+          "必要cookies：网站功能所需",
+          "分析cookies：了解网站使用情况",
+          "偏好cookies：记住您的选择（语言等）"
+        ]
+      },
+      "rights": {
+        "title": "您的权利",
+        "content": "根据GDPR，您拥有以下权利：",
+        "details": [
+          "访问权：查看您的个人数据",
+          "更正权：更正您的信息",
+          "删除权：删除您的数据",
+          "可移植权：检索您的数据",
+          "反对权：拒绝某些处理"
+        ]
+      }
+    },
+    "contact": {
+      "title": "有疑问？",
+      "description": "对于有关您个人数据的任何问题，请随时与我们联系。",
+      "button": "联系我们"
+    }
+  },
+  "terms_conditions": {
+    "title": "条款和条件",
+    "subtitle": "使用我们数字服务的规则和条件。",
+    "last_update": "最后更新：{{date}}",
+    "sections": {
+      "general": {
+        "title": "一般规定",
+        "content": "这些一般使用条款（GUT）和销售条款（GST）管理对Soleon Tech提供的服务的访问和使用。使用我们的服务即表示您接受所有这些条款。",
+        "details": []
+      },
+      "services": {
+        "title": "服务描述",
+        "content": "Soleon Tech提供数字设计和开发服务，包括：",
+        "details": [
+          "定制网站和移动应用程序创建",
+          "UX/UI设计和视觉识别",
+          "SaaS应用程序开发",
+          "技术维护和支持",
+          "SEO和性能优化"
+        ]
+      },
+      "accounts": {
+        "title": "用户帐户",
+        "content": "访问某些服务可能需要创建帐户。您同意：",
+        "details": [
+          "提供准确和最新的信息",
+          "保持您凭据的机密性",
+          "立即通知任何未经授权的使用",
+          "不与第三方共享您的帐户"
+        ]
+      },
+      "responsibilities": {
+        "title": "责任",
+        "content": "我们的承诺和您的责任：",
+        "details": [
+          "Soleon Tech承诺提供专业质量的服务",
+          "客户及时提供必要的内容和材料",
+          "客户根据约定的期限验证交付成果",
+          "任何实质性修改可能导致价格调整"
+        ]
+      },
+      "limitations": {
+        "title": "责任限制",
+        "content": "在法律允许的范围内：",
+        "details": [
+          "Soleon Tech不对超出其控制范围的服务中断负责",
+          "我们的责任仅限于为相关服务支付的金额",
+          "我们不保证具体的商业结果",
+          "客户负责备份其数据"
+        ]
+      },
+      "jurisdiction": {
+        "title": "管辖权和适用法律",
+        "content": "这些条件受法国法律管辖。如有争议：",
+        "details": [
+          "将优先寻求友好解决",
+          "否则，法国法院将拥有管辖权",
+          "符合GDPR和欧洲法规"
+        ]
+      }
+    },
+    "acceptance": {
+      "title": "接受条件",
+      "content": "使用我们的服务即表示完全接受这些GUT/GST。如果您不接受这些条件，请不要使用我们的服务。我们保留随时修改这些条件的权利，并会提前通知用户。"
+    }
+  },
+  "quote": {
+    "modal": {
+      "title": "获取报价",
+      "subtitle": "通过电子邮件获取您的个性化报价和详细的PDF选择清单。",
+      "language_label": "您的语言",
+      "email_label": "您的电子邮件地址",
+      "email_placeholder": "您@示例.com",
+      "email_invalid": "无效的电子邮件地址",
+      "summary": "估价",
+      "firstname_label": "名字",
+      "firstname_placeholder": "您的名字",
+      "lastname_label": "姓氏",
+      "lastname_placeholder": "您的姓氏",
+      "name_invalid": "名字和姓氏为必填项（至少2个字符）",
+      "send": "发送报价",
+      "sending": "您的报价正在发送，请稍候。",
+      "sending_title": "发送中...",
+      "success_title": "报价已发送！",
+      "success_desc": "您的详细报价（含PDF）已发送至",
+      "close": "关闭",
+      "error": "发生错误。请检查您的电子邮件并重试。"
+    }
+  }}

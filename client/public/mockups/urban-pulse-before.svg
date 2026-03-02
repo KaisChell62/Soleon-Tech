@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice">
+  <!-- Background -->
+  <rect width="1200" height="600" fill="#f8fafc"/>
+  <!-- Title bar -->
+  <rect width="1200" height="40" fill="#ef4444" fill-opacity=".08"/>
+  <text x="600" y="26" font-family="system-ui,sans-serif" font-size="13" fill="#dc2626" text-anchor="middle" font-weight="600">⚠ AVANT — 15 identités visuelles différentes, aucune cohérence</text>
+
+  <!-- Row 1: Different service cards with wildly different styles -->
+  <!-- Card 1: Old-style heavy gradient, serif font -->
+  <g transform="translate(30,60)">
+    <rect width="220" height="160" rx="0" fill="#1a3c5e" stroke="#0d2137" stroke-width="3"/>
+    <rect x="0" y="0" width="220" height="40" fill="#0d2137"/>
+    <text x="110" y="28" font-family="Georgia,serif" font-size="14" fill="#c9a23c" text-anchor="middle" font-weight="bold">MAIRIE CENTRALE</text>
+    <rect x="15" y="55" width="190" height="8" rx="0" fill="#c9a23c" opacity=".4"/>
+    <rect x="15" y="72" width="140" height="6" rx="0" fill="#7a8999"/>
+    <rect x="15" y="86" width="160" height="6" rx="0" fill="#7a8999"/>
+    <rect x="15" y="110" width="120" height="30" rx="0" fill="#c9a23c"/>
+    <text x="75" y="130" font-family="Georgia,serif" font-size="11" fill="#0d2137" text-anchor="middle">ACCÉDER</text>
+  </g>
+
+  <!-- Card 2: Bright green, comic sans-ish, rounded -->
+  <g transform="translate(270,60)">
+    <rect width="220" height="160" rx="20" fill="#d4edda" stroke="#28a745" stroke-width="2"/>
+    <circle cx="40" cy="40" r="20" fill="#28a745"/>
+    <text x="40" y="45" font-family="Comic Sans MS,cursive" font-size="16" fill="white" text-anchor="middle">🌿</text>
+    <text x="70" y="38" font-family="Comic Sans MS,cursive" font-size="15" fill="#155724" font-weight="bold">Parcs & Jardins</text>
+    <text x="70" y="56" font-family="Comic Sans MS,cursive" font-size="10" fill="#155724">Service des espaces verts</text>
+    <rect x="15" y="80" width="190" height="6" rx="3" fill="#28a745" opacity=".2"/>
+    <rect x="15" y="94" width="150" height="6" rx="3" fill="#28a745" opacity=".15"/>
+    <rect x="15" y="115" width="100" height="28" rx="14" fill="#28a745"/>
+    <text x="65" y="133" font-family="Comic Sans MS,cursive" font-size="10" fill="white" text-anchor="middle">En savoir +</text>
+  </g>
+
+  <!-- Card 3: Red bureaucratic, all caps -->
+  <g transform="translate(510,60)">
+    <rect width="220" height="160" rx="2" fill="white" stroke="#dc3545" stroke-width="1"/>
+    <rect x="0" y="0" width="220" height="4" fill="#dc3545"/>
+    <text x="15" y="30" font-family="Arial,sans-serif" font-size="9" fill="#dc3545" font-weight="bold" letter-spacing="3">ADMINISTRATION</text>
+    <text x="15" y="52" font-family="Times New Roman,serif" font-size="16" fill="#333" font-weight="bold">État Civil</text>
+    <line x1="15" y1="60" x2="120" y2="60" stroke="#dc3545" stroke-width="1"/>
+    <rect x="15" y="72" width="190" height="5" rx="0" fill="#eee"/>
+    <rect x="15" y="82" width="160" height="5" rx="0" fill="#eee"/>
+    <rect x="15" y="92" width="140" height="5" rx="0" fill="#eee"/>
+    <rect x="15" y="120" width="190" height="28" rx="0" fill="#dc3545"/>
+    <text x="110" y="139" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle" letter-spacing="2">FORMULAIRES</text>
+  </g>
+
+  <!-- Card 4: Purple gradient, modern but inconsistent -->
+  <g transform="translate(750,60)">
+    <rect width="220" height="160" rx="12" fill="#667eea"/>
+    <rect width="220" height="160" rx="12" fill="url(#pg1)" opacity=".8"/>
+    <text x="110" y="45" font-family="system-ui,sans-serif" font-size="24" fill="white" text-anchor="middle" opacity=".6">🚌</text>
+    <text x="110" y="80" font-family="Helvetica,sans-serif" font-size="18" fill="white" text-anchor="middle" font-weight="300">transport+</text>
+    <text x="110" y="100" font-family="Helvetica,sans-serif" font-size="10" fill="white" text-anchor="middle" opacity=".7">Réseau urbain connecté</text>
+    <rect x="50" y="120" width="120" height="24" rx="12" fill="white" fill-opacity=".2"/>
+    <text x="110" y="136" font-family="Helvetica,sans-serif" font-size="10" fill="white" text-anchor="middle">Horaires →</text>
+  </g>
+
+  <!-- Card 5: Yellow/orange, playful -->
+  <g transform="translate(990,60)">
+    <rect width="180" height="160" rx="16" fill="#fff3cd" stroke="#ffc107" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="90" y="50" font-family="system-ui,sans-serif" font-size="32" text-anchor="middle">📚</text>
+    <text x="90" y="80" font-family="Verdana,sans-serif" font-size="13" fill="#856404" text-anchor="middle" font-weight="bold">Médiathèque</text>
+    <text x="90" y="98" font-family="Verdana,sans-serif" font-size="9" fill="#856404" text-anchor="middle">Lire · Apprendre · Partager</text>
+    <rect x="25" y="115" width="130" height="24" rx="4" fill="#ffc107"/>
+    <text x="90" y="131" font-family="Verdana,sans-serif" font-size="10" fill="#856404" text-anchor="middle">Catalogue</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Card 6: Blue corporate, very generic -->
+  <g transform="translate(30,240)">
+    <rect width="220" height="160" rx="4" fill="#e3f2fd" stroke="#1976d2" stroke-width="1"/>
+    <rect x="15" y="15" width="40" height="40" rx="4" fill="#1976d2"/>
+    <text x="35" y="42" font-family="Arial,sans-serif" font-size="18" fill="white" text-anchor="middle">💧</text>
+    <text x="65" y="32" font-family="Arial,sans-serif" font-size="14" fill="#1976d2" font-weight="bold">Service des Eaux</text>
+    <text x="65" y="48" font-family="Arial,sans-serif" font-size="9" fill="#666">Département technique</text>
+    <rect x="15" y="70" width="190" height="5" rx="2" fill="#bbdefb"/>
+    <rect x="15" y="82" width="150" height="5" rx="2" fill="#bbdefb"/>
+    <rect x="15" y="110" width="190" height="32" rx="4" fill="#1976d2"/>
+    <text x="110" y="131" font-family="Arial,sans-serif" font-size="11" fill="white" text-anchor="middle">Mon espace</text>
+  </g>
+
+  <!-- Card 7: Dark, techy, different brand -->
+  <g transform="translate(270,240)">
+    <rect width="220" height="160" rx="8" fill="#1b1b2f"/>
+    <rect x="15" y="15" width="30" height="30" rx="15" fill="#e94560"/>
+    <text x="30" y="35" font-family="monospace" font-size="14" fill="white" text-anchor="middle">S</text>
+    <text x="55" y="35" font-family="monospace" font-size="12" fill="#e94560" font-weight="bold">SÉCURITÉ</text>
+    <text x="55" y="48" font-family="monospace" font-size="8" fill="#533483">Vidéosurveillance urbaine</text>
+    <rect x="15" y="65" width="190" height="1" fill="#533483" opacity=".3"/>
+    <rect x="15" y="78" width="190" height="5" rx="0" fill="#533483" opacity=".2"/>
+    <rect x="15" y="90" width="140" height="5" rx="0" fill="#533483" opacity=".15"/>
+    <rect x="15" y="120" width="90" height="26" rx="4" fill="#e94560"/>
+    <text x="60" y="137" font-family="monospace" font-size="9" fill="white" text-anchor="middle">ALERTES</text>
+  </g>
+
+  <!-- Card 8: Pastel pink, gentle -->
+  <g transform="translate(510,240)">
+    <rect width="220" height="160" rx="24" fill="#fce4ec"/>
+    <text x="110" y="50" font-family="Georgia,serif" font-size="28" text-anchor="middle" opacity=".5">🏥</text>
+    <text x="110" y="80" font-family="Georgia,serif" font-size="14" fill="#880e4f" text-anchor="middle" font-style="italic">Centre de Santé</text>
+    <text x="110" y="98" font-family="Georgia,serif" font-size="9" fill="#ad1457" text-anchor="middle">Prendre soin de vous</text>
+    <rect x="40" y="115" width="140" height="26" rx="13" fill="#f48fb1" opacity=".4"/>
+    <text x="110" y="132" font-family="Georgia,serif" font-size="10" fill="#880e4f" text-anchor="middle">Rendez-vous</text>
+  </g>
+
+  <!-- Card 9: Orange construction -->
+  <g transform="translate(750,240)">
+    <rect width="220" height="160" rx="0" fill="#fff8e1"/>
+    <rect width="220" height="8" fill="#ff9800"/>
+    <rect y="152" width="220" height="8" fill="#ff9800"/>
+    <text x="110" y="52" font-family="Impact,sans-serif" font-size="28" fill="#e65100" text-anchor="middle">⚒</text>
+    <text x="110" y="80" font-family="Impact,sans-serif" font-size="16" fill="#e65100" text-anchor="middle">TRAVAUX</text>
+    <text x="110" y="98" font-family="Arial,sans-serif" font-size="9" fill="#bf360c" text-anchor="middle">Direction de l'urbanisme</text>
+    <rect x="40" y="112" width="140" height="26" rx="2" fill="#ff9800"/>
+    <text x="110" y="130" font-family="Impact,sans-serif" font-size="11" fill="white" text-anchor="middle">CHANTIERS</text>
+  </g>
+
+  <!-- Card 10: Minimalist gray -->
+  <g transform="translate(990,240)">
+    <rect width="180" height="160" rx="0" fill="white" stroke="#ccc" stroke-width="1"/>
+    <text x="15" y="30" font-family="Courier New,monospace" font-size="10" fill="#999">réf: SVC-10</text>
+    <text x="15" y="55" font-family="Courier New,monospace" font-size="13" fill="#333">Déchets &amp;</text>
+    <text x="15" y="72" font-family="Courier New,monospace" font-size="13" fill="#333">Recyclage</text>
+    <rect x="15" y="85" width="150" height="1" fill="#ddd"/>
+    <rect x="15" y="100" width="150" height="4" rx="0" fill="#eee"/>
+    <rect x="15" y="110" width="120" height="4" rx="0" fill="#eee"/>
+    <rect x="15" y="128" width="100" height="22" rx="0" fill="#666"/>
+    <text x="65" y="143" font-family="Courier New,monospace" font-size="9" fill="white" text-anchor="middle">calendrier</text>
+  </g>
+
+  <!-- Chaos indicators -->
+  <g opacity=".5">
+    <text x="60" y="435" font-family="system-ui,sans-serif" font-size="9" fill="#ef4444">× 8 polices différentes</text>
+    <text x="300" y="435" font-family="system-ui,sans-serif" font-size="9" fill="#ef4444">× 15 palettes de couleurs</text>
+    <text x="560" y="435" font-family="system-ui,sans-serif" font-size="9" fill="#ef4444">× Aucune accessibilité</text>
+    <text x="800" y="435" font-family="system-ui,sans-serif" font-size="9" fill="#ef4444">× 0 composant réutilisable</text>
+  </g>
+  <!-- Red X marks -->
+  <g stroke="#ef4444" stroke-width="2" opacity=".25">
+    <line x1="30" y1="450" x2="1170" y2="450"/><line x1="30" y1="470" x2="1170" y2="470"/><line x1="30" y1="490" x2="1170" y2="490"/>
+  </g>
+  <!-- Bottom label -->
+  <rect x="0" y="520" width="1200" height="80" fill="#fef2f2"/>
+  <text x="600" y="555" font-family="system-ui,sans-serif" font-size="16" fill="#dc2626" text-anchor="middle" font-weight="700">Résultat : confusion citoyenne, 0% accessibilité, coûts de maintenance ×15</text>
+  <text x="600" y="580" font-family="system-ui,sans-serif" font-size="11" fill="#991b1b" text-anchor="middle">Chaque service avait développé sa propre charte sans aucune concertation</text>
+
+  <defs>
+    <linearGradient id="pg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#667eea"/><stop offset="100%" stop-color="#764ba2"/></linearGradient>
+  </defs>
+</svg>

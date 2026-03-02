@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient>
+    <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#06b6d4" stop-opacity=".6"/><stop offset="100%" stop-color="#0e7490" stop-opacity=".3"/></linearGradient>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366f1" stop-opacity=".7"/><stop offset="100%" stop-color="#312e81" stop-opacity=".4"/></linearGradient>
+    <linearGradient id="g3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8b5cf6" stop-opacity=".5"/><stop offset="100%" stop-color="#4c1d95" stop-opacity=".3"/></linearGradient>
+    <linearGradient id="g4" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0ea5e9" stop-opacity=".6"/><stop offset="100%" stop-color="#075985" stop-opacity=".3"/></linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#6366f1"/></linearGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="1200" height="600" fill="url(#sky)"/>
+  <!-- Grid dots -->
+  <g opacity=".08">
+    <pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="1" fill="white"/></pattern>
+    <rect width="1200" height="600" fill="url(#dots)"/>
+  </g>
+  <!-- Cityscape silhouette -->
+  <g>
+    <rect x="40" y="280" width="70" height="320" rx="3" fill="url(#g1)"/>
+    <rect x="120" y="200" width="90" height="400" rx="3" fill="url(#g2)"/>
+    <rect x="220" y="310" width="60" height="290" rx="3" fill="url(#g3)"/>
+    <rect x="290" y="160" width="100" height="440" rx="3" fill="url(#g4)"/>
+    <rect x="400" y="250" width="75" height="350" rx="3" fill="url(#g1)"/>
+    <rect x="485" y="180" width="95" height="420" rx="3" fill="url(#g2)"/>
+    <rect x="590" y="300" width="65" height="300" rx="3" fill="url(#g3)"/>
+    <!-- Windows -->
+    <g opacity=".4" fill="#fbbf24">
+      <rect x="135" y="220" width="8" height="6" rx="1"/><rect x="155" y="220" width="8" height="6" rx="1"/><rect x="175" y="220" width="8" height="6" rx="1"/>
+      <rect x="135" y="240" width="8" height="6" rx="1"/><rect x="155" y="240" width="8" height="6" rx="1"/><rect x="175" y="240" width="8" height="6" rx="1"/>
+      <rect x="135" y="260" width="8" height="6" rx="1"/><rect x="155" y="260" width="8" height="6" rx="1"/>
+      <rect x="310" y="180" width="8" height="6" rx="1"/><rect x="330" y="180" width="8" height="6" rx="1"/><rect x="350" y="180" width="8" height="6" rx="1"/>
+      <rect x="310" y="200" width="8" height="6" rx="1"/><rect x="330" y="200" width="8" height="6" rx="1"/>
+      <rect x="310" y="220" width="8" height="6" rx="1"/><rect x="350" y="220" width="8" height="6" rx="1"/>
+      <rect x="500" y="200" width="8" height="6" rx="1"/><rect x="520" y="200" width="8" height="6" rx="1"/><rect x="540" y="200" width="8" height="6" rx="1"/>
+      <rect x="500" y="220" width="8" height="6" rx="1"/><rect x="520" y="220" width="8" height="6" rx="1"/>
+    </g>
+  </g>
+  <!-- Design System Panel (right side) -->
+  <rect x="700" y="60" width="460" height="480" rx="16" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <!-- Panel header -->
+  <text x="730" y="100" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="white">Urban Pulse</text>
+  <text x="730" y="120" font-family="system-ui,sans-serif" font-size="11" fill="#64748b">Design System v2.0</text>
+  <!-- Color Palette -->
+  <text x="730" y="158" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" font-weight="600" letter-spacing="2">COLOR PALETTE</text>
+  <rect x="730" y="170" width="50" height="50" rx="8" fill="#06b6d4"/><text x="755" y="235" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">Cyan</text>
+  <rect x="790" y="170" width="50" height="50" rx="8" fill="#6366f1"/><text x="815" y="235" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">Indigo</text>
+  <rect x="850" y="170" width="50" height="50" rx="8" fill="#8b5cf6"/><text x="875" y="235" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">Violet</text>
+  <rect x="910" y="170" width="50" height="50" rx="8" fill="#0ea5e9"/><text x="935" y="235" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">Sky</text>
+  <rect x="970" y="170" width="50" height="50" rx="8" fill="#10b981"/><text x="995" y="235" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">Emerald</text>
+  <rect x="1030" y="170" width="50" height="50" rx="8" fill="#f59e0b"/><text x="1055" y="235" font-family="monospace" font-size="8" fill="#64748b" text-anchor="middle">Amber</text>
+  <!-- Typography -->
+  <text x="730" y="272" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" font-weight="600" letter-spacing="2">TYPOGRAPHY</text>
+  <text x="730" y="300" font-family="system-ui,sans-serif" font-size="28" font-weight="700" fill="white">Aa</text>
+  <text x="780" y="300" font-family="system-ui,sans-serif" font-size="14" fill="#cbd5e1">Inter — Headings</text>
+  <text x="730" y="325" font-family="system-ui,sans-serif" font-size="20" font-weight="400" fill="#94a3b8">Aa</text>
+  <text x="770" y="325" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Inter — Body text 16px</text>
+  <!-- Component samples -->
+  <text x="730" y="365" font-family="system-ui,sans-serif" font-size="10" fill="#94a3b8" font-weight="600" letter-spacing="2">COMPONENTS</text>
+  <!-- Button primary -->
+  <rect x="730" y="380" width="120" height="36" rx="8" fill="url(#brand)"/>
+  <text x="790" y="403" font-family="system-ui,sans-serif" font-size="12" fill="white" text-anchor="middle" font-weight="600">Primary</text>
+  <!-- Button secondary -->
+  <rect x="860" y="380" width="120" height="36" rx="8" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+  <text x="920" y="403" font-family="system-ui,sans-serif" font-size="12" fill="#06b6d4" text-anchor="middle" font-weight="600">Secondary</text>
+  <!-- Card sample -->
+  <rect x="730" y="430" width="200" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <rect x="745" y="445" width="30" height="30" rx="6" fill="#06b6d4" opacity=".3"/>
+  <rect x="785" y="448" width="80" height="8" rx="3" fill="#475569"/>
+  <rect x="785" y="462" width="120" height="6" rx="3" fill="#334155"/>
+  <circle cx="745" cy="495" r="4" fill="#10b981"/><text x="755" y="498" font-family="system-ui,sans-serif" font-size="9" fill="#94a3b8">Active</text>
+  <!-- Icon grid sample -->
+  <rect x="950" y="430" width="80" height="80" rx="10" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <g transform="translate(970,448)" fill="none" stroke="#06b6d4" stroke-width="1.5">
+    <rect width="16" height="16" rx="2"/><line x1="24" y1="4" x2="24" y2="12"/><line x1="20" y1="8" x2="28" y2="8"/>
+    <circle cx="8" cy="30" r="7"/><line x1="13" y1="35" x2="18" y2="40"/>
+    <rect x="24" y="24" width="16" height="16" rx="2"/><line x1="28" y1="32" x2="36" y2="32"/>
+  </g>
+  <!-- Pulse rings overlay on city -->
+  <circle cx="200" cy="350" r="15" fill="none" stroke="#06b6d4" stroke-width="1" opacity=".4"/>
+  <circle cx="200" cy="350" r="30" fill="none" stroke="#06b6d4" stroke-width=".5" opacity=".2"/>
+  <circle cx="450" cy="300" r="12" fill="none" stroke="#8b5cf6" stroke-width="1" opacity=".4"/>
+  <circle cx="450" cy="300" r="25" fill="none" stroke="#8b5cf6" stroke-width=".5" opacity=".2"/>
+  <circle cx="350" cy="400" r="10" fill="none" stroke="#0ea5e9" stroke-width="1" opacity=".3"/>
+  <!-- Connection lines between pulse points -->
+  <line x1="200" y1="350" x2="350" y2="400" stroke="#06b6d4" stroke-width=".5" opacity=".15" stroke-dasharray="4,4"/>
+  <line x1="350" y1="400" x2="450" y2="300" stroke="#8b5cf6" stroke-width=".5" opacity=".15" stroke-dasharray="4,4"/>
+  <!-- Logo mark -->
+  <g transform="translate(730,60)">
+    <rect x="-30" y="10" width="8" height="20" rx="2" fill="url(#brand)"/>
+    <rect x="-18" y="2" width="8" height="28" rx="2" fill="url(#brand)"/>
+    <rect x="-6" y="-2" width="8" height="32" rx="2" fill="url(#brand)"/>
+  </g>
+</svg>

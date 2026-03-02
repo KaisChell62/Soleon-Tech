@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="nebulaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#D946EF"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  
+  <!-- Header bar -->
+  <rect x="0" y="0" width="800" height="50" fill="#12121a"/>
+  <text x="400" y="32" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="url(#textGrad)" letter-spacing="4">TYPOGRAPHY SYSTEM</text>
+  
+  <!-- Left Column: Font Specimens -->
+  
+  <!-- Display Font -->
+  <rect x="30" y="65" width="350" height="95" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="50" y="90" font-family="Arial" font-size="10" fill="#8B5CF6" letter-spacing="2">DISPLAY</text>
+  <text x="50" y="130" font-family="Arial" font-size="42" font-weight="900" fill="#fff">Nebula Sans</text>
+  <text x="50" y="150" font-family="Arial" font-size="11" fill="#555">Black 900 | 48-72px | Headlines, Hero</text>
+  
+  <!-- Heading Font -->
+  <rect x="30" y="170" width="350" height="85" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="50" y="195" font-family="Arial" font-size="10" fill="#06B6D4" letter-spacing="2">HEADINGS</text>
+  <text x="50" y="230" font-family="Arial" font-size="32" font-weight="bold" fill="#fff">Inter Bold</text>
+  <text x="50" y="248" font-family="Arial" font-size="11" fill="#555">Bold 700 | 24-36px | Section Titles</text>
+  
+  <!-- Body Font -->
+  <rect x="30" y="265" width="350" height="85" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="50" y="290" font-family="Arial" font-size="10" fill="#D946EF" letter-spacing="2">BODY</text>
+  <text x="50" y="320" font-family="Arial" font-size="18" fill="#ccc">The quick brown fox jumps</text>
+  <text x="50" y="342" font-family="Arial" font-size="11" fill="#555">Regular 400 | 16-18px | Paragraphs</text>
+  
+  <!-- Caption Font -->
+  <rect x="30" y="360" width="350" height="75" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="50" y="385" font-family="Arial" font-size="10" fill="#F59E0B" letter-spacing="2">UI ELEMENTS</text>
+  <text x="50" y="410" font-family="Arial" font-size="14" font-weight="500" fill="#888" letter-spacing="1">INTER MEDIUM</text>
+  <text x="50" y="428" font-family="Arial" font-size="11" fill="#555">Medium 500 | 12-14px | Labels, Buttons</text>
+  
+  <!-- Right Column: Type Scale -->
+  <rect x="400" y="65" width="180" height="255" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="420" y="90" font-family="Arial" font-size="10" fill="#8B5CF6" letter-spacing="2">TYPE SCALE</text>
+  
+  <text x="420" y="130" font-family="Arial" font-size="42" font-weight="bold" fill="#fff">Aa</text>
+  <text x="490" y="125" font-family="Arial" font-size="10" fill="#555">48px</text>
+  <text x="490" y="138" font-family="Arial" font-size="9" fill="#444">Display</text>
+  
+  <text x="420" y="170" font-family="Arial" font-size="32" font-weight="bold" fill="#fff">Aa</text>
+  <text x="475" y="165" font-family="Arial" font-size="10" fill="#555">36px</text>
+  <text x="475" y="178" font-family="Arial" font-size="9" fill="#444">H1</text>
+  
+  <text x="420" y="205" font-family="Arial" font-size="26" font-weight="bold" fill="#fff">Aa</text>
+  <text x="468" y="200" font-family="Arial" font-size="10" fill="#555">28px</text>
+  <text x="468" y="213" font-family="Arial" font-size="9" fill="#444">H2</text>
+  
+  <text x="420" y="238" font-family="Arial" font-size="22" font-weight="bold" fill="#fff">Aa</text>
+  <text x="462" y="233" font-family="Arial" font-size="10" fill="#555">22px</text>
+  <text x="462" y="246" font-family="Arial" font-size="9" fill="#444">H3</text>
+  
+  <text x="420" y="268" font-family="Arial" font-size="18" fill="#ccc">Aa</text>
+  <text x="455" y="263" font-family="Arial" font-size="10" fill="#555">18px</text>
+  <text x="455" y="276" font-family="Arial" font-size="9" fill="#444">Body</text>
+  
+  <text x="420" y="295" font-family="Arial" font-size="14" fill="#888">Aa</text>
+  <text x="448" y="290" font-family="Arial" font-size="10" fill="#555">14px</text>
+  <text x="448" y="303" font-family="Arial" font-size="9" fill="#444">Caption</text>
+
+  <!-- Character Set -->
+  <rect x="595" y="65" width="175" height="175" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="615" y="90" font-family="Arial" font-size="10" fill="#06B6D4" letter-spacing="2">CHARACTER SET</text>
+  <text x="615" y="115" font-family="Arial" font-size="12" fill="#fff">ABCDEFGHIJKL</text>
+  <text x="615" y="132" font-family="Arial" font-size="12" fill="#fff">MNOPQRSTUVWXYZ</text>
+  <text x="615" y="155" font-family="Arial" font-size="12" fill="#ccc">abcdefghijkl</text>
+  <text x="615" y="172" font-family="Arial" font-size="12" fill="#ccc">mnopqrstuvwxyz</text>
+  <text x="615" y="195" font-family="Arial" font-size="12" fill="#888">0123456789</text>
+  <text x="615" y="218" font-family="Arial" font-size="12" fill="#8B5CF6">@#$%*+-=</text>
+  
+  <!-- Line Heights -->
+  <rect x="595" y="250" width="175" height="70" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="615" y="275" font-family="Arial" font-size="10" fill="#D946EF" letter-spacing="2">LINE HEIGHT</text>
+  <text x="615" y="300" font-family="Arial" font-size="11" fill="#888">Headlines: 1.1</text>
+  <text x="700" y="300" font-family="Arial" font-size="11" fill="#888">Body: 1.6</text>
+  
+  <!-- Font Weights -->
+  <rect x="400" y="330" width="370" height="105" rx="8" fill="#12121a" stroke="#1a1a25" stroke-width="1"/>
+  <text x="420" y="355" font-family="Arial" font-size="10" fill="url(#textGrad)" letter-spacing="2">FONT WEIGHTS</text>
+  
+  <text x="420" y="385" font-family="Arial" font-size="16" font-weight="100" fill="#666">Thin 100</text>
+  <text x="520" y="385" font-family="Arial" font-size="16" font-weight="300" fill="#888">Light 300</text>
+  <text x="620" y="385" font-family="Arial" font-size="16" font-weight="400" fill="#aaa">Regular 400</text>
+  
+  <text x="420" y="415" font-family="Arial" font-size="16" font-weight="500" fill="#ccc">Medium 500</text>
+  <text x="540" y="415" font-family="Arial" font-size="16" font-weight="700" fill="#eee">Bold 700</text>
+  <text x="640" y="415" font-family="Arial" font-size="16" font-weight="900" fill="#fff">Black 900</text>
+  
+  <!-- Footer -->
+  <rect x="0" y="450" width="800" height="50" fill="#12121a"/>
+  <circle cx="40" cy="475" r="12" fill="url(#nebulaGrad)"/>
+  <text x="60" y="480" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">Nebula</text>
+  <text x="400" y="480" text-anchor="middle" font-family="Arial" font-size="10" fill="#555">Typography Guidelines | Brand Identity System v1.0</text>
+  <text x="760" y="480" text-anchor="end" font-family="Arial" font-size="10" fill="#444">03/06</text>
+</svg>

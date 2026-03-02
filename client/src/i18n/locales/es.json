@@ -1,0 +1,762 @@
+{
+  "common": {
+    "welcome": "Bienvenido",
+    "description": "Premium Digital Partner",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Inicio",
+    "agency": "Agencia",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "pricing": "Precios",
+    "faq": "FAQ",
+    "expertise": "Experiencia",
+    "contact": "Contacto",
+    "start": "Empezar"
+  },
+  "faq": {
+    "title": "Preguntas",
+    "highlight": "Frecuentes",
+    "subtitle": "Todo lo que necesitas saber sobre nuestro proceso y servicios.",
+    "timeline": {
+      "question": "¿Cuánto tiempo toma un proyecto promedio?",
+      "answer": "Depende de la complejidad. Un sitio corporativo típicamente toma 3-4 semanas, mientras que una aplicación SaaS compleja puede tomar 2-3 meses."
+    },
+    "cost": {
+      "question": "¿Cómo se calculan los precios?",
+      "answer": "Proporcionamos presupuestos personalizados basados en el tiempo de desarrollo, la complejidad de las funciones y el nivel de diseño requerido. Sin costos ocultos."
+    },
+    "support": {
+      "question": "¿Ofrecen soporte después del lanzamiento?",
+      "answer": "Sí, ofrecemos 30 días de soporte gratuito para corregir cualquier error. Después, ofrecemos paquetes de mantenimiento mensuales."
+    },
+    "tech": {
+      "question": "¿Qué tecnologías utilizan?",
+      "answer": "Somos expertos en React, Node.js y TypeScript para web, y React Native o Swift/Kotlin para móvil."
+    },
+    "seo": {
+      "question": "¿Está incluido el SEO?",
+      "answer": "Todos nuestros sitios están técnicamente optimizados para SEO (velocidad, etiquetas, estructura). También ofrecemos servicios avanzados de redacción SEO."
+    },
+    "badge": "FAQ y Soporte",
+    "categories": {
+      "all": "Todo",
+      "process": "Proceso",
+      "pricing": "Precios",
+      "tech": "Tecnología",
+      "support": "Soporte"
+    },
+    "results": "preguntas",
+    "process": {
+      "question": "¿Cuál es su proceso de desarrollo?",
+      "answer": "Seguimos una metodología ágil con 4 fases clave: auditoría y estrategia, diseño UX/UI, desarrollo iterativo y lanzamiento con soporte continuo. Cada fase incluye validación del cliente."
+    },
+    "payment": {
+      "question": "¿Qué métodos de pago aceptan?",
+      "answer": "Aceptamos transferencias bancarias, tarjetas de crédito y PayPal. El pago se divide generalmente en hitos: 30% al inicio, 40% a mitad del proyecto y 30% a la entrega."
+    },
+    "design": {
+      "question": "¿Cómo funciona el proceso de diseño?",
+      "answer": "Comenzamos con wireframes y flujos de usuario, luego creamos maquetas de alta fidelidad en Figma. Usted valida cada paso antes de pasar al desarrollo."
+    },
+    "security": {
+      "question": "¿Cómo manejan la seguridad de los datos?",
+      "answer": "La seguridad está integrada en cada proyecto desde el primer día. Implementamos HTTPS, cifrado de datos, cumplimiento GDPR y seguimos las mejores prácticas OWASP."
+    },
+    "revision": {
+      "question": "¿Cuántas revisiones están incluidas?",
+      "answer": "Cada fase del proyecto incluye hasta 2 rondas de revisiones. Se pueden organizar revisiones adicionales a una tarifa por hora transparente."
+    },
+    "cta": {
+      "title": "¿Tienes más preguntas?",
+      "subtitle": "Nuestro equipo está aquí para ayudarte a aclarar tus necesidades.",
+      "button": "Contáctanos"
+    }
+  },
+  "home": {
+    "badge": "Nueva Agencia",
+    "cta_project": "Start Project",
+    "cta_contact": "Contact Us",
+    "hero": {
+      "title": "Digital,",
+      "subtitle": "Reinventado.",
+      "description": "Experiencias digitales inmersivas.",
+      "cta_primary": "Descubrir",
+      "cta_secondary": "Iniciar Proyecto"
+    },
+    "features": {
+      "title": "¿Por qué nosotros?",
+      "subtitle": "Enfoque integral de diseño y estrategia.",
+      "strategy": {
+        "title": "Estrategia",
+        "desc": "Análisis de mercado profundo y estrategias basadas en datos."
+      },
+      "global": {
+        "title": "Global",
+        "desc": "Alcance internacional con soluciones adaptadas a cada cultura."
+      },
+      "tech": {
+        "title": "Tecnología",
+        "desc": "Stack moderno con React 19 y Node.js para máximo rendimiento."
+      },
+      "mobile": {
+        "title": "Móvil Primero",
+        "desc": "Experiencias fluidas y responsivas en todos los dispositivos."
+      }
+    },
+    "process": {
+      "title": "Proceso",
+      "steps": {
+        "discovery": {
+          "title": "1. Descubrimiento",
+          "desc": "Análisis."
+        },
+        "design": {
+          "title": "2. Diseño",
+          "desc": "UI/UX."
+        },
+        "dev": {
+          "title": "3. Desarrollo",
+          "desc": "Código."
+        },
+        "launch": {
+          "title": "4. Lanzamiento",
+          "desc": "Despliegue."
+        }
+      }
+    },
+    "cta_final": {
+      "title": "Ready?",
+      "button": "Get Quote"
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones interactivas.",
+    "web": {
+      "title": "Web",
+      "desc": "Alto rendimiento."
+    },
+    "mobile": {
+      "title": "Móvil",
+      "desc": "iOS & Android.",
+      "features": {
+        "native": "Native",
+        "cross": "Cross-platform",
+        "uiux": "UI/UX"
+      }
+    },
+    "logo": {
+      "title": "Branding",
+      "desc": "Logotipos.",
+      "features": {
+        "vector": "Vector",
+        "guidelines": "Guidelines",
+        "revisions": "Revisions"
+      }
+    },
+    "preview": {
+      "phone": {
+        "welcome_back": "¡Bienvenido!",
+        "uptime": "Actividad",
+        "new_users": "Usuarios",
+        "revenue": "Ingresos",
+        "growth": "+12% this week",
+        "role_1": "Designer",
+        "role_2": "Developer"
+      },
+      "web": {
+        "nav_new": "Nuevo",
+        "nav_men": "Hombres",
+        "nav_women": "Mujeres",
+        "hero_tag": "NUEVA COLECCIÓN",
+        "hero_title_1": "RUN THE",
+        "hero_title_2": "STREETS.",
+        "btn_shop": "COMPRAR"
+      },
+      "logo": {
+        "config": "Configurador",
+        "live": "Vista Previa",
+        "shape": "Forma",
+        "color": "Color",
+        "modern": "Modern",
+        "classic": "Classic",
+        "tech": "Tech"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contactar",
+    "subtitle": "Respuesta en 24h.",
+    "badge": "Contáctenos",
+    "detected": "Detectado desde",
+    "info": {
+      "hq": "Paris",
+      "availability": "Worldwide",
+      "email_label": "Email",
+      "quote": "Work with love.",
+      "quote_role": "Inspiration",
+      "location": "Ubicación",
+      "hours": "Horario",
+      "timezone": "Hora de París",
+      "response": "Respuesta en menos de 2 horas generalmente"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Mensaje",
+      "send": "Enviar",
+      "success": "¡Enviado!",
+      "error": "Error",
+      "sending": "Su mensaje se está enviando, por favor espere.",
+      "sending_title": "Enviando...",
+      "success_title": "¡Mensaje enviado!",
+      "success_desc": "Le responderemos dentro de 24 horas.",
+      "language": "Tu idioma *",
+      "required_fields": "Todos los campos son obligatorios"
+    },
+    "steps": {
+      "info": "Info",
+      "details": "Detalles",
+      "send": "Enviar"
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Descubre nuestros proyectos innovadores",
+    "categories": {
+      "all": "Todo",
+      "web": "Web",
+      "mobile": "Móvil",
+      "design": "Diseño"
+    },
+    "viewProject": "Ver Proyecto",
+    "project": {
+      "overview": "Resumen",
+      "problem": "Problema y Objetivo",
+      "challenge": "El Desafío",
+      "goal": "El Objetivo",
+      "solution": "La Solución",
+      "technologies": "Tecnologías",
+      "results": "Resultados",
+      "team": "Equipo",
+      "related": "Proyectos Relacionados",
+      "back": "Volver al Portafolio",
+      "liveDemo": "Ver Demo en Vivo",
+      "creationProcess": "Proceso de Creación",
+      "highFidelity": "Diseño de Alta Fidelidad",
+      "wireframes": "Wireframes y Bocetos",
+      "techTools": "Tecnologías y Herramientas",
+      "notFound": "Proyecto no encontrado",
+      "cta": {
+        "title": "¿Este proyecto te inspira?",
+        "subtitle": "Hablemos de cómo podemos transformar tu visión en realidad.",
+        "startProject": "Iniciar un proyecto",
+        "seeMore": "Ver otros proyectos"
+      }
+    }
+  },
+  "whyUs": {
+    "title": "¿Por qué elegir",
+    "brand": "Soleon Tech",
+    "subtitle": "Una agencia joven, ágil y apasionada. Sin promesas vacías — solo código limpio, diseño pulido y compromiso total con tu proyecto.",
+    "commitments": "Nuestros Compromisos",
+    "approach": "Nuestro Enfoque",
+    "stats": {
+      "custom": {
+        "value": "100%",
+        "label": "Código Personalizado",
+        "desc": "Sin plantillas. Cada proyecto es único."
+      },
+      "direct": {
+        "value": "98%",
+        "label": "Satisfacción",
+        "desc": "Nuestros clientes vuelven y nos recomiendan."
+      },
+      "passion": {
+        "value": "∞",
+        "label": "Pasión",
+        "desc": "Tecnologías dominadas con entusiasmo."
+      },
+      "response": {
+        "value": "24h",
+        "label": "Respuesta Máxima",
+        "desc": "Comunicación reactiva garantizada."
+      }
+    },
+    "methodology": {
+      "audit": {
+        "title": "Auditoría y Estrategia",
+        "desc": "Analizamos tu configuración existente y definimos KPIs claros antes de escribir código."
+      },
+      "design": {
+        "title": "Diseño UX/UI",
+        "desc": "Diseño de interfaz centrado en el usuario, enfocado en conversión, validado por prototipos."
+      },
+      "dev": {
+        "title": "Desarrollo",
+        "desc": "Código limpio, probado, documentado. Entrega iterativa con demos regulares."
+      },
+      "launch": {
+        "title": "Lanzamiento y Soporte",
+        "desc": "Despliegue optimizado, monitoreo proactivo y soporte continuo post-lanzamiento."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Invierte en",
+    "highlight": "excelencia",
+    "subtitle": "Precios transparentes, adaptados a cada etapa de tu crecimiento. Sin costos ocultos, sin sorpresas.",
+    "recommended": "RECOMENDADO",
+    "perProject": "/proyecto",
+    "start": "Comenzar",
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Cobran por hora o precio fijo?",
+        "answer": "Preferimos precio fijo para garantizar presupuesto. Para mantenimiento, trabajamos con bancos de horas."
+      },
+      "q2": {
+        "question": "¿Puedo cambiar de plan a mitad del proyecto?",
+        "answer": "Absolutamente. Nuestras ofertas son escalables. Solo pagas la diferencia prorrateada."
+      }
+    }
+  },
+  "security": {
+    "status": "SISTEMAS OPERATIVOS",
+    "title": "La seguridad no es opcional.",
+    "subtitle": "Es nuestro",
+    "highlight": "estándar",
+    "description": "Integramos la seguridad desde la fase de diseño. Protecciones activas, encriptación fuerte y cumplimiento legal incluidos en todos los proyectos.",
+    "compliance": "Cumplimiento y Estándares",
+    "badges": [
+      "GDPR Compliant",
+      "OWASP Top 10",
+      "ISO 27001 Ready",
+      "99.9% Uptime"
+    ],
+    "standards": {
+      "encryption": {
+        "title": "Encriptación E2E",
+        "desc": "Todos los datos sensibles se encriptan en tránsito y en reposo con AES-256.",
+        "category": "Infraestructura"
+      },
+      "auth": {
+        "title": "Autenticación Multifactor",
+        "desc": "Opciones MFA integradas para proteger el acceso de usuarios.",
+        "category": "Código"
+      },
+      "monitoring": {
+        "title": "Monitoreo 24/7",
+        "desc": "Vigilancia continua de anomalías con alertas en tiempo real.",
+        "category": "Proceso"
+      },
+      "backup": {
+        "title": "Backups Automáticos",
+        "desc": "Backups diarios con retención a largo plazo y pruebas de restauración.",
+        "category": "Infraestructura"
+      }
+    }
+  },
+  "international": {
+    "badge": "Disponible mundialmente",
+    "title1": "Presencia",
+    "highlight1": "Global",
+    "title2": ". Experiencia",
+    "highlight2": "Local",
+    "title3": ".",
+    "subtitle": "Apoyamos a clientes en 3 continentes. Nuestros equipos se adaptan a tu zona horaria y restricciones culturales.",
+    "stats": {
+      "support": {
+        "title": "Soporte 24/7",
+        "desc": "Equipos distribuidos en múltiples zonas horarias para máxima respuesta."
+      },
+      "multilingual": {
+        "title": "Multilingüe",
+        "desc": "Documentación y comunicación en francés, inglés, español y alemán."
+      },
+      "hubs": {
+        "title": "San Francisco & París",
+        "desc": "Hubs estratégicos conectando innovación de Silicon Valley con diseño europeo."
+      }
+    },
+    "locations": "Nuestros Hubs Estratégicos",
+    "remote": {
+      "title": "Remoto Primero, Humano Siempre",
+      "desc": "Nuestra cultura distribuida nos permite reclutar el mejor talento global, sin limitaciones geográficas.",
+      "stat": "Remoto & Eficiente"
+    }
+  },
+  "liveBoard": {
+    "status": "SEGUIMIENTO EN VIVO",
+    "title": "Panel de Cliente",
+    "subtitle": "Sigue el progreso de tu proyecto en tiempo real.",
+    "addTask": "+ Agregar tarea"
+  },
+  "configurator": {
+    "title": "Crea tu oferta personalizada",
+    "subtitle": "Configura tu proyecto ideal y obtén un presupuesto instantáneo.",
+    "summary": "Resumen",
+    "empty": "Selecciona opciones para ver detalles...",
+    "total": "Estimación Total",
+    "included": "Incluido",
+    "submit": "Obtener presupuesto",
+    "disclaimer": "Estimación indicativa no vinculante.",
+    "badge": "Presupuesto personalizado",
+    "from": "Desde",
+    "month": "mes",
+    "monthly": "Costo mensual"
+  },
+  "about": {
+    "title": "Construimos el",
+    "highlight": "futuro",
+    "title2": "digital.",
+    "subtitle": "Soleon Tech nació de una simple observación: la mayoría de las agencias venden tiempo. Nosotros vendemos impacto.",
+    "team": "Los Arquitectos",
+    "values": {
+      "precision": {
+        "title": "Precisión",
+        "desc": "Cada píxel cuenta. Cada línea de código tiene un propósito."
+      },
+      "velocity": {
+        "title": "Velocidad",
+        "desc": "Entregamos rápido, sin romper nada."
+      },
+      "passion": {
+        "title": "Pasión",
+        "desc": "Solo aceptamos proyectos que nos emocionan."
+      },
+      "excellence": {
+        "title": "Excelencia",
+        "desc": "\"Suficientemente bueno\" es nuestro enemigo."
+      }
+    }
+  },
+  "blog": {
+    "title": "Insights",
+    "subtitle": "Análisis, tendencias y feedback de nuestros expertos.",
+    "readArticle": "Leer artículo",
+    "read": "lectura"
+  },
+  "careers": {
+    "title": "Únete a la",
+    "highlight": "élite",
+    "subtitle": "Buscamos mentes brillantes que rechazan el status quo. Trabajo remoto, salarios competitivos y proyectos estimulantes.",
+    "apply": "Aplicar",
+    "spontaneous": "¿No hay posición adecuada?",
+    "spontaneousLink": "Envíanos una candidatura espontánea."
+  },
+  "terms": {
+    "title": "Aviso Legal y Términos",
+    "sections": [
+      {
+        "title": "1. Editor del Sitio",
+        "content": "El sitio web Soleon Tech es publicado por Soleon Tech SAS."
+      },
+      {
+        "title": "2. Alojamiento",
+        "content": "El sitio está alojado por Vercel Inc."
+      },
+      {
+        "title": "3. Propiedad Intelectual",
+        "content": "Todos los elementos del sitio son propiedad exclusiva de Soleon Tech."
+      },
+      {
+        "title": "4. Datos Personales (GDPR)",
+        "content": "Soleon Tech asegura que la recopilación de datos cumple con GDPR."
+      },
+      {
+        "title": "5. Limitación de Responsabilidad",
+        "content": "Soleon Tech rechaza cualquier responsabilidad por daños causados durante el acceso al sitio."
+      }
+    ]
+  },
+  "demoEco": {
+    "brand": "EcoMarket",
+    "tagline": "El futuro de la alimentación sostenible.",
+    "shopNow": "Comprar Ahora",
+    "featured": "Cosecha de Hoy",
+    "addToCart": "Añadir al Carrito",
+    "cart": "Tu Carrito",
+    "total": "Subtotal",
+    "checkout": "Pago Seguro",
+    "emptyCart": "Tu carrito está vacío.",
+    "freeDelivery": "Envío Gratis",
+    "organic": "100% Orgánico",
+    "fresh": "Ultra Fresco",
+    "secure": "Seguro",
+    "reviews": "reseñas",
+    "categories": "Categorías",
+    "all": "Todos los Productos",
+    "fruits": "Frutas",
+    "vegetables": "Verduras",
+    "dairy": "Lácteos"
+  },
+  "footer": {
+    "services": {
+      "title": "Servicios",
+      "main": "Servicios",
+      "configurator": "Configurador",
+      "security": "Seguridad",
+      "international": "Internacional"
+    },
+    "agency": {
+      "title": "Agencia",
+      "about": "Nosotros",
+      "why_us": "¿Por qué nosotros?",
+      "careers": "Carreras",
+      "blog": "Blog",
+      "client_area": "Área de Clientes",
+      "contact": "Contacto"
+    },
+    "legal": {
+      "privacy": "Política de Privacidad",
+      "terms": "Términos y Condiciones"
+    },
+    "description": "Transformando tus ideas en experiencias digitales excepcionales.",
+    "social": "Social",
+    "copyright": "© {{year}} Soleon Tech. Todos los derechos reservados."
+  },
+  "global": {
+    "cta": {
+      "title": "¿Listo para escalar tu negocio a nivel global?",
+      "description": "Únete a los más de 12 clientes que confían en Soleon Tech para su estrategia digital internacional.",
+      "button": "Iniciar Proyecto Global"
+    },
+    "culture": {
+      "western_label": "UI Occidental",
+      "asian_label": "UI Asiática",
+      "title": "Adaptación Cultural",
+      "subtitle": "El diseño no es universal. Adaptamos las interfaces a los hábitos locales.",
+      "explanation": {
+        "asian": "Diseño Integrado: Super-Apps y alta densidad de información. La UX asiática favorece el acceso inmediato a todo el ecosistema.",
+        "western": "Diseño Minimalista: Espacios aireados y recorridos lineales. La UX occidental favorece la claridad y el enfoque."
+      }
+    },
+    "timezone": {
+      "label": {
+        "paris": "Sede & Estrategia",
+        "new_york": "Ingeniería",
+        "tokyo": "Soporte & QA"
+      },
+      "uptime": {
+        "title": "Disponibilidad 24/7",
+        "desc": "Sin interrupciones entre turnos."
+      },
+      "delivery": {
+        "title": "Entrega Más Rápida",
+        "desc": "El trabajo continúa mientras duermes."
+      },
+      "compliance": {
+        "title": "Cumplimiento Local",
+        "desc": "Expertos en cada región."
+      },
+      "title": "La Ventaja Horaria",
+      "subtitle": "Gracias a nuestra distribución global, tu proyecto avanza 24/7.",
+      "paris": "París",
+      "new_york": "Nueva York",
+      "tokyo": "Tokio",
+      "dubai": "Dubái",
+      "sydney": "Sídney"
+    },
+    "title": "Nuestra Experiencia",
+    "highlight": "Sin Límites",
+    "subtitle": "Experiencia local, alcance global. Adaptamos cada proyecto a las especificidades culturales de tu audiencia objetivo.",
+    "trust": {
+      "title": "Confianza a Escala Global",
+      "clients": "Clientes Satisfechos",
+      "countries": "Países Alcanzados",
+      "projects": "Proyectos Entregados",
+      "satisfaction": "Satisfacción"
+    }
+  },
+  "packs": {
+    "type": {
+      "title": "Tipo de proyecto",
+      "landing": "Landing Page",
+      "landing_desc": "Una página única optimizada para conversión.",
+      "showcase": "Sitio Web (5 páginas)",
+      "showcase_desc": "Presentación completa de tu negocio.",
+      "ecommerce": "E-commerce",
+      "ecommerce_desc": "Tienda online con gestión de catálogo y pagos.",
+      "saas": "Web App / SaaS",
+      "saas_desc": "Aplicación empresarial compleja a medida."
+    },
+    "design": {
+      "title": "Nivel de diseño",
+      "standard": "Estándar (Plantilla)",
+      "standard_desc": "Adaptación limpia de una plantilla existente.",
+      "custom": "Diseño a Medida",
+      "custom_desc": "Dirección artística única y maquetas completas."
+    },
+    "features": {
+      "title": "Funcionalidades y complementos",
+      "cms": "CMS (Gestión de contenido)",
+      "seo": "Pack SEO Avanzado",
+      "analytics": "Analytics y Tracking",
+      "i18n": "Multi-idioma",
+      "auth": "Área de Miembros / Auth",
+      "payment": "Integración de Pago (Stripe)"
+    },
+    "maintenance": {
+      "title": "Mantenimiento Mensual (Opcional)",
+      "none": "Ninguno",
+      "pro": "Soporte Técnico y Actualizaciones"
+    }
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "subtitle": "Nos comprometemos a proteger sus datos personales con el máximo rigor.",
+    "last_update": "Última actualización: {{date}}",
+    "sections": {
+      "intro": {
+        "title": "Introducción",
+        "content": "En Soleon Tech, la protección de sus datos personales es una prioridad absoluta. Esta política de privacidad explica qué información recopilamos, cómo la usamos y sus derechos como usuario."
+      },
+      "data_collection": {
+        "title": "Datos Recopilados",
+        "content": "Solo recopilamos la información necesaria para el correcto funcionamiento de nuestros servicios:",
+        "details": [
+          "Información de identidad: nombre, apellido, dirección de correo electrónico",
+          "Datos de navegación: cookies, páginas visitadas, duración de la sesión",
+          "Datos de comunicación: mensajes enviados a través del formulario de contacto",
+          "Información técnica: dirección IP, navegador, sistema operativo"
+        ]
+      },
+      "data_usage": {
+        "title": "Uso de Datos",
+        "content": "Sus datos se utilizan exclusivamente para:",
+        "details": [
+          "Responder a sus solicitudes y proporcionar nuestros servicios",
+          "Mejorar la experiencia del usuario de nuestro sitio",
+          "Enviar comunicaciones relevantes (con su consentimiento)",
+          "Analizar el tráfico y optimizar nuestro rendimiento"
+        ]
+      },
+      "data_sharing": {
+        "title": "Compartir Datos",
+        "content": "Nunca vendemos sus datos personales. Solo se pueden compartir con:",
+        "details": [
+          "Nuestros proveedores de servicios técnicos (alojamiento, análisis) bajo contrato estricto",
+          "Autoridades legales en caso de obligación legal",
+          "Con su consentimiento explícito para socios seleccionados"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies y Tecnologías Similares",
+        "content": "Utilizamos cookies para mejorar su navegación. Puede administrar sus preferencias en cualquier momento a través de la configuración de su navegador. Tipos de cookies utilizadas:",
+        "details": [
+          "Cookies esenciales: necesarias para el funcionamiento del sitio",
+          "Cookies analíticas: para comprender el uso del sitio",
+          "Cookies de preferencia: para recordar sus elecciones (idioma, etc.)"
+        ]
+      },
+      "rights": {
+        "title": "Sus Derechos",
+        "content": "De acuerdo con el RGPD, tiene los siguientes derechos:",
+        "details": [
+          "Derecho de acceso: consultar sus datos personales",
+          "Derecho de rectificación: corregir su información",
+          "Derecho de supresión: eliminar sus datos",
+          "Derecho a la portabilidad: recuperar sus datos",
+          "Derecho de oposición: rechazar ciertos tratamientos"
+        ]
+      }
+    },
+    "contact": {
+      "title": "¿Preguntas?",
+      "description": "Para cualquier pregunta sobre sus datos personales, no dude en contactarnos.",
+      "button": "Contáctenos"
+    }
+  },
+  "terms_conditions": {
+    "title": "Términos y Condiciones",
+    "subtitle": "Las reglas y condiciones de uso de nuestros servicios digitales.",
+    "last_update": "Última actualización: {{date}}",
+    "sections": {
+      "general": {
+        "title": "Disposiciones Generales",
+        "content": "Estos Términos Generales de Uso (TGU) y Venta (TGV) rigen el acceso y uso de los servicios ofrecidos por Soleon Tech. Al usar nuestros servicios, acepta todas estas condiciones.",
+        "details": []
+      },
+      "services": {
+        "title": "Descripción de Servicios",
+        "content": "Soleon Tech ofrece servicios de diseño y desarrollo digital que incluyen:",
+        "details": [
+          "Creación de sitios web y aplicaciones móviles personalizadas",
+          "Diseño UX/UI e identidad visual",
+          "Desarrollo de aplicaciones SaaS",
+          "Mantenimiento y soporte técnico",
+          "Optimización SEO y rendimiento"
+        ]
+      },
+      "accounts": {
+        "title": "Cuentas de Usuario",
+        "content": "El acceso a ciertos servicios puede requerir la creación de una cuenta. Usted se compromete a:",
+        "details": [
+          "Proporcionar información precisa y actualizada",
+          "Mantener la confidencialidad de sus credenciales",
+          "Notificar inmediatamente cualquier uso no autorizado",
+          "No compartir su cuenta con terceros"
+        ]
+      },
+      "responsibilities": {
+        "title": "Responsabilidades",
+        "content": "Nuestros compromisos y sus responsabilidades:",
+        "details": [
+          "Soleon Tech se compromete a proporcionar servicios de calidad profesional",
+          "El cliente proporciona el contenido y los materiales necesarios de manera oportuna",
+          "El cliente valida los entregables según los plazos acordados",
+          "Cualquier modificación sustancial puede resultar en un ajuste de precio"
+        ]
+      },
+      "limitations": {
+        "title": "Limitaciones de Responsabilidad",
+        "content": "Dentro de los límites autorizados por la ley:",
+        "details": [
+          "Soleon Tech no puede ser responsable de interrupciones del servicio más allá de su control",
+          "Nuestra responsabilidad se limita al monto pagado por el servicio en cuestión",
+          "No garantizamos resultados comerciales específicos",
+          "El cliente es responsable de hacer copias de seguridad de sus datos"
+        ]
+      },
+      "jurisdiction": {
+        "title": "Jurisdicción y Ley Aplicable",
+        "content": "Estas condiciones se rigen por la ley francesa. En caso de disputa:",
+        "details": [
+          "Se buscará una resolución amistosa como prioridad",
+          "De lo contrario, los tribunales franceses tendrán jurisdicción",
+          "Cumplimiento del RGPD y las regulaciones europeas"
+        ]
+      }
+    },
+    "acceptance": {
+      "title": "Aceptación de Condiciones",
+      "content": "El uso de nuestros servicios implica la aceptación total de estos TGU/TGV. Si no acepta estas condiciones, no use nuestros servicios. Nos reservamos el derecho de modificar estas condiciones en cualquier momento, con notificación previa a los usuarios."
+    }
+  },
+  "quote": {
+    "modal": {
+      "title": "Recibir su presupuesto",
+      "subtitle": "Reciba su presupuesto personalizado por email con PDF detallado de su selección.",
+      "language_label": "Su idioma",
+      "email_label": "Su dirección de email",
+      "email_placeholder": "usted@ejemplo.com",
+      "email_invalid": "Dirección de email inválida",
+      "summary": "Estimación",
+      "firstname_label": "Nombre",
+      "firstname_placeholder": "Su nombre",
+      "lastname_label": "Apellido",
+      "lastname_placeholder": "Su apellido",
+      "name_invalid": "Nombre y apellido requeridos (mín. 2 caracteres)",
+      "send": "Enviar presupuesto",
+      "sending": "Su presupuesto se está enviando, por favor espere.",
+      "sending_title": "Enviando...",
+      "success_title": "Presupuesto enviado!",
+      "success_desc": "Su presupuesto detallado (con PDF) ha sido enviado a",
+      "close": "Cerrar",
+      "error": "Ocurrió un error. Por favor verifique su email e intente de nuevo."
+    }
+  }}

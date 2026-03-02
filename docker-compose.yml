@@ -1,0 +1,51 @@
+services:
+  # Database Service
+  mongodb:
+    image: mongo:latest
+    container_name: soleontech-mongo
+    ports:
+      - "27020:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - soleontech-network
+
+  # Backend Service
+  server:
+    build: ./server
+    container_name: soleontech-server
+    ports:
+      - "5001:5000"
+    environment:
+      - PORT=5000
+      - MONGO_URI=mongodb://soleontech-mongo:27017/soleontech
+      - NODE_ENV=production
+      - GMAIL_USER=chelhaoui.kais62141@gmail.com
+      - GMAIL_APP_PASSWORD=cvrofmifuhebfxmn
+      - ADMIN_EMAIL=chelhaoui.kais62141@gmail.com
+      - FRONTEND_URL=https://goallife.kaiscorp.fr
+    depends_on:
+      - mongodb
+    networks:
+      - soleontech-network
+
+  # Frontend Service
+  client:
+    build: 
+      context: ./client
+      args:
+        - VITE_API_URL=/api
+    container_name: soleontech-client
+    ports:
+      - "8081:80"
+    depends_on:
+      - server
+    networks:
+      - soleontech-network
+
+networks:
+  soleontech-network:
+    driver: bridge
+
+volumes:
+  mongo-data:

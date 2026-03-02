@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="paper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fafafa"/>
+      <stop offset="100%" stop-color="#f0f0f0"/>
+    </linearGradient>
+    <linearGradient id="nebulaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#1a1a2e"/>
+  
+  <!-- Paper sheets -->
+  <rect x="30" y="30" width="220" height="280" rx="4" fill="url(#paper)" transform="rotate(-3 140 170)"/>
+  <rect x="35" y="35" width="220" height="280" rx="4" fill="#fff"/>
+  
+  <!-- Sketch 1: Circle explorations -->
+  <circle cx="145" cy="120" r="45" fill="none" stroke="#ccc" stroke-width="1" stroke-dasharray="4 2"/>
+  <circle cx="145" cy="120" r="35" fill="none" stroke="#999" stroke-width="1"/>
+  <circle cx="145" cy="120" r="25" fill="none" stroke="#666" stroke-width="2"/>
+  <text x="145" y="128" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">N</text>
+  <text x="145" y="200" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">Concept A - Cercles concentriques</text>
+  
+  <!-- Small sketches -->
+  <circle cx="80" cy="260" r="20" fill="none" stroke="#aaa" stroke-width="1"/>
+  <text x="80" y="266" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">N</text>
+  
+  <circle cx="145" cy="260" r="20" fill="none" stroke="#aaa" stroke-width="1"/>
+  <path d="M135 250 Q145 270 155 250" fill="none" stroke="#666" stroke-width="1"/>
+  
+  <circle cx="210" cy="260" r="20" fill="none" stroke="#aaa" stroke-width="1"/>
+  <rect x="200" y="250" width="20" height="20" fill="none" stroke="#666" stroke-width="1" transform="rotate(45 210 260)"/>
+  
+  <!-- Paper 2 -->
+  <rect x="280" y="40" width="220" height="280" rx="4" fill="url(#paper)" transform="rotate(2 390 180)"/>
+  <rect x="285" y="45" width="220" height="280" rx="4" fill="#fff"/>
+  
+  <!-- Sketch 2: Nebula organic shape -->
+  <ellipse cx="395" cy="130" rx="50" ry="40" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.3"/>
+  <ellipse cx="395" cy="130" rx="40" ry="30" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.5"/>
+  <ellipse cx="395" cy="130" rx="30" ry="20" fill="none" stroke="#8B5CF6" stroke-width="2" opacity="0.7"/>
+  <text x="395" y="138" text-anchor="middle" font-family="Arial" font-size="20" font-weight="bold" fill="#8B5CF6">N</text>
+  <text x="395" y="210" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">Concept B - Forme organique</text>
+  
+  <!-- Color tests -->
+  <rect x="310" y="240" width="30" height="30" rx="4" fill="#8B5CF6"/>
+  <rect x="350" y="240" width="30" height="30" rx="4" fill="#06B6D4"/>
+  <rect x="390" y="240" width="30" height="30" rx="4" fill="#D946EF"/>
+  <rect x="430" y="240" width="30" height="30" rx="4" fill="#0a0a0f"/>
+  <text x="395" y="295" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">Palette exploratoire</text>
+  
+  <!-- Paper 3 -->
+  <rect x="530" y="30" width="220" height="280" rx="4" fill="url(#paper)" transform="rotate(-1 640 170)"/>
+  <rect x="535" y="35" width="220" height="280" rx="4" fill="#fff"/>
+  
+  <!-- Final direction -->
+  <circle cx="645" cy="120" r="50" fill="url(#nebulaGrad)"/>
+  <circle cx="645" cy="120" r="38" fill="#fff"/>
+  <text x="645" y="132" text-anchor="middle" font-family="Arial" font-size="32" font-weight="bold" fill="url(#nebulaGrad)">N</text>
+  <text x="645" y="200" text-anchor="middle" font-family="Arial" font-size="10" fill="#999">Direction retenue ✓</text>
+  
+  <!-- Typography test -->
+  <text x="645" y="240" text-anchor="middle" font-family="Arial" font-size="18" font-weight="bold" fill="#333">Nebula</text>
+  <text x="645" y="260" text-anchor="middle" font-family="Arial" font-size="12" fill="#666">Sans-serif moderne</text>
+  <text x="645" y="290" text-anchor="middle" font-family="Georgia" font-size="18" fill="#333">Nebula</text>
+  <text x="645" y="305" text-anchor="middle" font-family="Arial" font-size="10" fill="#ccc" text-decoration="line-through">Serif - rejeté</text>
+  
+  <!-- Pencil -->
+  <rect x="50" y="350" width="150" height="12" rx="2" fill="#f4d03f" transform="rotate(-15 125 356)"/>
+  <polygon points="40,365 50,356 50,368" fill="#2d2d2d"/>
+  <rect x="180" y="340" width="20" height="12" rx="2" fill="#e8b4b8" transform="rotate(-15 190 346)"/>
+  
+  <!-- Notes -->
+  <text x="400" y="380" text-anchor="middle" font-family="Arial" font-size="14" fill="#8B5CF6">Recherches préliminaires - Logo Nebula AI</text>
+  <text x="400" y="400" text-anchor="middle" font-family="Arial" font-size="11" fill="#666">Exploration des formes circulaires et organiques</text>
+  
+  <!-- Markers -->
+  <rect x="620" y="380" width="80" height="15" rx="3" fill="#8B5CF6"/>
+  <rect x="710" y="380" width="60" height="15" rx="3" fill="#06B6D4"/>
+</svg>
