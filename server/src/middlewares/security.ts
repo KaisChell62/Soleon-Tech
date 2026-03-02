@@ -14,6 +14,8 @@ const getAllowedOrigins = (): string[] => {
       process.env.FRONTEND_URL || 'https://goallife.kaiscorp.fr',
       'https://goallife.kaiscorp.fr',
       'https://www.goallife.kaiscorp.fr',
+      'https://soleon-tech.kaiscorp.fr',
+      'https://www.soleon-tech.kaiscorp.fr',
       'http://localhost:8081',
       'http://127.0.0.1:8081',
     ].filter(Boolean);
