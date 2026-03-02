@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e1b4b"/></linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06b6d4"/><stop offset="100%" stop-color="#6366f1"/></linearGradient>
+    <linearGradient id="bar1" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#06b6d4" stop-opacity=".2"/><stop offset="100%" stop-color="#06b6d4" stop-opacity=".8"/></linearGradient>
+    <linearGradient id="bar2" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#f59e0b" stop-opacity=".2"/><stop offset="100%" stop-color="#f59e0b" stop-opacity=".8"/></linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#hg)"/>
+  <!-- Sidebar -->
+  <rect width="220" height="800" fill="#0c1222" stroke="#1e293b" stroke-width="1"/>
+  <!-- Logo -->
+  <g transform="translate(24,24)">
+    <rect width="36" height="36" rx="8" fill="url(#btn)"/>
+    <rect x="8" y="14" width="5" height="14" rx="1.5" fill="white"/><rect x="15" y="10" width="5" height="18" rx="1.5" fill="white"/><rect x="22" y="6" width="5" height="22" rx="1.5" fill="white"/>
+  </g>
+  <text x="72" y="42" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="white">Urban Pulse</text>
+  <text x="72" y="56" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Tableau de bord citoyen</text>
+  <!-- Nav items -->
+  <g font-family="system-ui,sans-serif" font-size="13">
+    <rect x="12" y="90" width="196" height="38" rx="8" fill="#06b6d4" fill-opacity=".1" stroke="#06b6d4" stroke-width=".5" stroke-opacity=".3"/>
+    <text x="48" y="114" fill="#06b6d4" font-weight="600">Vue d'ensemble</text>
+    <circle cx="30" cy="109" r="3" fill="#06b6d4"/>
+    <text x="48" y="150" fill="#475569">Transport</text><circle cx="30" cy="145" r="3" fill="#334155"/>
+    <text x="48" y="182" fill="#475569">Énergie</text><circle cx="30" cy="177" r="3" fill="#334155"/>
+    <text x="48" y="214" fill="#475569">Espaces verts</text><circle cx="30" cy="209" r="3" fill="#334155"/>
+    <text x="48" y="246" fill="#475569">Services</text><circle cx="30" cy="241" r="3" fill="#334155"/>
+    <text x="48" y="278" fill="#475569">Alertes</text><circle cx="30" cy="273" r="3" fill="#334155"/>
+  </g>
+  <!-- Sidebar bottom stats -->
+  <g transform="translate(20,650)">
+    <rect width="180" height="1" fill="#1e293b"/>
+    <text x="0" y="24" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Résidents</text>
+    <text x="0" y="40" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">1.2M</text>
+    <text x="0" y="64" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Satisfaction</text>
+    <text x="0" y="80" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#10b981">94%</text>
+    <text x="0" y="104" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Signalements résolus</text>
+    <text x="0" y="120" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="white">2,847</text>
+  </g>
+  <!-- Top bar -->
+  <rect x="220" y="0" width="980" height="56" fill="#0c1222" stroke="#1e293b" stroke-width="1"/>
+  <!-- Search -->
+  <rect x="240" y="12" width="250" height="32" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="260" y="33" font-family="system-ui,sans-serif" font-size="12" fill="#475569">Rechercher un service...</text>
+  <!-- Live badge -->
+  <rect x="980" y="16" width="60" height="24" rx="12" fill="#06b6d4" fill-opacity=".15"/>
+  <circle cx="996" cy="28" r="3" fill="#06b6d4"/><text x="1006" y="32" font-family="system-ui,sans-serif" font-size="10" fill="#06b6d4" font-weight="600">Live</text>
+  <!-- Theme toggle -->
+  <circle cx="1060" cy="28" r="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="1060" y="32" font-family="system-ui,sans-serif" font-size="10" fill="#f59e0b" text-anchor="middle">☀</text>
+  <!-- Avatar -->
+  <circle cx="1100" cy="28" r="14" fill="url(#btn)"/>
+  <!-- Accessibility -->
+  <rect x="1130" y="14" width="50" height="28" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="1155" y="32" font-family="system-ui,sans-serif" font-size="9" fill="#64748b" text-anchor="middle">A11y</text>
+
+  <!-- Main content -->
+  <!-- Stat cards row -->
+  <g transform="translate(244,76)">
+    <!-- Metro -->
+    <rect width="220" height="100" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+    <rect x="16" y="16" width="36" height="36" rx="8" fill="#10b981" fill-opacity=".15"/>
+    <g transform="translate(24,24)" fill="none" stroke="#10b981" stroke-width="1.5"><rect width="20" height="14" rx="3"/><line x1="4" y1="18" x2="4" y2="20"/><line x1="16" y1="18" x2="16" y2="20"/></g>
+    <text x="64" y="32" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Métro</text>
+    <text x="64" y="48" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#10b981">À l'heure</text>
+    <text x="16" y="84" font-family="system-ui,sans-serif" font-size="10" fill="#334155">Lignes actives: 14</text>
+    <!-- Bike -->
+    <g transform="translate(236,0)">
+      <rect width="220" height="100" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="16" width="36" height="36" rx="8" fill="#06b6d4" fill-opacity=".15"/>
+      <circle cx="34" cy="34" r="8" fill="none" stroke="#06b6d4" stroke-width="1.5"/>
+      <text x="64" y="32" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Vélos</text>
+      <text x="64" y="48" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#06b6d4">847</text>
+      <text x="16" y="84" font-family="system-ui,sans-serif" font-size="10" fill="#334155">Stations: 320</text>
+    </g>
+    <!-- Air Quality -->
+    <g transform="translate(472,0)">
+      <rect width="220" height="100" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="16" width="36" height="36" rx="8" fill="#10b981" fill-opacity=".15"/>
+      <text x="34" y="38" font-family="system-ui,sans-serif" font-size="12" fill="#10b981" text-anchor="middle">AQ</text>
+      <text x="64" y="32" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Qualité air</text>
+      <text x="64" y="48" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#10b981">Bon</text>
+      <text x="16" y="84" font-family="system-ui,sans-serif" font-size="10" fill="#334155">AQI: 72</text>
+    </g>
+    <!-- Temperature -->
+    <g transform="translate(708,0)">
+      <rect width="220" height="100" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+      <rect x="16" y="16" width="36" height="36" rx="8" fill="#f59e0b" fill-opacity=".15"/>
+      <text x="34" y="38" font-family="system-ui,sans-serif" font-size="14" fill="#f59e0b" text-anchor="middle">°</text>
+      <text x="64" y="32" font-family="system-ui,sans-serif" font-size="10" fill="#475569">Température</text>
+      <text x="64" y="48" font-family="system-ui,sans-serif" font-size="18" font-weight="700" fill="#f59e0b">22°C</text>
+      <text x="16" y="84" font-family="system-ui,sans-serif" font-size="10" fill="#334155">Vent: 12 km/h</text>
+    </g>
+  </g>
+
+  <!-- Charts row -->
+  <g transform="translate(244,196)">
+    <!-- Energy chart -->
+    <rect width="466" height="200" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="white">⚡ Énergie</text>
+    <text x="420" y="30" font-family="system-ui,sans-serif" font-size="10" fill="#475569" text-anchor="end">kWh</text>
+    <!-- Bars -->
+    <g transform="translate(20,50)">
+      <rect x="0" y="80" width="28" height="60" rx="3" fill="url(#bar2)"/><rect x="36" y="60" width="28" height="80" rx="3" fill="url(#bar2)"/>
+      <rect x="72" y="40" width="28" height="100" rx="3" fill="url(#bar2)"/><rect x="108" y="70" width="28" height="70" rx="3" fill="url(#bar2)"/>
+      <rect x="144" y="30" width="28" height="110" rx="3" fill="url(#bar2)"/><rect x="180" y="55" width="28" height="85" rx="3" fill="url(#bar2)"/>
+      <rect x="216" y="45" width="28" height="95" rx="3" fill="url(#bar2)"/><rect x="252" y="65" width="28" height="75" rx="3" fill="url(#bar2)"/>
+      <rect x="288" y="35" width="28" height="105" rx="3" fill="url(#bar2)"/><rect x="324" y="50" width="28" height="90" rx="3" fill="url(#bar2)"/>
+      <rect x="360" y="25" width="28" height="115" rx="3" fill="url(#bar2)"/><rect x="396" y="60" width="28" height="80" rx="3" fill="url(#bar2)"/>
+    </g>
+    <!-- Water chart -->
+    <g transform="translate(482,0)">
+      <rect width="466" height="200" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="white">💧 Eau</text>
+      <text x="420" y="30" font-family="system-ui,sans-serif" font-size="10" fill="#475569" text-anchor="end">m³</text>
+      <g transform="translate(20,50)">
+        <rect x="0" y="60" width="28" height="80" rx="3" fill="url(#bar1)"/><rect x="36" y="70" width="28" height="70" rx="3" fill="url(#bar1)"/>
+        <rect x="72" y="50" width="28" height="90" rx="3" fill="url(#bar1)"/><rect x="108" y="40" width="28" height="100" rx="3" fill="url(#bar1)"/>
+        <rect x="144" y="55" width="28" height="85" rx="3" fill="url(#bar1)"/><rect x="180" y="65" width="28" height="75" rx="3" fill="url(#bar1)"/>
+        <rect x="216" y="35" width="28" height="105" rx="3" fill="url(#bar1)"/><rect x="252" y="45" width="28" height="95" rx="3" fill="url(#bar1)"/>
+        <rect x="288" y="55" width="28" height="85" rx="3" fill="url(#bar1)"/><rect x="324" y="60" width="28" height="80" rx="3" fill="url(#bar1)"/>
+        <rect x="360" y="50" width="28" height="90" rx="3" fill="url(#bar1)"/><rect x="396" y="70" width="28" height="70" rx="3" fill="url(#bar1)"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Transport + Kiosks row -->
+  <g transform="translate(244,416)">
+    <!-- Transport lines -->
+    <rect width="620" height="190" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="white">🚌 Transport</text>
+    <g transform="translate(20,48)" font-family="system-ui,sans-serif">
+      <!-- Line 1 -->
+      <circle cx="6" cy="8" r="4" fill="#06b6d4"/><text x="18" y="12" font-size="11" fill="#cbd5e1">L1 — Centre ↔ Aéroport</text>
+      <text x="460" y="12" font-size="10" fill="#475569" text-anchor="end">À l'heure</text>
+      <rect x="480" y="3" width="120" height="8" rx="4" fill="#1e293b"/><rect x="480" y="3" width="104" height="8" rx="4" fill="#06b6d4" fill-opacity=".6"/>
+      <!-- Line 2 -->
+      <circle cx="6" cy="44" r="4" fill="#6366f1"/><text x="18" y="48" font-size="11" fill="#cbd5e1">L2 — Nord ↔ Sud</text>
+      <text x="460" y="48" font-size="10" fill="#f59e0b" text-anchor="end">2min retard</text>
+      <rect x="480" y="39" width="120" height="8" rx="4" fill="#1e293b"/><rect x="480" y="39" width="74" height="8" rx="4" fill="#6366f1" fill-opacity=".6"/>
+      <!-- Line 3 -->
+      <circle cx="6" cy="80" r="4" fill="#10b981"/><text x="18" y="84" font-size="11" fill="#cbd5e1">L3 — Est ↔ Université</text>
+      <text x="460" y="84" font-size="10" fill="#475569" text-anchor="end">À l'heure</text>
+      <rect x="480" y="75" width="120" height="8" rx="4" fill="#1e293b"/><rect x="480" y="75" width="114" height="8" rx="4" fill="#10b981" fill-opacity=".6"/>
+      <!-- Line B12 -->
+      <circle cx="6" cy="116" r="4" fill="#f59e0b"/><text x="18" y="120" font-size="11" fill="#cbd5e1">B12 — Express</text>
+      <text x="460" y="120" font-size="10" fill="#475569" text-anchor="end">À l'heure</text>
+      <rect x="480" y="111" width="120" height="8" rx="4" fill="#1e293b"/><rect x="480" y="111" width="89" height="8" rx="4" fill="#f59e0b" fill-opacity=".6"/>
+    </g>
+    <!-- Green Spaces -->
+    <g transform="translate(636,0)">
+      <rect width="312" height="190" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+      <text x="20" y="30" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="white">🌳 Espaces verts</text>
+      <g transform="translate(20,48)" font-family="system-ui,sans-serif" font-size="11">
+        <text x="0" y="10" fill="#cbd5e1">Parc Central</text>
+        <rect x="200" y="2" width="72" height="18" rx="9" fill="#10b981" fill-opacity=".1"/><text x="236" y="14" font-size="9" fill="#10b981" text-anchor="middle" font-weight="600">Ouvert</text>
+        <text x="0" y="42" fill="#cbd5e1">Jardin Botanique</text>
+        <rect x="200" y="34" width="72" height="18" rx="9" fill="#10b981" fill-opacity=".1"/><text x="236" y="46" font-size="9" fill="#10b981" text-anchor="middle" font-weight="600">Ouvert</text>
+        <text x="0" y="74" fill="#cbd5e1">Promenade Rivière</text>
+        <rect x="200" y="66" width="72" height="18" rx="9" fill="#10b981" fill-opacity=".1"/><text x="236" y="78" font-size="9" fill="#10b981" text-anchor="middle" font-weight="600">Ouvert</text>
+      </g>
+      <!-- Capacity bar -->
+      <text x="20" y="160" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Capacité</text>
+      <text x="276" y="160" font-family="system-ui,sans-serif" font-size="10" fill="white" text-anchor="end" font-weight="600">68%</text>
+      <rect x="20" y="166" width="272" height="6" rx="3" fill="#1e293b"/><rect x="20" y="166" width="185" height="6" rx="3" fill="url(#btn)" fill-opacity=".7"/>
+    </g>
+  </g>
+
+  <!-- Kiosks strip -->
+  <g transform="translate(244,626)">
+    <rect width="948" height="150" rx="12" fill="#0f1729" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="28" font-family="system-ui,sans-serif" font-size="12" font-weight="600" fill="white">📍 Bornes interactives</text>
+    <text x="900" y="28" font-family="system-ui,sans-serif" font-size="10" fill="#475569" text-anchor="end">Événements →</text>
+    <!-- Kiosk cards -->
+    <g transform="translate(20,42)">
+      <rect width="170" height="90" rx="8" fill="#164e63" fill-opacity=".3" stroke="#155e75" stroke-width=".5"/>
+      <text x="85" y="40" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" opacity=".15">🚂</text>
+      <text x="12" y="62" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Kiosk Gare</text>
+      <text x="12" y="76" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Quartier: Centre</text>
+    </g>
+    <g transform="translate(200,42)">
+      <rect width="170" height="90" rx="8" fill="#312e81" fill-opacity=".3" stroke="#3730a3" stroke-width=".5"/>
+      <text x="85" y="40" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" opacity=".15">🏛</text>
+      <text x="12" y="62" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Kiosk Mairie</text>
+      <text x="12" y="76" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Quartier: Admin</text>
+    </g>
+    <g transform="translate(380,42)">
+      <rect width="170" height="90" rx="8" fill="#064e3b" fill-opacity=".3" stroke="#065f46" stroke-width=".5"/>
+      <text x="85" y="40" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" opacity=".15">🌳</text>
+      <text x="12" y="62" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Kiosk Parc</text>
+      <text x="12" y="76" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Quartier: Ouest</text>
+    </g>
+    <g transform="translate(560,42)">
+      <rect width="170" height="90" rx="8" fill="#4a1d96" fill-opacity=".2" stroke="#5b21b6" stroke-width=".5"/>
+      <text x="85" y="40" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" opacity=".15">🎓</text>
+      <text x="12" y="62" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Kiosk Campus</text>
+      <text x="12" y="76" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Quartier: Nord</text>
+    </g>
+    <g transform="translate(740,42)">
+      <rect width="170" height="90" rx="8" fill="#0c4a6e" fill-opacity=".3" stroke="#075985" stroke-width=".5"/>
+      <text x="85" y="40" font-family="system-ui,sans-serif" font-size="18" fill="white" text-anchor="middle" opacity=".15">⚓</text>
+      <text x="12" y="62" font-family="system-ui,sans-serif" font-size="11" font-weight="600" fill="white">Kiosk Port</text>
+      <text x="12" y="76" font-family="system-ui,sans-serif" font-size="9" fill="#475569">Quartier: Sud</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="nebulaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="nebulaGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#8B5CF6" letter-spacing="4">WEB APPLICATION MOCKUP</text>
+  
+  <!-- Browser Window -->
+  <rect x="40" y="50" width="480" height="320" rx="8" fill="#12121a" stroke="#333" stroke-width="1"/>
+  
+  <!-- Browser Header -->
+  <rect x="40" y="50" width="480" height="32" rx="8" fill="#1a1a24"/>
+  <rect x="40" y="70" width="480" height="12" fill="#1a1a24"/>
+  <circle cx="58" cy="66" r="6" fill="#ff5f56"/>
+  <circle cx="78" cy="66" r="6" fill="#ffbd2e"/>
+  <circle cx="98" cy="66" r="6" fill="#27c93f"/>
+  <rect x="130" y="59" width="260" height="14" rx="7" fill="#252530"/>
+  <text x="260" y="69" text-anchor="middle" font-family="Arial" font-size="9" fill="#666">nebula-ai.com</text>
+  
+  <!-- Dashboard Content -->
+  <!-- Sidebar -->
+  <rect x="40" y="82" width="80" height="288" fill="#0f0f17"/>
+  
+  <!-- Logo in sidebar -->
+  <circle cx="80" cy="110" r="18" fill="url(#nebulaGrad)" opacity="0.8"/>
+  <path d="M 72 110 L 80 100 L 88 110 L 80 105 Z" fill="#fff"/>
+  
+  <!-- Nav items -->
+  <rect x="50" y="140" width="60" height="8" rx="2" fill="#8B5CF6"/>
+  <rect x="50" y="160" width="55" height="8" rx="2" fill="#333"/>
+  <rect x="50" y="180" width="50" height="8" rx="2" fill="#333"/>
+  <rect x="50" y="200" width="58" height="8" rx="2" fill="#333"/>
+  <rect x="50" y="220" width="48" height="8" rx="2" fill="#333"/>
+  
+  <!-- Main Content Area -->
+  <rect x="130" y="92" width="380" height="50" fill="#15151f" rx="6"/>
+  
+  <!-- Header in main -->
+  <text x="145" y="112" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">Dashboard</text>
+  <text x="145" y="128" font-family="Arial" font-size="9" fill="#666">Welcome back, Alex</text>
+  
+  <!-- Search bar -->
+  <rect x="380" y="100" width="120" height="24" rx="12" fill="#1f1f2a" stroke="#333" stroke-width="1"/>
+  <text x="400" y="116" font-family="Arial" font-size="9" fill="#555">Search...</text>
+  
+  <!-- Cards Row -->
+  <rect x="130" y="152" width="120" height="70" rx="6" fill="url(#nebulaGrad)"/>
+  <text x="145" y="175" font-family="Arial" font-size="9" fill="rgba(255,255,255,0.8)">Total Models</text>
+  <text x="145" y="202" font-family="Arial" font-size="22" font-weight="bold" fill="#fff">2,847</text>
+  
+  <rect x="260" y="152" width="120" height="70" rx="6" fill="#15151f" stroke="#333" stroke-width="1"/>
+  <text x="275" y="175" font-family="Arial" font-size="9" fill="#888">Active Users</text>
+  <text x="275" y="202" font-family="Arial" font-size="22" font-weight="bold" fill="#fff">12.4K</text>
+  
+  <rect x="390" y="152" width="120" height="70" rx="6" fill="#15151f" stroke="#333" stroke-width="1"/>
+  <text x="405" y="175" font-family="Arial" font-size="9" fill="#888">API Calls</text>
+  <text x="405" y="202" font-family="Arial" font-size="22" font-weight="bold" fill="#06B6D4">8.2M</text>
+  
+  <!-- Chart Area -->
+  <rect x="130" y="232" width="250" height="128" rx="6" fill="#15151f" stroke="#333" stroke-width="1"/>
+  <text x="145" y="252" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">Performance Analytics</text>
+  
+  <!-- Chart bars -->
+  <rect x="155" y="320" width="20" height="30" fill="#8B5CF6" opacity="0.5"/>
+  <rect x="185" y="300" width="20" height="50" fill="#8B5CF6" opacity="0.6"/>
+  <rect x="215" y="285" width="20" height="65" fill="#8B5CF6" opacity="0.7"/>
+  <rect x="245" y="295" width="20" height="55" fill="#8B5CF6" opacity="0.8"/>
+  <rect x="275" y="275" width="20" height="75" fill="url(#nebulaGrad)"/>
+  <rect x="305" y="290" width="20" height="60" fill="#06B6D4" opacity="0.7"/>
+  <rect x="335" y="310" width="20" height="40" fill="#06B6D4" opacity="0.5"/>
+  
+  <!-- Right sidebar -->
+  <rect x="390" y="232" width="120" height="128" rx="6" fill="#15151f" stroke="#333" stroke-width="1"/>
+  <text x="405" y="252" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">Recent Activity</text>
+  
+  <circle cx="415" cy="275" r="6" fill="#8B5CF6"/>
+  <rect x="430" y="272" width="65" height="6" rx="2" fill="#333"/>
+  
+  <circle cx="415" cy="295" r="6" fill="#06B6D4"/>
+  <rect x="430" y="292" width="55" height="6" rx="2" fill="#333"/>
+  
+  <circle cx="415" cy="315" r="6" fill="#D946EF"/>
+  <rect x="430" y="312" width="60" height="6" rx="2" fill="#333"/>
+  
+  <circle cx="415" cy="335" r="6" fill="#8B5CF6" opacity="0.5"/>
+  <rect x="430" y="332" width="50" height="6" rx="2" fill="#333"/>
+  
+  <!-- Mobile Mockup -->
+  <rect x="560" y="55" width="200" height="400" rx="24" fill="#1a1a24" stroke="#333" stroke-width="2"/>
+  <rect x="572" y="75" width="176" height="360" rx="4" fill="#0a0a0f"/>
+  
+  <!-- Mobile Status Bar -->
+  <text x="590" y="92" font-family="Arial" font-size="8" fill="#666">9:41</text>
+  <rect x="700" y="86" width="20" height="8" rx="2" fill="#666"/>
+  <rect x="700" y="86" width="14" height="8" rx="2" fill="#8B5CF6"/>
+  
+  <!-- Mobile Header -->
+  <circle cx="610" cy="118" r="18" fill="url(#nebulaGrad)" opacity="0.8"/>
+  <path d="M 602 118 L 610 108 L 618 118 L 610 113 Z" fill="#fff"/>
+  <text x="638" y="115" font-family="Arial" font-size="12" font-weight="bold" fill="#fff">Nebula AI</text>
+  <text x="638" y="128" font-family="Arial" font-size="8" fill="#666">Your AI Assistant</text>
+  
+  <!-- Mobile Chat Interface -->
+  <rect x="582" y="150" width="120" height="40" rx="12" fill="#8B5CF6"/>
+  <text x="595" y="165" font-family="Arial" font-size="8" fill="#fff">Analyze this image</text>
+  <text x="595" y="178" font-family="Arial" font-size="8" fill="rgba(255,255,255,0.7)">for brand colors</text>
+  
+  <rect x="608" y="200" width="130" height="50" rx="12" fill="#1f1f2a"/>
+  <text x="620" y="218" font-family="Arial" font-size="8" fill="#ccc">I found 5 primary colors:</text>
+  <rect x="620" y="228" width="12" height="12" rx="2" fill="#8B5CF6"/>
+  <rect x="636" y="228" width="12" height="12" rx="2" fill="#06B6D4"/>
+  <rect x="652" y="228" width="12" height="12" rx="2" fill="#D946EF"/>
+  <rect x="668" y="228" width="12" height="12" rx="2" fill="#fff"/>
+  <rect x="684" y="228" width="12" height="12" rx="2" fill="#0a0a0f" stroke="#333" stroke-width="1"/>
+  
+  <rect x="582" y="260" width="100" height="35" rx="12" fill="#8B5CF6"/>
+  <text x="595" y="278" font-family="Arial" font-size="8" fill="#fff">Generate logo</text>
+  <text x="595" y="288" font-family="Arial" font-size="7" fill="rgba(255,255,255,0.7)">variations</text>
+  
+  <rect x="608" y="305" width="130" height="80" rx="12" fill="#1f1f2a"/>
+  <text x="620" y="323" font-family="Arial" font-size="8" fill="#ccc">Here are 4 variations:</text>
+  
+  <!-- Mini logo variations -->
+  <rect x="620" y="335" width="45" height="35" rx="4" fill="#15151f"/>
+  <circle cx="642" cy="352" r="10" fill="url(#nebulaGrad)" opacity="0.8"/>
+  
+  <rect x="673" y="335" width="45" height="35" rx="4" fill="#15151f"/>
+  <circle cx="695" cy="352" r="10" fill="#8B5CF6"/>
+  
+  <!-- Mobile Input -->
+  <rect x="582" y="395" width="156" height="30" rx="15" fill="#1f1f2a" stroke="#333" stroke-width="1"/>
+  <text x="600" y="414" font-family="Arial" font-size="9" fill="#555">Ask Nebula AI...</text>
+  <circle cx="718" cy="410" r="10" fill="url(#nebulaGrad)"/>
+  
+  <!-- Notch -->
+  <rect x="625" y="58" width="70" height="18" rx="9" fill="#0a0a0f"/>
+  
+  <!-- Footer -->
+  <text x="700" y="485" font-family="Arial" font-size="9" fill="#444">Nebula AI • Brand Guidelines v1.0</text>
+</svg>

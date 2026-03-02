@@ -1,0 +1,12 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#fffaf0" />
+  <text x="40" y="56" font-family="Inter, Arial" font-size="24" fill="#92400e">Panier — Checkout flow</text>
+  <g transform="translate(40,100)">
+    <rect width="720" height="360" rx="16" fill="#ffffff" stroke="#fff1e6" />
+    <text x="24" y="36" font-size="18" fill="#92400e">Items dans le panier</text>
+    <rect x="24" y="64" width="660" height="56" rx="10" fill="#fff7ed" />
+    <rect x="24" y="132" width="660" height="56" rx="10" fill="#fff7ed" />
+    <rect x="24" y="200" width="320" height="56" rx="10" fill="#10b981" />
+    <text x="40" y="236" font-size="14" fill="#fff">Procéder au paiement</text>
+  </g>
+</svg>

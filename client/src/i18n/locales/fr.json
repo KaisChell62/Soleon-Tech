@@ -1,0 +1,862 @@
+{
+  "common": {
+    "welcome": "Bienvenue",
+    "description": "Premium Digital Partner",
+    "language": "Language"
+  },
+  "nav": {
+    "home": "Accueil",
+    "agency": "Agence",
+    "services": "Services",
+    "portfolio": "Réalisations",
+    "pricing": "Tarifs",
+    "faq": "FAQ",
+    "expertise": "Expertise",
+    "contact": "Contact",
+    "start": "Démarrer"
+  },
+  "faq": {
+    "title": "Questions",
+    "highlight": "Fréquentes",
+    "subtitle": "Tout ce que vous devez savoir sur notre processus et nos services.",
+    "timeline": {
+      "question": "Combien de temps prend un projet moyen ?",
+      "answer": "Cela dépend de la complexité. Un site vitrine prend généralement 3-4 semaines, tandis qu'une application SaaS complexe peut prendre 2-3 mois."
+    },
+    "cost": {
+      "question": "Comment sont calculés vos tarifs ?",
+      "answer": "Nous proposons des devis sur mesure basés sur le temps de développement, la complexité des fonctionnalités et le niveau de design requis. Pas de frais cachés."
+    },
+    "support": {
+      "question": "Offrez-vous un support après le lancement ?",
+      "answer": "Oui, nous offrons 30 jours de support gratuit pour corriger les bugs éventuels. Ensuite, nous proposons des packs de maintenance mensuels."
+    },
+    "tech": {
+      "question": "Quelles technologies utilisez-vous ?",
+      "answer": "Nous sommes experts en React, Node.js, et TypeScript pour le web, et React Native ou Swift/Kotlin pour le mobile."
+    },
+    "seo": {
+      "question": "Le référencement (SEO) est-il inclus ?",
+      "answer": "Tous nos sites sont optimisés techniquement pour le SEO (vitesse, balises, structure). Nous proposons aussi des services de rédaction SEO avancés."
+    },
+    "badge": "FAQ & Support",
+    "categories": {
+      "all": "Tout",
+      "process": "Processus",
+      "pricing": "Tarifs",
+      "tech": "Technologie",
+      "support": "Support"
+    },
+    "results": "questions",
+    "process": {
+      "question": "Quel est votre processus de développement ?",
+      "answer": "Nous suivons une méthodologie agile en 4 phases clés : audit & stratégie, design UX/UI, développement itératif et lancement avec support continu. Chaque phase inclut une validation client."
+    },
+    "payment": {
+      "question": "Quels modes de paiement acceptez-vous ?",
+      "answer": "Nous acceptons les virements bancaires, cartes de crédit et PayPal. Le paiement est généralement réparti en jalons : 30% à la signature, 40% à mi-projet et 30% à la livraison."
+    },
+    "design": {
+      "question": "Comment fonctionne le processus de design ?",
+      "answer": "Nous commençons par les wireframes et les parcours utilisateurs, puis créons des maquettes haute fidélité sur Figma. Vous validez chaque étape avant le développement."
+    },
+    "security": {
+      "question": "Comment gérez-vous la sécurité des données ?",
+      "answer": "La sécurité est intégrée dès le premier jour. Nous mettons en place HTTPS, chiffrement des données, conformité RGPD et suivons les bonnes pratiques OWASP."
+    },
+    "revision": {
+      "question": "Combien de révisions sont incluses ?",
+      "answer": "Chaque phase du projet inclut jusqu'à 2 tours de révisions. Des révisions supplémentaires peuvent être organisées à un tarif horaire transparent."
+    },
+    "cta": {
+      "title": "Vous avez d'autres questions ?",
+      "subtitle": "Notre équipe est là pour vous aider à clarifier vos besoins.",
+      "button": "Contactez-nous"
+    }
+  },
+  "footer": {
+    "services": {
+      "title": "Services",
+      "main": "Services",
+      "configurator": "Configurateur",
+      "security": "Sécurité",
+      "international": "International"
+    },
+    "agency": {
+      "title": "Agence",
+      "about": "À propos",
+      "why_us": "Pourquoi nous ?",
+      "careers": "Carrières",
+      "blog": "Blog",
+      "client_area": "Espace Client",
+      "contact": "Contact"
+    },
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "CGU & CGV"
+    },
+    "description": "Transformons vos idées en expériences numériques exceptionnelles.",
+    "social": "Réseaux Sociaux",
+    "copyright": "Â© {{year}} Soleon Tech. Tous droits réservés."
+  },
+  "portfolio": {
+    "title": "Nos Créations",
+    "subtitle": "Une sélection de nos meilleurs projets digitaux.",
+    "categories": {
+      "all": "Tout",
+      "web": "Sites Web",
+      "mobile": "Apps Mobile",
+      "design": "Design & UX",
+      "marketing": "Marketing"
+    },
+    "viewProject": "Voir le projet",
+    "project": {
+      "overview": "Aperçu",
+      "problem": "Problème & Objectif",
+      "challenge": "Le Défi",
+      "goal": "L'Objectif",
+      "solution": "La Solution",
+      "technologies": "Technologies",
+      "results": "Résultats",
+      "team": "Équipe",
+      "related": "Projets Similaires",
+      "back": "Retour au Portfolio",
+      "liveDemo": "Voir la démo",
+      "creationProcess": "Processus de création",
+      "highFidelity": "Design Haute Fidélité",
+      "wireframes": "Wireframes & Maquettes",
+      "techTools": "Tech & Outils",
+      "notFound": "Projet non trouvé",
+      "cta": {
+        "title": "Ce projet vous inspire ?",
+        "subtitle": "Discutons de la manière dont nous pouvons transformer votre vision en réalité.",
+        "startProject": "Démarrer un projet",
+        "seeMore": "Voir d'autres projets"
+      }
+    }
+  },
+  "home": {
+    "badge": "Agence Digitale",
+    "cta_project": "Start Project",
+    "cta_contact": "Contact Us",
+    "hero": {
+      "title": "Le Digital,",
+      "subtitle": "Réinventé.",
+      "description": "Nous créons des expériences digitales immersives qui propulsent votre marque.",
+      "cta_primary": "Nos Services",
+      "cta_secondary": "Lancer un Projet"
+    },
+    "features": {
+      "title": "Pourquoi nous ?",
+      "subtitle": "Une approche holistique : design, performance et stratégie.",
+      "strategy": {
+        "title": "Stratégie",
+        "desc": "Analyse de marché approfondie pour une croissance durable."
+      },
+      "global": {
+        "title": "International",
+        "desc": "Solutions adaptées aux marchés mondiaux et cultures locales."
+      },
+      "tech": {
+        "title": "Technologie",
+        "desc": "Stack moderne : React 19, Node.js pour une performance maximale."
+      },
+      "mobile": {
+        "title": "Mobile First",
+        "desc": "Expérience fluide sur tous les appareils, du mobile au desktop."
+      }
+    },
+    "process": {
+      "title": "Notre Processus",
+      "steps": {
+        "discovery": {
+          "title": "1. Découverte",
+          "desc": "Audit et besoins."
+        },
+        "design": {
+          "title": "2. Design",
+          "desc": "UI/UX et Prototypes."
+        },
+        "dev": {
+          "title": "3. Dév",
+          "desc": "Code de qualité."
+        },
+        "launch": {
+          "title": "4. Lancement",
+          "desc": "Mise en ligne."
+        }
+      }
+    },
+    "cta_final": {
+      "title": "Prêt ?",
+      "button": "Demander un devis"
+    }
+  },
+  "services": {
+    "title": "Nos Services",
+    "subtitle": "Solutions sur mesure.",
+    "web": {
+      "title": "Sites Web",
+      "desc": "Haute performance."
+    },
+    "mobile": {
+      "title": "Apps Mobiles",
+      "desc": "iOS & Android.",
+      "features": {
+        "native": "Native",
+        "cross": "Cross-platform",
+        "uiux": "UI/UX"
+      }
+    },
+    "logo": {
+      "title": "Branding",
+      "desc": "Identité Visuelle.",
+      "features": {
+        "vector": "Vector",
+        "guidelines": "Guidelines",
+        "revisions": "Revisions"
+      }
+    },
+    "preview": {
+      "phone": {
+        "welcome_back": "Bon retour !",
+        "uptime": "Disponibilité",
+        "new_users": "Nouveaux",
+        "revenue": "Revenus",
+        "growth": "+12% cette sem.",
+        "role_1": "Designer",
+        "role_2": "Developer",
+        "hello": "Bonjour, Alex",
+        "recent_activity": "Activité récente",
+        "view_all": "Voir tout",
+        "new_update": "Nouvelle mise à jour",
+        "just_now": "À l'instant • Projet A",
+        "chats": "Messages",
+        "search_conversations": "Rechercher...",
+        "my_story": "Ma Story",
+        "online": "En ligne",
+        "today": "Aujourd'hui 9:41",
+        "message_placeholder": "Message...",
+        "pro_member": "Membre Pro",
+        "general": "GÉNÉRAL",
+        "settings": "Paramètres",
+        "notifications": "Notifications"
+      },
+      "web": {
+        "nav_new": "Nouveautés",
+        "nav_men": "Hommes",
+        "nav_women": "Femmes",
+        "hero_tag": "NOUVELLE COLLECTION",
+        "hero_title_1": "DOMINEZ LA",
+        "hero_title_2": "RUE.",
+        "btn_shop": "ACHETER",
+        "running": "Course",
+        "lifestyle": "Lifestyle",
+        "select_size": "Choisir la taille",
+        "add_to_cart": "AJOUTER AU PANIER",
+        "product_desc": "Conçu pour la vitesse, pensé pour la rue. Ce modèle intègre notre dernière technologie d'amorti et une tige en maille respirante.",
+        "demo_text": "Démo E-commerce interactive - Ajoutez au panier !"
+      },
+      "logo": {
+        "config": "Configurateur",
+        "live": "Aperçu",
+        "shape": "Forme",
+        "color": "Couleur",
+        "typography": "Typographie",
+        "modern": "Modern",
+        "classic": "Classic",
+        "tech": "Tech"
+      }
+    }
+  },
+  "contact": {
+    "title": "Parlons-en",
+    "subtitle": "Réponse sous 24h.",
+    "badge": "Contactez-nous",
+    "detected": "Détecté depuis",
+    "info": {
+      "hq": "Paris",
+      "availability": "Worldwide",
+      "email_label": "Email",
+      "quote": "Work with love.",
+      "quote_role": "Inspiration",
+      "location": "Localisation",
+      "hours": "Heures d'ouverture",
+      "timezone": "Heure de Paris",
+      "response": "Réponse en moins de 2 heures généralement"
+    },
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Envoyer",
+      "success": "Envoyé !",
+      "error": "Error",
+      "sending": "Votre message est en cours d'envoi, veuillez patienter.",
+      "sending_title": "Envoi en cours...",
+      "success_title": "Message envoyé !",
+      "success_desc": "Nous vous répondrons sous 24 heures.",
+      "language": "Votre langue *",
+      "required_fields": "Tous les champs sont obligatoires"
+    },
+    "steps": {
+      "info": "Infos",
+      "details": "Détails",
+      "send": "Envoi"
+    }
+  },
+  "whyUs": {
+    "title": "Pourquoi choisir",
+    "brand": "Soleon Tech",
+    "subtitle": "Une agence jeune, agile et passionnée. Pas de grandes promesses creuses — juste du code propre, du design soigné et un engagement total sur votre projet.",
+    "commitments": "Nos Engagements",
+    "approach": "Notre Approche",
+    "cta": {
+      "title": "Prêt à passer au niveau supérieur ?",
+      "button": "Discutons de votre projet"
+    },
+    "stats": {
+      "custom": {
+        "value": "100%",
+        "label": "Code Sur Mesure",
+        "desc": "Aucun template. Chaque projet est unique."
+      },
+      "direct": {
+        "value": "98%",
+        "label": "Satisfaction",
+        "desc": "Nos clients reviennent et nous recommandent."
+      },
+      "passion": {
+        "value": "∞",
+        "label": "Passion",
+        "desc": "Des technologies maîtrisées avec enthousiasme."
+      },
+      "response": {
+        "value": "24h",
+        "label": "Réponse Max",
+        "desc": "Communication réactive garantie."
+      }
+    },
+    "methodology": {
+      "audit": {
+        "title": "Audit & Stratégie",
+        "desc": "Nous analysons votre existant et définissons des KPIs clairs avant d'écrire la moindre ligne de code."
+      },
+      "design": {
+        "title": "UX/UI Design",
+        "desc": "Conception d'interfaces centrées sur l'utilisateur et la conversion, validées par des prototypes."
+      },
+      "dev": {
+        "title": "Développement",
+        "desc": "Code propre, testé, documenté. Livraison itérative avec démos régulières."
+      },
+      "launch": {
+        "title": "Lancement & Support",
+        "desc": "Déploiement optimisé, monitoring proactif et support continu post-livraison."
+      }
+    }
+  },
+  "pricing": {
+    "title": "Investissez dans",
+    "highlight": "l'excellence",
+    "subtitle": "Des tarifs transparents, adaptés à chaque étape de votre croissance. Pas de coûts cachés, pas de surprises.",
+    "recommended": "RECOMMANDÉ",
+    "perProject": "/projet",
+    "start": "Commencer",
+    "faq": {
+      "title": "Questions fréquentes",
+      "q1": {
+        "question": "Facturez-vous à l'heure ou au forfait ?",
+        "answer": "Nous privilégions le forfait pour garantir le budget. Pour la maintenance, nous fonctionnons avec des banques d'heures."
+      },
+      "q2": {
+        "question": "Puis-je changer de plan en cours de route ?",
+        "answer": "Absolument. Nos offres sont évolutives. Vous ne payez que la différence au prorata."
+      }
+    },
+    "tiers": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Idéal pour les MVPs et les petites entreprises qui veulent se lancer."
+      },
+      "growth": {
+        "name": "Growth",
+        "desc": "Pour les entreprises en croissance nécessitant plus de fonctionnalités."
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Solutions sur mesure pour les grandes organisations."
+      }
+    }
+  },
+  "security": {
+    "status": "SYSTEMS OPERATIONAL",
+    "title": "La sécurité n'est pas une option.",
+    "subtitle": "C'est notre",
+    "highlight": "standard",
+    "description": "Nous intégrons la sécurité dès la phase de design. Protections actives, chiffrement fort et conformité légale sont inclus dans tous nos projets.",
+    "compliance": "Conformité & Standards",
+    "badges": [
+      "GDPR Compliant",
+      "OWASP Top 10",
+      "ISO 27001 Ready",
+      "99.9% Uptime"
+    ],
+    "standards": {
+      "encryption": {
+        "title": "Chiffrement E2E",
+        "desc": "Toutes les données sensibles sont chiffrées en transit et au repos avec AES-256.",
+        "category": "Infrastructure"
+      },
+      "auth": {
+        "title": "Authentification Multi-Facteur",
+        "desc": "Options MFA intégrées pour protéger les accès utilisateurs.",
+        "category": "Code"
+      },
+      "monitoring": {
+        "title": "Monitoring 24/7",
+        "desc": "Surveillance continue des anomalies avec alertes temps réel.",
+        "category": "Process"
+      },
+      "backup": {
+        "title": "Sauvegardes Automatiques",
+        "desc": "Backups quotidiens avec rétention longue durée et tests de restauration.",
+        "category": "Infrastructure"
+      }
+    }
+  },
+  "international": {
+    "badge": "Disponible dans le monde entier",
+    "title1": "Une présence",
+    "highlight1": "Globale",
+    "title2": "Une expertise",
+    "highlight2": "Locale",
+    "subtitle": "Nous accompagnons des clients sur 3 continents. Nos équipes s'adaptent à votre fuseau horaire et vos contraintes culturelles.",
+    "stats": {
+      "support": {
+        "title": "Support 24/7",
+        "desc": "Équipes réparties sur plusieurs fuseaux horaires pour une réactivité maximale."
+      },
+      "multilingual": {
+        "title": "Multilingue",
+        "desc": "Documentation et communication en Français, Anglais, Espagnol et Allemand."
+      },
+      "hubs": {
+        "title": "San Francisco & Paris",
+        "desc": "Des hubs stratégiques pour connecter l'innovation de la Silicon Valley au design Européen."
+      }
+    },
+    "locations": "Nos Hubs Stratégiques",
+    "remote": {
+      "title": "Remote First, Human Always",
+      "desc": "Notre culture distribuée nous permet de recruter les meilleurs talents mondiaux, sans être limités par la géographie. Nous utilisons des outils de collaboration asynchrone de pointe pour garantir que votre projet avance, même quand vous dormez.",
+      "stat": "Remote & Efficient"
+    }
+  },
+  "liveBoard": {
+    "status": "LIVE PROJECT TRACKING",
+    "title": "Tableau de Bord Client",
+    "subtitle": "Suivez l'avancement de votre projet en temps réel.",
+    "addTask": "+ Ajouter une tâche"
+  },
+  "configurator": {
+    "title": "Créez votre offre sur mesure",
+    "subtitle": "Configurez votre projet idéal et obtenez une estimation immédiate.",
+    "summary": "Récapitulatif",
+    "empty": "Sélectionnez des options pour voir le détail...",
+    "total": "Estimation Totale",
+    "included": "Inclus",
+    "submit": "Recevoir ce devis",
+    "disclaimer": "Estimation indicative non contractuelle.",
+    "badge": "Devis sur mesure",
+    "from": "À partir de",
+    "month": "mois",
+    "monthly": "Coût mensuel"
+  },
+  "about": {
+    "title": "Nous construisons le",
+    "highlight": "futur",
+    "title2": "numérique.",
+    "subtitle": "Soleon Tech est né d'un constat simple : la plupart des agences vendent du temps. Nous vendons de l'impact. Nous sommes un collectif d'ingénieurs, de designers et de stratèges obsédés par l'excellence.",
+    "team": "Les Architectes",
+    "values": {
+      "precision": {
+        "title": "Précision",
+        "desc": "Chaque pixel compte. Chaque ligne de code a un but."
+      },
+      "velocity": {
+        "title": "Vélocité",
+        "desc": "Nous livrons vite, sans casser les choses."
+      },
+      "passion": {
+        "title": "Passion",
+        "desc": "Nous ne prenons que les projets qui nous excitent."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "desc": "Le \"suffisant\" est notre ennemi."
+      }
+    }
+  },
+  "blog": {
+    "title": "Insights",
+    "subtitle": "Analyses, tendances et retours d'expérience de nos experts.",
+    "readArticle": "Lire l'article",
+    "readTime": "de lecture",
+    "read": "de lecture"
+  },
+  "careers": {
+    "title": "Rejoignez l'",
+    "highlight": "élite",
+    "subtitle": "Nous cherchons des esprits brillants qui refusent le statu quo. Travail à distance, salaires compétitifs, et projets stimulants.",
+    "apply": "Postuler",
+    "spontaneous": "Pas de poste correspondant ?",
+    "spontaneousLink": "Envoyez-nous une candidature spontanée."
+  },
+  "terms": {
+    "title": "Mentions Légales & CGV",
+    "sections": {
+      "publisher": {
+        "title": "1. Édition du site",
+        "content": "Le site Soleon Tech (ci-après \"le Site\"), accessible à l'adresse soleontech.agency, est édité par la société Soleon Tech SAS."
+      },
+      "hosting": {
+        "title": "2. Hébergement",
+        "content": "Le Site est hébergé par Vercel Inc., situé 340 S Lemon Ave #4133 Walnut, CA 91789, USA."
+      },
+      "ip": {
+        "title": "3. Propriété intellectuelle",
+        "content": "L'ensemble des éléments figurant sur le Site est la propriété exclusive de Soleon Tech. Toute reproduction est strictement interdite sans accord écrit."
+      },
+      "gdpr": {
+        "title": "4. Données personnelles (GDPR)",
+        "content": "Soleon Tech s'engage à ce que la collecte de vos données soit conforme au RGPD. Les données du formulaire de contact ne sont jamais revendues."
+      },
+      "liability": {
+        "title": "5. Limitation de responsabilité",
+        "content": "Soleon Tech décline toute responsabilité quant aux dommages causés lors de l'accès au site."
+      }
+    }
+  },
+  "demoEco": {
+    "brand": "EcoMarket",
+    "tagline": "Le futur de l'alimentation durable.",
+    "shopNow": "Commandez maintenant",
+    "featured": "Récolte du jour",
+    "addToCart": "Ajouter",
+    "cart": "Votre Panier",
+    "total": "Sous-total",
+    "checkout": "Paiement sécurisé",
+    "emptyCart": "Votre panier est vide.",
+    "freeDelivery": "Livraison offerte",
+    "organic": "100% Biologique",
+    "fresh": "Ultra Frais",
+    "secure": "Sécurisé",
+    "reviews": "avis",
+    "categories": "Rayons",
+    "all": "Tous les produits",
+    "fruits": "Fruits",
+    "vegetables": "Légumes",
+    "dairy": "Crémerie"
+  },
+  "demoBank": {
+    "welcome": "Bonsoir",
+    "totalBalance": "Solde Total",
+    "send": "Envoyer",
+    "details": "Détails",
+    "transactions": "Transactions Récentes",
+    "income": "Entrées",
+    "expenses": "Dépenses",
+    "savings": "Coffre-fort",
+    "scan": "Scanner QR"
+  },
+  "demoWatch": {
+    "menu": "Menu",
+    "since": "Depuis 1924",
+    "headline": "Élégance Intemporelle",
+    "discover": "Découvrir la Collection",
+    "craftHead": "Savoir-faire Suisse",
+    "craftBody": "Chaque montre Aura est assemblée à la main...",
+    "certified": "Certifié COSC",
+    "warranty": "Garantie 5 Ans",
+    "catalog": "La Collection",
+    "viewAll": "Voir les Modèles",
+    "quickView": "Aperçu",
+    "addToCart": "Ajouter au Panier"
+  },
+  "demoRealEstate": {
+    "buy": "Acheter",
+    "rent": "Louer",
+    "sell": "Vendre",
+    "contact": "Contact",
+    "heroTitle": "Architecture et Art de Vivre.",
+    "listingsCount": "450+",
+    "exclusiveProps": "Biens Exclusifs",
+    "citiesCount": "12",
+    "globalCities": "Villes Mondiales",
+    "featured": "Résidences en Vedette",
+    "curated": "Une sélection de propriétés d'exception.",
+    "viewAll": "Voir tout",
+    "forSale": "À Vendre",
+    "virtualTour": "Visite Virtuelle",
+    "viewMap": "Carte",
+    "beds": "Chambres",
+    "baths": "SDB",
+    "sqft": "mÂ²",
+    "schedule": "Rendez-vous"
+  },
+  "global": {
+    "culture": {
+      "subtitle": "Le design n'est pas universel. Nous adaptons l'interface aux habitudes locales.",
+      "title": "Adaptation Culturelle",
+      "explanation": {
+        "asian": "Design Intégré : Super-Apps et densité d'information. L'UX asiatique privilégie l'accès immédiat à tout l'écosystème.",
+        "western": "Design Minimaliste : Espaces aérés et parcours linéaire. L'UX occidentale favorise la clarté et la concentration."
+      },
+      "western_label": "UI Occidentale",
+      "asian_label": "UI Asiatique"
+    },
+    "title": "Notre Expertise",
+    "highlight": "Sans Frontières",
+    "subtitle": "Une expertise locale, une portée globale. Nous adaptons chaque projet aux spécificités culturelles de votre audience cible.",
+    "trust": {
+      "projects": "Projets Livrés",
+      "title": "La Confiance à l'Échelle Mondiale",
+      "satisfaction": "Satisfaction",
+      "countries": "Pays Touchés",
+      "clients": "Clients Heureux"
+    },
+    "timezone": {
+      "tokyo": "Tokyo",
+      "paris": "Paris",
+      "subtitle": "Grâce à notre distribution mondiale, votre projet avance 24h/24.",
+      "new_york": "New York",
+      "title": "L'Avantage du Décalage Horaire",
+      "dubai": "Dubaï",
+      "sydney": "Sydney",
+      "label": {
+        "paris": "Siège & Stratégie",
+        "new_york": "Ingénierie",
+        "tokyo": "Support & QA"
+      },
+      "uptime": {
+        "title": "Disponibilité 24/7",
+        "desc": "Aucune interruption entre les équipes."
+      },
+      "delivery": {
+        "title": "Livraison Accélérée",
+        "desc": "Le travail continue pendant votre sommeil."
+      },
+      "compliance": {
+        "title": "Conformité Locale",
+        "desc": "Des experts dans chaque région."
+      }
+    },
+    "cta": {
+      "title": "Prêt à développer votre activité à l'international ?",
+      "description": "Rejoignez les 12+ clients qui font confiance à Soleon Tech pour leur stratégie digitale internationale.",
+      "button": "Lancer un Projet Global"
+    }
+  },
+  "globe": {
+    "types": {
+      "branding": "Branding",
+      "web": "Site Web",
+      "mobile": "App Mobile",
+      "ecommerce": "E-Commerce"
+    },
+    "drag": "Glissez pour tourner",
+    "viewProject": "Voir le projet",
+    "click": "Cliquez les points"
+  },
+  "projects": {},
+  "packs": {
+    "type": {
+      "title": "Type de projet",
+      "landing": "Landing Page",
+      "landing_desc": "Une page unique optimisée pour la conversion.",
+      "showcase": "Site Vitrine (5 pages)",
+      "showcase_desc": "Présentation complète de votre activité.",
+      "ecommerce": "E-commerce",
+      "ecommerce_desc": "Boutique en ligne avec gestion de catalogue et paiements.",
+      "saas": "Web App / SaaS",
+      "saas_desc": "Application métier complexe sur mesure."
+    },
+    "design": {
+      "title": "Niveau de design",
+      "standard": "Standard (Template)",
+      "standard_desc": "Adaptation propre d'un template existant.",
+      "custom": "Sur Mesure",
+      "custom_desc": "Direction artistique unique et maquettes complètes."
+    },
+    "features": {
+      "title": "Fonctionnalités & Add-ons",
+      "cms": "CMS (Gestion de contenu)",
+      "seo": "Pack SEO Avancé",
+      "analytics": "Analytics & Tracking",
+      "i18n": "Multi-langues",
+      "auth": "Espace Membre / Auth",
+      "payment": "Intégration Paiement (Stripe)"
+    },
+    "maintenance": {
+      "title": "Maintenance Mensuelle (Optionnel)",
+      "none": "Aucune",
+      "pro": "Support Technique & Mises à jour"
+    }
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité",
+    "subtitle": "Nous nous engageons à protéger vos données personnelles avec la plus grande rigueur.",
+    "last_update": "Dernière mise à jour : {{date}}",
+    "sections": {
+      "intro": {
+        "title": "Introduction",
+        "content": "Chez Soleon Tech, la protection de vos données personnelles est une priorité absolue. Cette politique de confidentialité explique quelles informations nous collectons, comment nous les utilisons, et vos droits en tant qu'utilisateur."
+      },
+      "data_collection": {
+        "title": "Données Collectées",
+        "content": "Nous collectons uniquement les informations nécessaires au bon fonctionnement de nos services :",
+        "details": [
+          "Informations d'identité : nom, prénom, adresse e-mail",
+          "Données de navigation : cookies, pages visitées, durée de session",
+          "Données de communication : messages envoyés via le formulaire de contact",
+          "Informations techniques : adresse IP, navigateur, système d'exploitation"
+        ]
+      },
+      "data_usage": {
+        "title": "Utilisation des Données",
+        "content": "Vos données sont utilisées exclusivement pour :",
+        "details": [
+          "Répondre à vos demandes et fournir nos services",
+          "Améliorer l'expérience utilisateur de notre site",
+          "Envoyer des communications pertinentes (avec votre consentement)",
+          "Analyser le trafic et optimiser nos performances"
+        ]
+      },
+      "data_sharing": {
+        "title": "Partage des Données",
+        "content": "Nous ne vendons jamais vos données personnelles. Elles peuvent être partagées uniquement avec :",
+        "details": [
+          "Nos prestataires techniques (hébergement, analytics) sous contrat strict",
+          "Les autorités légales en cas d'obligation juridique",
+          "Avec votre consentement explicite pour des partenaires sélectionnés"
+        ]
+      },
+      "cookies": {
+        "title": "Cookies & Technologies Similaires",
+        "content": "Nous utilisons des cookies pour améliorer votre navigation. Vous pouvez gérer vos préférences à tout moment via les paramètres de votre navigateur. Types de cookies utilisés :",
+        "details": [
+          "Cookies essentiels : nécessaires au fonctionnement du site",
+          "Cookies analytiques : pour comprendre l'utilisation du site",
+          "Cookies de préférence : pour mémoriser vos choix (langue, etc.)"
+        ]
+      },
+      "rights": {
+        "title": "Vos Droits",
+        "content": "Conformément au RGPD, vous disposez des droits suivants :",
+        "details": [
+          "Droit d'accès : consulter vos données personnelles",
+          "Droit de rectification : corriger vos informations",
+          "Droit à l'effacement : supprimer vos données",
+          "Droit à la portabilité : récupérer vos données",
+          "Droit d'opposition : refuser certains traitements"
+        ]
+      }
+    },
+    "contact": {
+      "title": "Des Questions ?",
+      "description": "Pour toute question concernant vos données personnelles, n'hésitez pas à nous contacter.",
+      "button": "Nous Contacter"
+    }
+  },
+  "terms_conditions": {
+    "title": "Conditions Générales",
+    "subtitle": "Les règles et conditions d'utilisation de nos services digitaux.",
+    "last_update": "Dernière mise à jour : {{date}}",
+    "sections": {
+      "general": {
+        "title": "Dispositions Générales",
+        "content": "Les présentes Conditions Générales d'Utilisation (CGU) et de Vente (CGV) régissent l'accès et l'utilisation des services proposés par Soleon Tech. En utilisant nos services, vous acceptez l'intégralité de ces conditions.",
+        "details": [
+        ]
+      },
+      "services": {
+        "title": "Description des Services",
+        "content": "Soleon Tech propose des services de conception et développement digital incluant :",
+        "details": [
+          "Création de sites web et applications mobiles sur mesure",
+          "Design UX/UI et identité visuelle",
+          "Développement d'applications SaaS",
+          "Maintenance et support technique",
+          "Optimisation SEO et performance"
+        ]
+      },
+      "accounts": {
+        "title": "Comptes Utilisateurs",
+        "content": "L'accès à certains services peut nécessiter la création d'un compte. Vous vous engagez à :",
+        "details": [
+          "Fournir des informations exactes et à jour",
+          "Maintenir la confidentialité de vos identifiants",
+          "Notifier immédiatement toute utilisation non autorisée",
+          "Ne pas partager votre compte avec des tiers"
+        ]
+      },
+      "responsibilities": {
+        "title": "Responsabilités",
+        "content": "Nos engagements et vos responsabilités :",
+        "details": [
+          "Soleon Tech s'engage à fournir des services de qualité professionnelle",
+          "Le client fournit les contenus et matériaux nécessaires en temps voulu",
+          "Le client valide les livrables selon les délais convenus",
+          "Toute modification substantielle peut entraîner un ajustement tarifaire"
+        ]
+      },
+      "limitations": {
+        "title": "Limitations de Responsabilité",
+        "content": "Dans les limites autorisées par la loi :",
+        "details": [
+          "Soleon Tech ne peut être tenu responsable des interruptions de service indépendantes de sa volonté",
+          "Notre responsabilité est limitée au montant payé pour le service concerné",
+          "Nous ne garantissons pas de résultats commerciaux spécifiques",
+          "Le client est responsable de la sauvegarde de ses données"
+        ]
+      },
+      "jurisdiction": {
+        "title": "Juridiction & Loi Applicable",
+        "content": "Les présentes conditions sont régies par le droit français. En cas de litige :",
+        "details": [
+          "Une résolution amiable sera recherchée en priorité",
+          "À défaut, les tribunaux français seront compétents",
+          "Conformité au RGPD et aux réglementations européennes"
+        ]
+      }
+    },
+    "acceptance": {
+      "title": "Acceptation des Conditions",
+      "content": "L'utilisation de nos services implique l'acceptation pleine et entière des présentes CGU/CGV. Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser nos services. Nous nous réservons le droit de modifier ces conditions à tout moment, avec notification préalable aux utilisateurs."
+    }
+  },
+  "quote": {
+    "modal": {
+      "title": "Recevoir votre devis",
+      "subtitle": "Recevez votre devis personnalisé par email avec votre sélection détaillée en PDF.",
+      "language_label": "Votre langue",
+      "email_label": "Votre adresse email",
+      "email_placeholder": "vous@exemple.com",
+      "email_invalid": "Adresse email invalide",
+      "summary": "Estimation",
+      "firstname_label": "Prénom",
+      "firstname_placeholder": "Votre prénom",
+      "lastname_label": "Nom de famille",
+      "lastname_placeholder": "Votre nom de famille",
+      "name_invalid": "Prénom et nom requis (min. 2 caractères)",
+      "send": "Envoyer le devis",
+      "sending": "Votre devis est en cours d'envoi, veuillez patienter.",
+      "sending_title": "Envoi en cours...",
+      "success_title": "Devis envoyé !",
+      "success_desc": "Votre devis détaillé (avec PDF) a été envoyé à",
+      "close": "Fermer",
+      "error": "Une erreur est survenue. Vérifiez votre email et réessayez."
+    }
+  }}

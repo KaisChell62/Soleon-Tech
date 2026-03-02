@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Environment variables - CRITICAL: NEVER COMMIT
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.*
+
+# Build outputs
+dist/
+build/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Secrets - NEVER COMMIT
+*.pem
+*.key
+*.crt
+secrets/
+
+# Coverage
+coverage/
+
+# Temporary
+tmp/
+temp/
+*.tmp

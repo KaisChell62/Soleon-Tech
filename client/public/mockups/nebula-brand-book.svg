@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="nebulaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+    <linearGradient id="nebulaGradV" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#D946EF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0a0a0f"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#8B5CF6" letter-spacing="4">BRAND GUIDELINES</text>
+  
+  <!-- Cover Page Mockup -->
+  <rect x="40" y="50" width="160" height="220" rx="4" fill="#12121a" stroke="#333" stroke-width="1"/>
+  
+  <!-- Cover Design -->
+  <rect x="50" y="60" width="140" height="200" fill="#0a0a0f"/>
+  <rect x="50" y="60" width="140" height="130" fill="url(#nebulaGrad)" opacity="0.2"/>
+  
+  <!-- Abstract shapes -->
+  <circle cx="120" cy="100" r="40" fill="#8B5CF6" opacity="0.3"/>
+  <circle cx="160" cy="140" r="30" fill="#06B6D4" opacity="0.3"/>
+  <circle cx="80" cy="150" r="25" fill="#D946EF" opacity="0.2"/>
+  
+  <!-- Logo -->
+  <circle cx="120" cy="120" r="25" fill="url(#nebulaGrad)"/>
+  <path d="M 107 120 L 120 100 L 133 120 L 120 110 Z" fill="#fff"/>
+  
+  <text x="120" y="215" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">NEBULA AI</text>
+  <text x="120" y="232" text-anchor="middle" font-family="Arial" font-size="8" fill="#666">BRAND GUIDELINES</text>
+  <text x="120" y="250" text-anchor="middle" font-family="Arial" font-size="7" fill="#444">VERSION 1.0</text>
+  
+  <text x="120" y="290" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">Cover Page</text>
+  
+  <!-- Logo Usage Page -->
+  <rect x="220" y="50" width="160" height="220" rx="4" fill="#ffffff"/>
+  
+  <text x="240" y="75" font-family="Arial" font-size="10" font-weight="bold" fill="#0a0a0f">Logo Usage</text>
+  <rect x="240" y="80" width="30" height="2" fill="#8B5CF6"/>
+  
+  <!-- Correct usage -->
+  <rect x="240" y="95" width="50" height="40" rx="4" fill="#0a0a0f"/>
+  <circle cx="265" cy="115" r="12" fill="url(#nebulaGrad)"/>
+  <path d="M 259 115 L 265 105 L 271 115 L 265 110 Z" fill="#fff"/>
+  <circle cx="280" cy="105" r="5" fill="#27c93f"/>
+  <text x="278" y="108" font-family="Arial" font-size="8" fill="#fff">✓</text>
+  
+  <!-- Incorrect usage -->
+  <rect x="300" y="95" width="50" height="40" rx="4" fill="#f5f5f5"/>
+  <circle cx="325" cy="115" r="12" fill="#ccc"/>
+  <circle cx="340" cy="105" r="5" fill="#ff5f56"/>
+  <text x="338" y="108" font-family="Arial" font-size="8" fill="#fff">✕</text>
+  
+  <text x="240" y="150" font-family="Arial" font-size="7" fill="#333">Clear Space Requirements</text>
+  
+  <rect x="240" y="158" width="60" height="45" rx="2" fill="#f5f5f5"/>
+  <circle cx="270" cy="180" r="10" fill="url(#nebulaGrad)"/>
+  <path d="M 265 180 L 270 172 L 275 180 L 270 176 Z" fill="#fff"/>
+  
+  <!-- Spacing lines -->
+  <line x1="258" y1="168" x2="258" y2="192" stroke="#8B5CF6" stroke-width="0.5" stroke-dasharray="2"/>
+  <line x1="282" y1="168" x2="282" y2="192" stroke="#8B5CF6" stroke-width="0.5" stroke-dasharray="2"/>
+  <text x="270" y="210" text-anchor="middle" font-family="Arial" font-size="5" fill="#888">1x minimum</text>
+  
+  <text x="240" y="235" font-family="Arial" font-size="7" fill="#333">Minimum Size: 24px</text>
+  
+  <text x="300" y="290" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">Logo Page</text>
+  
+  <!-- Color Page -->
+  <rect x="400" y="50" width="160" height="220" rx="4" fill="#ffffff"/>
+  
+  <text x="420" y="75" font-family="Arial" font-size="10" font-weight="bold" fill="#0a0a0f">Color Palette</text>
+  <rect x="420" y="80" width="30" height="2" fill="#8B5CF6"/>
+  
+  <!-- Primary colors -->
+  <text x="420" y="102" font-family="Arial" font-size="6" fill="#888" letter-spacing="1">PRIMARY</text>
+  
+  <rect x="420" y="108" width="28" height="28" rx="4" fill="#8B5CF6"/>
+  <text x="434" y="150" text-anchor="middle" font-family="Arial" font-size="5" fill="#333">Violet</text>
+  
+  <rect x="455" y="108" width="28" height="28" rx="4" fill="#06B6D4"/>
+  <text x="469" y="150" text-anchor="middle" font-family="Arial" font-size="5" fill="#333">Cyan</text>
+  
+  <rect x="490" y="108" width="28" height="28" rx="4" fill="#D946EF"/>
+  <text x="504" y="150" text-anchor="middle" font-family="Arial" font-size="5" fill="#333">Fuchsia</text>
+  
+  <!-- Neutral colors -->
+  <text x="420" y="172" font-family="Arial" font-size="6" fill="#888" letter-spacing="1">NEUTRAL</text>
+  
+  <rect x="420" y="178" width="28" height="28" rx="4" fill="#0a0a0f"/>
+  <text x="434" y="220" text-anchor="middle" font-family="Arial" font-size="5" fill="#333">Black</text>
+  
+  <rect x="455" y="178" width="28" height="28" rx="4" fill="#F8FAFC" stroke="#ddd" stroke-width="0.5"/>
+  <text x="469" y="220" text-anchor="middle" font-family="Arial" font-size="5" fill="#333">White</text>
+  
+  <!-- Gradient -->
+  <rect x="490" y="178" width="52" height="28" rx="4" fill="url(#nebulaGrad)"/>
+  <text x="516" y="220" text-anchor="middle" font-family="Arial" font-size="5" fill="#333">Gradient</text>
+  
+  <text x="480" y="290" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">Colors Page</text>
+  
+  <!-- Typography Page -->
+  <rect x="580" y="50" width="160" height="220" rx="4" fill="#ffffff"/>
+  
+  <text x="600" y="75" font-family="Arial" font-size="10" font-weight="bold" fill="#0a0a0f">Typography</text>
+  <rect x="600" y="80" width="30" height="2" fill="#8B5CF6"/>
+  
+  <text x="600" y="105" font-family="Arial" font-size="6" fill="#888" letter-spacing="1">DISPLAY</text>
+  <text x="600" y="125" font-family="Arial" font-size="18" font-weight="bold" fill="#0a0a0f">Nebula Sans</text>
+  
+  <text x="600" y="150" font-family="Arial" font-size="6" fill="#888" letter-spacing="1">BODY</text>
+  <text x="600" y="168" font-family="Arial" font-size="12" fill="#333">Inter Regular</text>
+  
+  <text x="600" y="195" font-family="Arial" font-size="6" fill="#888" letter-spacing="1">SCALE</text>
+  <text x="600" y="215" font-family="Arial" font-size="14" fill="#0a0a0f">Aa</text>
+  <text x="620" y="215" font-family="Arial" font-size="12" fill="#333">Aa</text>
+  <text x="638" y="215" font-family="Arial" font-size="10" fill="#555">Aa</text>
+  <text x="654" y="215" font-family="Arial" font-size="8" fill="#888">Aa</text>
+  <text x="668" y="215" font-family="Arial" font-size="6" fill="#aaa">Aa</text>
+  
+  <text x="660" y="290" text-anchor="middle" font-family="Arial" font-size="9" fill="#555">Type Page</text>
+  
+  <!-- Table of Contents Preview -->
+  <rect x="40" y="320" width="200" height="160" rx="8" fill="#12121a" stroke="#333" stroke-width="1"/>
+  <text x="60" y="345" font-family="Arial" font-size="10" font-weight="bold" fill="#fff">Table of Contents</text>
+  <rect x="60" y="350" width="40" height="2" fill="#8B5CF6"/>
+  
+  <text x="60" y="375" font-family="Arial" font-size="8" fill="#888">01</text>
+  <text x="80" y="375" font-family="Arial" font-size="8" fill="#ccc">Introduction</text>
+  <text x="200" y="375" font-family="Arial" font-size="8" fill="#555">03</text>
+  
+  <text x="60" y="392" font-family="Arial" font-size="8" fill="#888">02</text>
+  <text x="80" y="392" font-family="Arial" font-size="8" fill="#ccc">Logo Guidelines</text>
+  <text x="200" y="392" font-family="Arial" font-size="8" fill="#555">07</text>
+  
+  <text x="60" y="409" font-family="Arial" font-size="8" fill="#888">03</text>
+  <text x="80" y="409" font-family="Arial" font-size="8" fill="#ccc">Color System</text>
+  <text x="200" y="409" font-family="Arial" font-size="8" fill="#555">15</text>
+  
+  <text x="60" y="426" font-family="Arial" font-size="8" fill="#888">04</text>
+  <text x="80" y="426" font-family="Arial" font-size="8" fill="#ccc">Typography</text>
+  <text x="200" y="426" font-family="Arial" font-size="8" fill="#555">23</text>
+  
+  <text x="60" y="443" font-family="Arial" font-size="8" fill="#888">05</text>
+  <text x="80" y="443" font-family="Arial" font-size="8" fill="#ccc">Brand Applications</text>
+  <text x="200" y="443" font-family="Arial" font-size="8" fill="#555">31</text>
+  
+  <text x="60" y="460" font-family="Arial" font-size="8" fill="#888">06</text>
+  <text x="80" y="460" font-family="Arial" font-size="8" fill="#ccc">Digital Guidelines</text>
+  <text x="200" y="460" font-family="Arial" font-size="8" fill="#555">45</text>
+  
+  <!-- Spread Preview -->
+  <rect x="270" y="320" width="240" height="160" rx="4" fill="#666"/>
+  
+  <!-- Left page -->
+  <rect x="275" y="325" width="115" height="150" fill="#ffffff"/>
+  <rect x="285" y="335" width="95" height="60" fill="url(#nebulaGrad)" opacity="0.3"/>
+  <circle cx="333" cy="365" r="20" fill="url(#nebulaGrad)"/>
+  <path d="M 323 365 L 333 350 L 343 365 L 333 358 Z" fill="#fff"/>
+  
+  <rect x="285" y="405" width="60" height="4" fill="#333"/>
+  <rect x="285" y="415" width="95" height="3" fill="#ddd"/>
+  <rect x="285" y="422" width="80" height="3" fill="#ddd"/>
+  <rect x="285" y="429" width="90" height="3" fill="#ddd"/>
+  <rect x="285" y="436" width="70" height="3" fill="#ddd"/>
+  
+  <!-- Right page -->
+  <rect x="395" y="325" width="115" height="150" fill="#ffffff"/>
+  
+  <rect x="405" y="335" width="30" height="25" rx="2" fill="#8B5CF6"/>
+  <rect x="440" y="335" width="30" height="25" rx="2" fill="#06B6D4"/>
+  <rect x="475" y="335" width="30" height="25" rx="2" fill="#D946EF"/>
+  
+  <rect x="405" y="370" width="95" height="3" fill="#ddd"/>
+  <rect x="405" y="377" width="85" height="3" fill="#ddd"/>
+  <rect x="405" y="384" width="90" height="3" fill="#ddd"/>
+  
+  <rect x="405" y="400" width="40" height="30" rx="2" fill="#0a0a0f"/>
+  <circle cx="425" cy="415" r="8" fill="url(#nebulaGrad)"/>
+  
+  <rect x="455" y="400" width="50" height="30" rx="2" fill="#F8FAFC" stroke="#ddd" stroke-width="0.5"/>
+  <circle cx="480" cy="415" r="8" fill="#8B5CF6"/>
+  
+  <!-- Spine -->
+  <rect x="390" y="325" width="5" height="150" fill="#555"/>
+  
+  <!-- Book Stack -->
+  <rect x="540" y="360" width="210" height="15" rx="2" fill="#8B5CF6"/>
+  <rect x="545" y="375" width="200" height="12" rx="2" fill="#06B6D4"/>
+  <rect x="550" y="387" width="190" height="10" rx="2" fill="#D946EF"/>
+  <rect x="555" y="397" width="180" height="8" rx="2" fill="#0a0a0f" stroke="#333" stroke-width="0.5"/>
+  
+  <text x="650" y="380" text-anchor="middle" font-family="Arial" font-size="6" font-weight="bold" fill="#fff">NEBULA AI</text>
+  
+  <text x="650" y="430" text-anchor="middle" font-family="Arial" font-size="9" fill="#666">Brand Book Stack</text>
+  
+  <!-- USB with guidelines -->
+  <rect x="545" y="440" width="50" height="25" rx="3" fill="#1a1a24"/>
+  <rect x="550" y="445" width="8" height="15" rx="1" fill="#8B5CF6"/>
+  <text x="565" y="456" font-family="Arial" font-size="6" fill="#888">Brand</text>
+  <text x="565" y="463" font-family="Arial" font-size="6" fill="#888">Assets</text>
+  
+  <!-- CD/DVD -->
+  <circle cx="660" cy="452" r="20" fill="#1a1a24" stroke="#333" stroke-width="1"/>
+  <circle cx="660" cy="452" r="15" fill="url(#nebulaGrad)" opacity="0.3"/>
+  <circle cx="660" cy="452" r="5" fill="#0a0a0f"/>
+  <text x="660" y="475" text-anchor="middle" font-family="Arial" font-size="6" fill="#666">Media Kit</text>
+  
+  <!-- Footer -->
+  <text x="700" y="485" font-family="Arial" font-size="9" fill="#444">Nebula AI • Brand Guidelines v1.0</text>
+</svg>

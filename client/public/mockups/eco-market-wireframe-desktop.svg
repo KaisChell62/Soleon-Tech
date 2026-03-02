@@ -1,0 +1,43 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#f8fafc" />
+  <text x="48" y="56" font-family="Inter, Arial" font-size="28" fill="#064e3b">Wireframe Desktop — EcoMarket</text>
+  <g transform="translate(48,96)">
+    <rect width="1104" height="560" rx="20" fill="#ffffff" stroke="#e6e6e6" />
+    <!-- Left column: filters -->
+    <g transform="translate(24,24)">
+      <rect x="0" y="0" width="220" height="512" rx="12" fill="#f1f5f9" />
+      <text x="24" y="36" font-size="16" fill="#0f766e">Filtres</text>
+      <rect x="24" y="64" width="172" height="36" rx="10" fill="#fff" stroke="#e9eef2" />
+      <rect x="24" y="108" width="172" height="36" rx="10" fill="#fff" stroke="#e9eef2" />
+    </g>
+    <!-- Main grid -->
+    <g transform="translate(264,24)">
+      <rect x="0" y="0" width="800" height="120" rx="12" fill="#ecfccb" />
+      <text x="16" y="40" font-size="20" fill="#065f46">Hero produit — mise en avant</text>
+      <!-- product cards -->
+      <g transform="translate(0,144)">
+        <!-- card 1 -->
+        <rect x="0" y="0" width="240" height="160" rx="14" fill="#ffffff" stroke="#eef2f7" />
+        <circle cx="60" cy="56" r="36" fill="#34d399" />
+        <text x="120" y="56" font-size="16" fill="#064e3b">Avocat Bio</text>
+        <text x="120" y="84" font-size="14" fill="#6b7280">2.49€ • 250g</text>
+        <rect x="0" y="184" width="240" height="36" rx="18" fill="#10b981" />
+        <text x="16" y="208" font-size="14" fill="#fff">Ajouter</text>
+        <!-- card 2 -->
+        <rect x="280" y="0" width="240" height="160" rx="14" fill="#ffffff" stroke="#eef2f7" />
+        <circle cx="340" cy="56" r="36" fill="#fb7185" />
+        <text x="400" y="56" font-size="16" fill="#064e3b">Fraises Bio</text>
+        <text x="400" y="84" font-size="14" fill="#6b7280">4.99€ • 250g</text>
+        <rect x="280" y="184" width="240" height="36" rx="18" fill="#10b981" />
+        <text x="296" y="208" font-size="14" fill="#fff">Ajouter</text>
+        <!-- card 3 -->
+        <rect x="560" y="0" width="240" height="160" rx="14" fill="#ffffff" stroke="#eef2f7" />
+        <circle cx="620" cy="56" r="36" fill="#60a5fa" />
+        <text x="680" y="56" font-size="16" fill="#064e3b">Chou Kale</text>
+        <text x="680" y="84" font-size="14" fill="#6b7280">3.29€ • botte</text>
+        <rect x="560" y="184" width="240" height="36" rx="18" fill="#10b981" />
+        <text x="576" y="208" font-size="14" fill="#fff">Ajouter</text>
+      </g>
+    </g>
+  </g>
+</svg>

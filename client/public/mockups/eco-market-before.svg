@@ -1,0 +1,35 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <rect width="100%" height="100%" fill="#f8fafc" />
+  <text x="60" y="72" font-family="Inter, Arial" font-size="34" font-weight="700" fill="#0f172a">Avant — Ancienne UI (extrait réel)</text>
+  <g transform="translate(60,120)">
+    <rect width="1080" height="620" rx="20" fill="#ffffff" stroke="#e6e6e6" />
+
+    <!-- Left: list (tight, small thumbs) -->
+    <g transform="translate(36,32)">
+      <text x="0" y="0" font-size="18" fill="#475569">Liste produits</text>
+      <g transform="translate(0,28)">
+        <rect x="0" y="0" width="420" height="64" rx="10" fill="#fafafa" stroke="#f1f5f9" />
+        <rect x="8" y="8" width="48" height="48" rx="8" fill="#e6e6e6" />
+        <text x="72" y="38" font-size="15" fill="#6b7280">Avocat Bio — 2.49€</text>
+
+        <rect x="0" y="84" width="420" height="64" rx="10" fill="#fafafa" stroke="#f1f5f9" />
+        <rect x="8" y="92" width="48" height="48" rx="8" fill="#e6e6e6" />
+        <text x="72" y="122" font-size="15" fill="#6b7280">Fraises Bio — 4.99€</text>
+
+        <rect x="0" y="168" width="420" height="64" rx="10" fill="#fafafa" stroke="#f1f5f9" />
+        <rect x="8" y="176" width="48" height="48" rx="8" fill="#e6e6e6" />
+        <text x="72" y="206" font-size="15" fill="#6b7280">Chou Kale — 3.29€</text>
+      </g>
+      <text x="0" y="460" font-size="13" fill="#94a3b8">Problèmes : images petites, densité élevée, CTA peu visibles.</text>
+    </g>
+
+    <!-- Right: actual product photo area to show old low-impact imagery -->
+    <g transform="translate(500,60)">
+      <rect x="0" y="0" width="520" height="520" rx="14" fill="#fbfdfb" stroke="#f0fdf4" />
+      <image href="/mockups/eco-market-produce.svg" x="20" y="60" width="480" height="420" preserveAspectRatio="xMidYMid slice" />
+      <text x="20" y="500" font-size="14" fill="#6b7280">Visuel produit — faible impact</text>
+      <rect x="20" y="512" width="160" height="44" rx="10" fill="#eaeaea" />
+      <text x="40" y="544" font-size="14" fill="#6b7280">Ajouter</text>
+    </g>
+  </g>
+</svg>
