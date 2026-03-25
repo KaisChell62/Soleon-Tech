@@ -79,3 +79,22 @@ export const getRoute = (key: string, lang: string): string => {
   return `/${l}${path.startsWith('/') ? path : '/' + path}`;
 };
 
+// Resolve a localized pathname back to its logical route key.
+export function getRouteKeyFromPath(pathname: string): string {
+  const segments = pathname.split('/').filter(Boolean);
+  const lang = segments[0];
+  const slug = segments[1] || '';
+
+  if (!lang || !SUPPORTED_LANGUAGES.includes(lang as SupportedLanguage)) {
+    return 'home';
+  }
+
+  for (const [key, paths] of Object.entries(routePaths)) {
+    if (paths[lang as SupportedLanguage] === slug) {
+      return key;
+    }
+  }
+
+  return 'home';
+}
+

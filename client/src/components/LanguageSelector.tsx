@@ -3,6 +3,8 @@ import { ChevronDown, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguageDetection } from '../hooks/useLanguageDetection';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { getRoute, getRouteKeyFromPath } from '../routes/config';
+import { detectLanguageByIP, normalizeLanguage } from './LanguageProvider';
 
 const languages = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -42,19 +44,26 @@ export default function LanguageSelector() {
   const currentLang = languages.find((l) => currentLanguage.startsWith(l.code)) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
-    // 1. Change internal state
     changeLanguage(langCode);
     setIsOpen(false);
-    
-    // 2. Redirect to new URL
-    // Replace "/oldLang/..." with "/newLang/..."
-    const segments = location.pathname.split('/').filter(Boolean);
-    if (segments.length > 0 && languages.some(l => l.code === segments[0])) {
-        segments[0] = langCode;
-        navigate(`/${segments.join('/')}`);
-    } else {
-        // Fallback if URL structure is weird
-        navigate(`/${langCode}`);
+
+    const routeKey = getRouteKeyFromPath(location.pathname);
+    navigate(getRoute(routeKey, langCode));
+  };
+
+  const handleAutoDetect = async () => {
+    resetToAutoDetect();
+    setIsOpen(false);
+
+    const routeKey = getRouteKeyFromPath(location.pathname);
+
+    try {
+      const geo = await detectLanguageByIP().catch(() => null);
+      const detectedLang = geo?.lang ?? normalizeLanguage(navigator.language);
+      navigate(getRoute(routeKey, detectedLang));
+    } catch {
+      const browserLang = normalizeLanguage(navigator.language);
+      navigate(getRoute(routeKey, browserLang));
     }
   };
 
@@ -95,7 +104,7 @@ export default function LanguageSelector() {
             <div className="p-1 grid grid-cols-1 gap-0.5">
               {/* Auto-detect option */}
               <button
-                onClick={() => { resetToAutoDetect(); setIsOpen(false); }}
+                onClick={handleAutoDetect}
                 className={`flex items-center gap-3 px-3 py-2 rounded-lg text-sm transition text-left w-full ${
                   !isManuallySet ? 'bg-green-600 text-white' : 'text-neutral-300 hover:bg-neutral-800'
                 }`}

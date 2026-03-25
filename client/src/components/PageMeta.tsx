@@ -1,31 +1,13 @@
 ﻿import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { getRoute, routePaths, SUPPORTED_LANGUAGES } from '../routes/config';
+import { getRoute, getRouteKeyFromPath, SUPPORTED_LANGUAGES } from '../routes/config';
 
 type MetaInfo = {
   title: string;
   description: string;
   keywords: string;
 };
-
-function getRouteKeyFromPath(pathname: string): string {
-  const segments = pathname.split('/').filter(Boolean);
-  const lang = segments[0];
-  const slug = segments[1] || '';
-
-  if (!lang || !SUPPORTED_LANGUAGES.includes(lang as typeof SUPPORTED_LANGUAGES[number])) {
-    return 'home';
-  }
-
-  for (const [key, paths] of Object.entries(routePaths)) {
-    if (paths[lang as keyof typeof paths] === slug) {
-      return key;
-    }
-  }
-
-  return slug === '' ? 'home' : 'home';
-}
 
 function getMetaInfo(routeKey: string, t: (key: string, options?: Record<string, unknown>) => string): MetaInfo {
   const metaByRoute: Record<string, MetaInfo> = {
