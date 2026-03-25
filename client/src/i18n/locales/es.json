@@ -15,6 +15,24 @@
     "contact": "Contacto",
     "start": "Empezar"
   },
+  "meta": {
+    "home": {
+      "title": "Soleon Tech | Excelencia Digital",
+      "desc": "Agencia digital especializada en desarrollo web, móvil y estrategia de crecimiento internacional."
+    },
+    "services": {
+      "title": "Servicios | Soleon Tech",
+      "desc": "Desarrollo a medida, aplicaciones móviles, branding y estrategia digital."
+    },
+    "portfolio": {
+      "title": "Portafolio | Soleon Tech",
+      "desc": "Descubre nuestros proyectos de clientes y experiencia técnica."
+    },
+    "contact": {
+      "title": "Contacto | Soleon Tech",
+      "desc": "Hablemos de tu proyecto. Presupuesto gratuito y respuesta en 24 horas."
+    }
+  },
   "faq": {
     "title": "Preguntas",
     "highlight": "Frecuentes",

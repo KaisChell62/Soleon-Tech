@@ -15,6 +15,24 @@
     "contact": "Contact",
     "start": "Start"
   },
+  "meta": {
+    "home": {
+      "title": "Soleon Tech | Digital Excellence",
+      "desc": "Digital agency specialized in web, mobile and international growth strategy."
+    },
+    "services": {
+      "title": "Services | Soleon Tech",
+      "desc": "Custom development, mobile apps, branding and digital strategy."
+    },
+    "portfolio": {
+      "title": "Portfolio | Soleon Tech",
+      "desc": "Explore our client projects and technical expertise."
+    },
+    "contact": {
+      "title": "Contact | Soleon Tech",
+      "desc": "Let's discuss your project. Free quote and reply within 24 hours."
+    }
+  },
   "faq": {
     "title": "Frequent",
     "highlight": "Questions",

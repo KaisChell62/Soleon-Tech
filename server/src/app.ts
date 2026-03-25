@@ -87,6 +87,49 @@ app.use(blockDangerousPatterns);
 app.use('/api/contact', contactRoutes);
 app.use('/api/geo', geoRoutes);
 
+app.get('/api/ip', async (_req: Request, res: Response) => {
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000);
+
+    const response = await fetch('https://ipwho.is/', {
+      signal: controller.signal,
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+
+    clearTimeout(timeoutId);
+
+    if (!response.ok) {
+      res.status(502).json({
+        success: false,
+        error: {
+          message: 'Upstream geolocation service failed',
+          code: 'GEO_UPSTREAM_ERROR',
+        },
+      });
+      return;
+    }
+
+    const data = await response.json();
+
+    res.json({
+      success: true,
+      data,
+    });
+  } catch (error) {
+    console.error('[IP_PROXY] Failed to fetch ipwho.is:', error);
+    res.status(502).json({
+      success: false,
+      error: {
+        message: 'Unable to fetch geolocation data',
+        code: 'GEO_PROXY_ERROR',
+      },
+    });
+  }
+});
+
 // Health check (no sensitive info)
 app.get('/', (_req: Request, res: Response) => {
   res.json({ status: 'ok', timestamp: Date.now() });

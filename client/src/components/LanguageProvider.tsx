@@ -8,6 +8,7 @@ import {
   MANUAL_LANG_KEY,
 } from '../hooks/useLanguageDetection';
 import type { LanguageDetectionValue, SupportedLanguage } from '../hooks/useLanguageDetection';
+import { request } from '../api/client';
 
 // ─── Helpers ────────────────────────────────────────────────────────────────
 
@@ -66,15 +67,13 @@ async function detectViaCountryIs(signal: AbortSignal): Promise<GeoResult | null
 /** Fallback: ipwho.is — HTTPS, free, no key, detailed */
 async function detectViaIpWhoIs(signal: AbortSignal): Promise<GeoResult | null> {
   try {
-    const res = await fetch(`https://ipwho.is/?_t=${Date.now()}`, {
+    const payload = await request(`/ip?_t=${Date.now()}`, {
       signal,
       cache: 'no-store',
       headers: { 'Cache-Control': 'no-cache, no-store', Pragma: 'no-cache' },
     });
-    if (!res.ok) return null;
-    const data = await res.json();
-    if (!data.success) return null;
-    const country = (data.country_code || '').toUpperCase();
+    if (!payload.success || !payload.data?.success) return null;
+    const country = (payload.data.country_code || '').toUpperCase();
     if (!country) return null;
     return { lang: COUNTRY_TO_LANG[country] || 'en', country };
   } catch {

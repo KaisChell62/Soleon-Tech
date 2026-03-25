@@ -15,6 +15,24 @@
     "contact": "联系",
     "start": "开始"
   },
+  "meta": {
+    "home": {
+      "title": "Soleon Tech | 数字卓越",
+      "desc": "专注于网站开发、移动应用和国际增长战略的数字机构。"
+    },
+    "services": {
+      "title": "服务 | Soleon Tech",
+      "desc": "定制开发、移动应用、品牌设计和数字战略。"
+    },
+    "portfolio": {
+      "title": "作品集 | Soleon Tech",
+      "desc": "了解我们的客户项目与技术专长。"
+    },
+    "contact": {
+      "title": "联系 | Soleon Tech",
+      "desc": "欢迎讨论您的项目。免费报价，24小时内回复。"
+    }
+  },
   "faq": {
     "title": "常见",
     "highlight": "问题",

@@ -15,6 +15,24 @@
     "contact": "Kontakt",
     "start": "Start"
   },
+  "meta": {
+    "home": {
+      "title": "Soleon Tech | Digitale Exzellenz",
+      "desc": "Digitale Agentur für Webentwicklung, Mobile Apps und internationale Wachstumsstrategie."
+    },
+    "services": {
+      "title": "Leistungen | Soleon Tech",
+      "desc": "Individuelle Entwicklung, mobile Apps, Branding und digitale Strategie."
+    },
+    "portfolio": {
+      "title": "Portfolio | Soleon Tech",
+      "desc": "Entdecken Sie unsere Kundenprojekte und technische Expertise."
+    },
+    "contact": {
+      "title": "Kontakt | Soleon Tech",
+      "desc": "Sprechen wir über Ihr Projekt. Kostenloses Angebot und Antwort innerhalb von 24 Stunden."
+    }
+  },
   "faq": {
     "title": "Häufig gestellte",
     "highlight": "Fragen",

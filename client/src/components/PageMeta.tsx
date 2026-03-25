@@ -1,67 +1,76 @@
 ﻿import { Helmet } from 'react-helmet-async';
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { routePaths, SUPPORTED_LANGUAGES } from '../routes/config';
+import { getRoute, routePaths, SUPPORTED_LANGUAGES } from '../routes/config';
 
-const SITE_URL = 'https://soleon.tech'; // Replace with actual domain
-const DEFAULT_IMAGE = 'https://soleon.tech/og-image.jpg'; // Replace
+type MetaInfo = {
+  title: string;
+  description: string;
+  keywords: string;
+};
 
-const getMetaInfo = (path: string, t: (key: string) => string) => {
-  // Check for specific routes
-  if (path === '/' || path.match(/^\/[a-z]{2}$/)) {
-    return {
-      title: t('meta.home.title') || 'Soleon Tech | Digital Excellence',
-      description: t('meta.home.desc') || 'Agence digitale spécialisée dans le développement web, mobile et la stratégie internationale.',
-      keywords: 'agence web, développement, seo, international, react, nodejs'
-    };
-  }
-  
-  if (path.includes('/services')) {
-    return {
-      title: t('meta.services.title') || 'Nos Services | Soleon Tech',
-      description: t('meta.services.desc') || 'Développement sur mesure, Applications Mobiles, E-commerce et Stratégie Digitale.',
-      keywords: 'services web, mobile app, e-commerce, saas'
-    };
+function getRouteKeyFromPath(pathname: string): string {
+  const segments = pathname.split('/').filter(Boolean);
+  const lang = segments[0];
+  const slug = segments[1] || '';
+
+  if (!lang || !SUPPORTED_LANGUAGES.includes(lang as typeof SUPPORTED_LANGUAGES[number])) {
+    return 'home';
   }
 
-  if (path.includes('/portfolio')) {
-    return {
-      title: t('meta.portfolio.title') || 'Nos Réalisations | Soleon Tech',
-      description: t('meta.portfolio.desc') || 'Découvrez nos projets clients et notre expertise technique.',
-      keywords: 'portfolio, projets, études de cas'
-    };
+  for (const [key, paths] of Object.entries(routePaths)) {
+    if (paths[lang as keyof typeof paths] === slug) {
+      return key;
+    }
   }
 
-  if (path.includes('/contact')) {
-    return {
-      title: t('meta.contact.title') || 'Contactez-nous | Soleon Tech',
-      description: t('meta.contact.desc') || 'Discutons de votre projet. Devis gratuit et réponse sous 24h.',
-      keywords: 'contact, devis, agence digitale paris'
-    };
-  }
+  return slug === '' ? 'home' : 'home';
+}
 
-  return {
-    title: 'Soleon Tech | Digital Excellence',
-    description: 'Agence digitale globale. Nous transformons vos idées en produits numériques d\'exception.',
-    keywords: 'digital agency, web development, innovation'
+function getMetaInfo(routeKey: string, t: (key: string, options?: Record<string, unknown>) => string): MetaInfo {
+  const metaByRoute: Record<string, MetaInfo> = {
+    home: {
+      title: t('meta.home.title', { defaultValue: 'Soleon Tech | Digital Excellence' }),
+      description: t('meta.home.desc', { defaultValue: 'Agence digitale spécialisée dans le développement web, mobile et la stratégie internationale.' }),
+      keywords: 'agence web, développement, seo, international, react, nodejs',
+    },
+    services: {
+      title: t('meta.services.title', { defaultValue: 'Services | Soleon Tech' }),
+      description: t('meta.services.desc', { defaultValue: 'Développement sur mesure, applications mobiles, branding et stratégie digitale.' }),
+      keywords: 'services web, mobile app, e-commerce, saas',
+    },
+    portfolio: {
+      title: t('meta.portfolio.title', { defaultValue: 'Réalisations | Soleon Tech' }),
+      description: t('meta.portfolio.desc', { defaultValue: 'Découvrez nos projets clients et notre expertise technique.' }),
+      keywords: 'portfolio, projets, études de cas',
+    },
+    contact: {
+      title: t('meta.contact.title', { defaultValue: 'Contact | Soleon Tech' }),
+      description: t('meta.contact.desc', { defaultValue: 'Discutons de votre projet. Devis gratuit et réponse sous 24h.' }),
+      keywords: 'contact, devis, agence digitale paris',
+    },
   };
+
+  return metaByRoute[routeKey] || metaByRoute.home;
 };
 
 export default function PageMeta() {
   const { pathname } = useLocation();
   const { t, i18n } = useTranslation();
+  const siteUrl = typeof window !== 'undefined' ? window.location.origin : 'https://soleon-tech.fr';
+  const defaultImage = `${siteUrl}/og-image.jpg`;
   const currentLang = i18n.language || 'fr';
-  
-  const { title, description, keywords } = getMetaInfo(pathname, t);
-  const currentUrl = `${SITE_URL}${pathname}`;
+  const routeKey = getRouteKeyFromPath(pathname);
+  const { title, description, keywords } = getMetaInfo(routeKey, t);
+  const currentUrl = `${siteUrl}${pathname}`;
 
   // Organization Schema
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Soleon Tech",
-    "url": SITE_URL,
-    "logo": `${SITE_URL}/logo.png`,
+    "url": siteUrl,
+    "logo": `${siteUrl}/logo.png`,
     "sameAs": [
       "https://twitter.com/soleontech",
       "https://linkedin.com/company/soleontech"
@@ -92,16 +101,17 @@ export default function PageMeta() {
           key={lang} 
           rel="alternate" 
           hrefLang={lang} 
-          href={`${SITE_URL}/${lang}${pathname.substring(3)}`} // Rough logic, ideally map correctly
+          href={`${siteUrl}${getRoute(routeKey, lang)}`}
         />
       ))}
+      <link rel="alternate" hrefLang="x-default" href={`${siteUrl}${getRoute(routeKey, 'en')}`} />
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta property="og:url" content={currentUrl} />
-      <meta property="og:image" content={DEFAULT_IMAGE} />
+      <meta property="og:image" content={defaultImage} />
       <meta property="og:site_name" content="Soleon Tech" />
       <meta property="og:locale" content={currentLang} />
 
@@ -109,7 +119,7 @@ export default function PageMeta() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
-      <meta name="twitter:image" content={DEFAULT_IMAGE} />
+      <meta name="twitter:image" content={defaultImage} />
 
       {/* Structured Data */}
       <script type="application/ld+json">
