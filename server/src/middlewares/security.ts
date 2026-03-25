@@ -11,20 +11,20 @@ const getAllowedOrigins = (): string[] => {
   
   if (env === 'production') {
     return [
-      process.env.FRONTEND_URL || 'https://goallife.kaiscorp.fr',
-      'https://goallife.kaiscorp.fr',
-      'https://www.goallife.kaiscorp.fr',
-      'https://soleon-tech.kaiscorp.fr',
-      'https://www.soleon-tech.kaiscorp.fr',
-      'http://localhost:8081',
-      'http://127.0.0.1:8081',
-    ].filter(Boolean);
+      process.env.CLIENT_URL,
+      'https://soleon.tech',
+      'https://www.soleon.tech',
+      'https://api.soleon.tech',
+    ].filter((url): url is string => !!url);
   }
   
   // Development - allow localhost
   return [
     'http://localhost:5173',
     'http://localhost:3000',
+    'http://localhost:3001',
+    'http://localhost:3002',
+    'http://localhost:3003',
     'http://127.0.0.1:5173',
     'http://127.0.0.1:3000',
   ];
@@ -37,13 +37,18 @@ export const corsConfig = cors({
   origin: (origin, callback) => {
     const allowedOrigins = getAllowedOrigins();
     
-    // Allow requests with no origin (same-origin via nginx proxy, mobile apps, curl)
-    // In Docker, nginx proxies API requests without an Origin header (same-origin)
+    // Allow requests with no origin (mobile apps, curl, or same-origin)
     if (!origin) {
       callback(null, true);
       return;
     }
     
+    // In development mode, allow any localhost port if strict check fails
+    if (process.env.NODE_ENV !== 'production' && (origin.startsWith('http://localhost:') || origin.startsWith('http://127.0.0.1:'))) {
+        callback(null, true);
+        return;
+    }
+
     if (allowedOrigins.includes(origin)) {
       callback(null, true);
     } else {
@@ -52,8 +57,9 @@ export const corsConfig = cors({
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
   exposedHeaders: ['X-RateLimit-Limit', 'X-RateLimit-Remaining'],
   maxAge: 86400, // 24 hours
 });

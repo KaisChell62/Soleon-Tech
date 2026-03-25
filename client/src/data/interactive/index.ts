@@ -52,7 +52,6 @@ export const packCategories: PackCategory[] = [
     title: 'packs.type.title',
     type: 'single',
     options: [
-      { id: 'landing', label: 'packs.type.landing', price: 590, description: 'packs.type.landing_desc' },
       { id: 'showcase', label: 'packs.type.showcase', price: 990, description: 'packs.type.showcase_desc' },
       { id: 'ecommerce', label: 'packs.type.ecommerce', price: 3500, description: 'packs.type.ecommerce_desc' },
       { id: 'saas', label: 'packs.type.saas', price: 4500, description: 'packs.type.saas_desc' },

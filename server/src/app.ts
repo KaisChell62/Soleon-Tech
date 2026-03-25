@@ -1,6 +1,21 @@
 import express, { Express, Request, Response } from 'express';
 import hpp from 'hpp';
 import dotenv from 'dotenv';
+
+// Load env vars FIRST
+dotenv.config();
+
+// Add detailed error handlers
+process.on('uncaughtException', (err) => {
+    console.error('[FATAL] Uncaught Exception:', err);
+});
+process.on('unhandledRejection', (reason, promise) => {
+    console.error('[FATAL] Unhandled Rejection at:', promise, 'reason:', reason);
+});
+process.on('exit', (code) => {
+    console.log(`[server] Process exiting with code: ${code}`);
+});
+
 import { connectDB } from './config/db';
 import contactRoutes from './routes/contactRoutes';
 import geoRoutes from './routes/geo.routes';
@@ -23,7 +38,12 @@ const app: Express = express();
 const port = process.env.PORT || 5000;
 
 // Database Connection
-connectDB();
+// connectDB().catch(err => console.error('[database] Init error:', err));
+if (process.env.MONGO_URI || process.env.NODE_ENV === 'production') {
+    connectDB(); 
+} else {
+    console.log('[database] Skipping DB connection check in local dev without URI');
+}
 
 // ===================
 // SECURITY MIDDLEWARES
@@ -89,3 +109,6 @@ app.use(errorHandler);
 app.listen(port, () => {
   console.log(`[server]: Server running on port ${port} in ${process.env.NODE_ENV || 'development'} mode`);
 });
+
+// Force keep-alive (Hack for diagnosis)
+setInterval(() => {}, 60000);

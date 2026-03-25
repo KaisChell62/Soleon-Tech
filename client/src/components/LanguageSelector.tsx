@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { ChevronDown, Globe } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguageDetection } from '../hooks/useLanguageDetection';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 const languages = [
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
@@ -27,6 +28,8 @@ export default function LanguageSelector() {
   const { currentLanguage, changeLanguage, resetToAutoDetect, isManuallySet } = useLanguageDetection();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Handle RTL for Arabic
   useEffect(() => {
@@ -39,9 +42,20 @@ export default function LanguageSelector() {
   const currentLang = languages.find((l) => currentLanguage.startsWith(l.code)) || languages[0];
 
   const handleLanguageChange = (langCode: string) => {
-    // This saves the manual choice and changes the language
+    // 1. Change internal state
     changeLanguage(langCode);
     setIsOpen(false);
+    
+    // 2. Redirect to new URL
+    // Replace "/oldLang/..." with "/newLang/..."
+    const segments = location.pathname.split('/').filter(Boolean);
+    if (segments.length > 0 && languages.some(l => l.code === segments[0])) {
+        segments[0] = langCode;
+        navigate(`/${segments.join('/')}`);
+    } else {
+        // Fallback if URL structure is weird
+        navigate(`/${langCode}`);
+    }
   };
 
   // Close when clicking outside

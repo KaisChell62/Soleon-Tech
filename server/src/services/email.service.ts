@@ -8,13 +8,20 @@ import { translatePackKeyEmail } from '../utils/packs-labels';
 
 // ─── Transporter ─────────────────────────────────────────────────────────────
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.GMAIL_USER,
-    pass: process.env.GMAIL_APP_PASSWORD,
-  },
-});
+let transporter: nodemailer.Transporter;
+
+const getTransporter = () => {
+  if (!transporter) {
+    transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASSWORD,
+      },
+    });
+  }
+  return transporter;
+};
 
 // ─── Language translations for user emails ────────────────────────────────────
 
@@ -272,7 +279,7 @@ export async function sendAdminContactEmail(data: ContactEmailData): Promise<voi
     </div>
   `);
 
-  await transporter.sendMail({
+  await getTransporter().sendMail({
     from: `"Soleon Tech" <${process.env.GMAIL_USER}>`,
     to: process.env.ADMIN_EMAIL || process.env.GMAIL_USER,
     subject: `[Contact] ${data.subject} — ${data.name}`,
@@ -314,7 +321,7 @@ export async function sendUserContactConfirmation(data: ContactEmailData): Promi
     </div>
   `, dir);
 
-  await transporter.sendMail({
+  await getTransporter().sendMail({
     from: `"Soleon Tech" <${process.env.GMAIL_USER}>`,
     to: data.email,
     subject: lang.contactSubject,
@@ -393,7 +400,7 @@ export async function sendAdminQuoteEmail(data: QuoteEmailData, pdfBuffer: Buffe
     <div class="footer"><p class="footer-text"><span class="footer-brand">soleontech.fr</span> — Devis automatique</p></div>
   `);
 
-  await transporter.sendMail({
+  await getTransporter().sendMail({
     from: `"Soleon Tech" <${process.env.GMAIL_USER}>`,
     to: process.env.ADMIN_EMAIL || process.env.GMAIL_USER,
     subject: `[Devis] ${data.email} — ${data.oneTimeTotal.toLocaleString()} ${data.currency}`,
@@ -448,7 +455,7 @@ export async function sendUserQuoteEmail(data: QuoteEmailData, pdfBuffer: Buffer
     <div class="footer"><p class="footer-text"><span class="footer-brand">Soleon Tech</span> · soleontech.fr</p></div>
   `, dir);
 
-  await transporter.sendMail({
+  await getTransporter().sendMail({
     from: `"Soleon Tech" <${process.env.GMAIL_USER}>`,
     to: data.email,
     subject: lang.quoteSubject,

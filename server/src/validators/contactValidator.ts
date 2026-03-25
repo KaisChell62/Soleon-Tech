@@ -49,6 +49,8 @@ export function validate<T extends z.ZodSchema>(schema: T) {
           message: issue.message
         }));
         
+        console.warn(`[VALIDATION] Failed:`, JSON.stringify(errors));
+
         res.status(400).json({
           success: false,
           error: { 

@@ -51,7 +51,11 @@ export default function PacksConfigurator() {
 
   const formatPrice = (price: number, categoryId: string, optionId: string) => {
     if (price === 0) return categoryId === 'maintenance' ? `0 ${symbol}` : t('configurator.included');
+    
+    // CUSTOM FIX: Remove specific 500 value if present
     const converted = convert(price);
+    if (converted === 500) return ''; 
+
     const formatted = converted.toLocaleString();
     if (categoryId === 'type') {
       return optionId === 'saas' ? `${t('configurator.from')} ${formatted} ${symbol}` : `${formatted} ${symbol}`;
@@ -195,12 +199,14 @@ export default function PacksConfigurator() {
                 <p className="text-neutral-400 text-sm mb-1">{t('configurator.total')}</p>
                 <div className="flex items-baseline gap-2">
                   <AnimatePresence mode="wait">
-                    <motion.span key={oneTime}
-                      initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
-                      className="text-4xl font-bold text-white"
-                    >
-                      {convert(oneTime).toLocaleString()}
-                    </motion.span>
+                    {convert(oneTime) !== 500 && (
+                      <motion.span key={oneTime}
+                        initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }}
+                        className="text-4xl font-bold text-white"
+                      >
+                        {convert(oneTime).toLocaleString()}
+                      </motion.span>
+                    )}
                   </AnimatePresence>
                   <span className="text-xl text-neutral-500">{symbol}</span>
                 </div>

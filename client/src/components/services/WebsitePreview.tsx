@@ -102,12 +102,12 @@ export default function WebsitePreview() {
                        <div className="bg-neutral-200 h-32 rounded-lg relative overflow-hidden flex items-end p-4 cursor-pointer hover:opacity-90 transition group">
                            <span className="font-bold relative z-10">{t('services.preview.web.running')}</span>
                            <motion.div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition z-[1]" />
-                           <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" className="absolute inset-0 w-full h-full object-cover z-0" />
+                           <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Running Shoes Preview" className="absolute inset-0 w-full h-full object-cover z-0" />
                        </div>
                        <div className="bg-neutral-200 h-32 rounded-lg relative overflow-hidden flex items-end p-4 cursor-pointer hover:opacity-90 transition group">
                            <span className="font-bold relative z-10">{t('services.preview.web.lifestyle')}</span>
                             <motion.div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition z-[1]" />
-                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" className="absolute inset-0 w-full h-full object-cover z-0" />
+                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Lifestyle Sneakers Preview" className="absolute inset-0 w-full h-full object-cover z-0" />
                        </div>
                   </div>
               </motion.div>
@@ -126,7 +126,7 @@ export default function WebsitePreview() {
                                     <div className="absolute top-2 right-2 bg-white rounded-full p-1.5 shadow-sm opacity-0 group-hover:opacity-100 transition">
                                         <Heart size={14} className="text-neutral-400 hover:text-red-500" />
                                     </div>
-                                    <img src={p.img} className="w-full h-full object-cover group-hover:scale-110 transition duration-500 mix-blend-multiply" />
+                                    <img src={p.img} alt={p.name} className="w-full h-full object-cover group-hover:scale-110 transition duration-500 mix-blend-multiply" />
                                 </div>
                                 <h3 className="font-bold text-sm">{p.name}</h3>
                                 <div className="flex justify-between items-center mt-1">

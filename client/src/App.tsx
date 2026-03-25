@@ -1,9 +1,12 @@
 import { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import LoadingSpinner from './components/LoadingSpinner';
 import ScrollToTop from './components/ScrollToTop';
 import PageMeta from './components/PageMeta';
+import LanguageLayout from './layouts/LanguageLayout';
+import RootRedirect from './components/RootRedirect';
+import { routePaths, SUPPORTED_LANGUAGES, type SupportedLanguage } from './routes/config';
 
 // Lazy Loading Pages used for code splitting
 const Home = lazy(() => import('./pages/Home'));
@@ -41,40 +44,68 @@ const CyberGuardDemo = lazy(() => import('./pages/demos/CyberGuard'));
 const HyperStreamDemo = lazy(() => import('./pages/demos/HyperStream'));
 const NebulaIdentityDemo = lazy(() => import('./pages/demos/NebulaIdentity'));
 
+const components: Record<string, React.ComponentType<any>> = {
+  home: Home,
+  services: Services,
+  portfolio: Portfolio,
+  projectDetail: ProjectDetail,
+  contact: Contact,
+  whyUs: WhyUs,
+  security: Security,
+  international: International,
+  expertise: GlobalOperations,
+  faq: FAQ,
+  liveBoard: LiveBoard,
+  packs: PacksConfigurator,
+  about: About,
+  blog: Blog,
+  careers: Careers,
+  privacy: PrivacyPolicy,
+  terms: TermsAndConditions
+};
+
 function App() {
   return (
-    <Router>
+    <>
       <PageMeta />
       <ScrollToTop />
       <Suspense fallback={<LoadingSpinner />}>
         <Routes>
-          <Route path="/" element={<MainLayout />}>
-            <Route index element={<Home />} />
-            <Route path="services" element={<Services />} />
-            <Route path="portfolio" element={<Portfolio />} />
-            <Route path="portfolio/:id" element={<ProjectDetail />} />
-            <Route path="contact" element={<Contact />} />
-            
-            {/* Trust Pages */}
-            <Route path="why-us" element={<WhyUs />} />
-            <Route path="security" element={<Security />} />
-            <Route path="international" element={<International />} />
-            <Route path="expertise" element={<GlobalOperations />} />
-            <Route path="faq" element={<FAQ />} />
+          {/* Root redirect */}
+          <Route path="/" element={<RootRedirect />} />
 
-            {/* Interactive Pages */}
-            <Route path="live-board" element={<LiveBoard />} />
-            <Route path="packs" element={<PacksConfigurator />} />
-            
-            {/* Content Pages */}
-            <Route path="about" element={<About />} />
-            <Route path="blog" element={<Blog />} />
-            <Route path="careers" element={<Careers />} />
-            <Route path="privacy" element={<PrivacyPolicy />} />
-            <Route path="terms" element={<TermsAndConditions />} />
-          </Route>
-          
-          {/* Standalone Demos (No generic layout) */}
+          {/* Language Loops */}
+          {SUPPORTED_LANGUAGES.map(lang => (
+             <Route key={lang} path={`/${lang}`} element={<LanguageLayout forcedLanguage={lang} />}>
+               <Route element={<MainLayout />}>
+                 {Object.entries(routePaths).map(([key, paths]) => {
+                   const path = paths[lang];
+                   // Skip undefined paths (but allow empty string for home/index)
+                   if (path === undefined) return null;
+                   
+                   const Component = components[key];
+                   if (!Component) return null;
+
+                   const isIndex = path === '';
+
+                   return (
+                     <Route 
+                       key={`${lang}-${key}`}
+                       index={isIndex}
+                       path={isIndex ? undefined : path}
+                       element={<Component />} 
+                     />
+                   );
+                 })}
+                 {/* Explicitly adding non-mapped or index if simplified loop failed */}
+                 {/* But wait, index route inside /:lang must use 'index' prop XOR path="/" */}
+                 {/* The loop handles path='' which works as relative path matching parent. */}
+               </Route>
+             </Route>
+          ))}
+
+          {/* Standalone Demos (No generic layout, keep english or generic path?) */}
+          {/* Ideally Demos should also be localized but for now keep them global or under /demos */}
           <Route path="/demos/eco-market" element={<EcoMarketDemo />} />
           <Route path="/demos/velocity" element={<VelocityDemo />} />
           <Route path="/demos/zenith-bank" element={<ZenithBankDemo />} />
@@ -87,7 +118,7 @@ function App() {
           
         </Routes>
       </Suspense>
-    </Router>
+    </>
   );
 }
 

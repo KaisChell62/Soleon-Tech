@@ -6,6 +6,11 @@ import { strictLimiter, antiSpam } from '../middlewares';
 
 const router = Router();
 
+router.use((req, res, next) => {
+    console.log(`[CONTACT] Route hit: ${req.method} ${req.url}`);
+    next();
+});
+
 // POST /api/contact — Contact form
 router.post('/',
   strictLimiter,

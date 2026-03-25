@@ -71,7 +71,7 @@ export default function InteractiveMockup({ desktopImage, mobileImage, demoUrl, 
                                     allow="fullscreen"
                                 />
                            ) : desktopImage ? (
-                               <img src={desktopImage} className="w-full h-full object-cover object-top scroll-smooth" />
+                               <img src={desktopImage} alt="Desktop Project Preview" className="w-full h-full object-cover object-top scroll-smooth" />
                            ) : (
                                <div className="w-full h-full flex items-center justify-center text-neutral-600">No Preview Available</div>
                            )}
@@ -111,7 +111,7 @@ export default function InteractiveMockup({ desktopImage, mobileImage, demoUrl, 
                                     className="w-full h-full border-0"
                                 />
                            ) : (mobileImage || desktopImage) ? (
-                               <img src={mobileImage || desktopImage} className="w-full h-full object-cover object-top" />
+                               <img src={mobileImage || desktopImage} alt="Mobile Project Preview" className="w-full h-full object-cover object-top" />
                            ) : (
                                <div className="w-full h-full flex items-center justify-center text-neutral-600">No Preview</div>
                            )}

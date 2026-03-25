@@ -120,7 +120,7 @@ export default function ZenithBank() {
               )}
             </AnimatePresence>
             <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-500 to-purple-500 p-[2px] cursor-pointer hover:scale-105 transition-transform">
-              <div className="w-full h-full rounded-full bg-slate-950 overflow-hidden"><img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=100" className="w-full h-full object-cover" /></div>
+              <div className="w-full h-full rounded-full bg-slate-950 overflow-hidden"><img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=100" alt="User" className="w-full h-full object-cover" /></div>
             </div>
           </div>
         </header>
@@ -331,7 +331,7 @@ export default function ZenithBank() {
                 <h3 className="text-lg font-semibold mb-4">Profil</h3>
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-500 p-[2px]">
-                    <div className="w-full h-full rounded-2xl bg-slate-950 overflow-hidden"><img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=200" className="w-full h-full object-cover" /></div>
+                    <div className="w-full h-full rounded-2xl bg-slate-950 overflow-hidden"><img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=200" alt="Alex Mercer" className="w-full h-full object-cover" /></div>
                   </div>
                   <div><p className="font-bold text-lg">Alex Mercer</p><p className="text-slate-500">alex.mercer@zenith.com</p><button className="text-indigo-400 text-sm mt-1 hover:text-indigo-300">Modifier la photo</button></div>
                 </div>
@@ -364,7 +364,7 @@ export default function ZenithBank() {
                 {[1,2,3,4].map(i => (
                   <div key={i} className="flex flex-col items-center gap-2 min-w-[4rem]">
                     <div className="w-16 h-16 rounded-full bg-slate-800 border-2 border-indigo-500/30 overflow-hidden">
-                      <img src={`https://images.unsplash.com/photo-${1500000000000+i*111111111}?w=100&h=100&fit=crop&crop=faces`} className="w-full h-full object-cover opacity-80" />
+                      <img src={`https://images.unsplash.com/photo-${1500000000000+i*111111111}?w=100&h=100&fit=crop&crop=faces`} alt={`Recipient ${i}`} className="w-full h-full object-cover opacity-80" />
                     </div>
                     <span className="text-xs text-slate-400">User {i}</span>
                   </div>

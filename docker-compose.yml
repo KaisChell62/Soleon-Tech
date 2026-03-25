@@ -1,10 +1,11 @@
 services:
-  # Database Service
+  # Database Service (Using Cloud Atlas but local container kept for options, mapped to 27019 to avoid conflict)
+  # You can comment this out if using Atlas exclusively
   mongodb:
     image: mongo:latest
     container_name: soleontech-mongo
     ports:
-      - "27020:27017"
+      - "27019:27017"
     volumes:
       - mongo-data:/data/db
     networks:
@@ -15,15 +16,9 @@ services:
     build: ./server
     container_name: soleontech-server
     ports:
-      - "5001:5000"
-    environment:
-      - PORT=5000
-      - MONGO_URI=mongodb://soleontech-mongo:27017/soleontech
-      - NODE_ENV=production
-      - GMAIL_USER=chelhaoui.kais62141@gmail.com
-      - GMAIL_APP_PASSWORD=cvrofmifuhebfxmn
-      - ADMIN_EMAIL=chelhaoui.kais62141@gmail.com
-      - FRONTEND_URL=https://goallife.kaiscorp.fr
+      - "5055:5000"
+    env_file: ./server/.env
+    # Environment variables are loaded from .env file directly
     depends_on:
       - mongodb
     networks:
@@ -34,10 +29,11 @@ services:
     build: 
       context: ./client
       args:
+        # Build arg for frontend to know where backend is (relative path /api assumes reverse proxy handling)
         - VITE_API_URL=/api
     container_name: soleontech-client
     ports:
-      - "8081:80"
+      - "8085:80"
     depends_on:
       - server
     networks:

@@ -86,7 +86,7 @@ export default function SkylineRealEstate() {
             <motion.div initial={{ scale:.95, opacity:0 }} animate={{ scale:1, opacity:1 }} exit={{ scale:.95, opacity:0 }} className="relative w-full h-full max-w-6xl bg-white shadow-2xl overflow-y-auto md:overflow-hidden flex flex-col md:flex-row">
               <button onClick={() => setActive(null)} className="absolute top-6 right-6 z-20 bg-white/50 hover:bg-white p-2 rounded-full transition-colors"><X className="w-6 h-6" /></button>
               <div className="w-full md:w-2/3 h-[50vh] md:h-full relative">
-                <img src={active.img} className="w-full h-full object-cover" />
+                <img src={active.img} alt={active.title} className="w-full h-full object-cover" />
                 <div className="absolute bottom-8 left-8 flex gap-4">
                   <button className="bg-white/90 backdrop-blur px-6 py-3 font-bold text-sm hover:bg-white flex items-center gap-2"><Expand className="w-4 h-4" />{t.virtualTour}</button>
                   <button className="bg-black/80 backdrop-blur text-white px-6 py-3 font-bold text-sm hover:bg-black flex items-center gap-2"><MapPin className="w-4 h-4" />{t.viewMap}</button>

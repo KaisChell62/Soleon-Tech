@@ -20,11 +20,11 @@ export const standardLimiter = rateLimit({
 
 /**
  * Strict rate limiter for sensitive endpoints (contact, auth)
- * 5 requests per 15 minutes per IP
+ * 50 requests per 15 minutes per IP
  */
 export const strictLimiter = rateLimit({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 5, // 5 requests per window
+  max: 50, // 50 requests per window
   message: {
     success: false,
     error: { message: 'Too many attempts, please try again in 15 minutes', code: 'RATE_LIMIT_STRICT' }

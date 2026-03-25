@@ -4,9 +4,10 @@ import { useTranslation } from 'react-i18next';
 import { Menu, X, Rocket } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LanguageSelector from './LanguageSelector';
+import { getRoute } from '../routes/config';
 
 export default function Navbar() {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
@@ -25,15 +26,20 @@ export default function Navbar() {
     setIsMobileMenuOpen(false);
   }, [location]);
 
+  const lang = i18n.language;
+  
   const navLinks = [
-    { name: t('nav.home'), path: '/' },
-    { name: t('nav.agency'), path: '/why-us' },
-    { name: t('nav.services'), path: '/services' },
-    { name: t('nav.portfolio'), path: '/portfolio' },
-    { name: t('nav.expertise'), path: '/expertise' },
-    { name: t('nav.faq'), path: '/faq' },
-    { name: t('nav.contact'), path: '/contact' },
+    { name: t('nav.home'), path: getRoute('home', lang) },
+    { name: t('nav.agency'), path: getRoute('whyUs', lang) },
+    { name: t('nav.services'), path: getRoute('services', lang) },
+    { name: t('nav.portfolio'), path: getRoute('portfolio', lang) },
+    { name: t('nav.expertise'), path: getRoute('expertise', lang) },
+    { name: t('nav.faq'), path: getRoute('faq', lang) },
+    { name: t('nav.contact'), path: getRoute('contact', lang) },
   ];
+
+  const homeLink = getRoute('home', lang);
+  const contactLink = getRoute('contact', lang);
 
   return (
     <nav
@@ -43,38 +49,41 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 flex items-center gap-2">
+        <Link to={homeLink} className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400 flex items-center gap-2">
           <Rocket className="text-indigo-400" />
           Soleon Tech
         </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <ul className="hidden md:flex items-center gap-8 list-none m-0 p-0">
           {navLinks.map((link) => (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              className={({ isActive }) =>
-                `text-sm font-medium transition-colors hover:text-indigo-400 ${
-                  isActive ? 'text-indigo-400' : 'text-neutral-300'
-                }`
-              }
-            >
-              {link.name}
-            </NavLink>
+            <li key={link.path}>
+              <NavLink
+                to={link.path}
+                className={({ isActive }) =>
+                  `text-sm font-medium transition-colors hover:text-indigo-400 ${
+                    isActive ? 'text-indigo-400' : 'text-neutral-300'
+                  }`
+                }
+              >
+                {link.name}
+              </NavLink>
+            </li>
           ))}
           
-          <div className="h-6 w-px bg-neutral-700 mx-2" />
+          <li className="h-6 w-px bg-neutral-700 mx-2" aria-hidden="true" />
           
-          <LanguageSelector />
+          <li><LanguageSelector /></li>
           
-          <Link
-            to="/contact"
-            className="px-5 py-2 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition shadow-lg shadow-indigo-600/20"
-          >
-            {t('nav.start')}
-          </Link>
-        </div>
+          <li>
+            <Link
+              to={contactLink}
+              className="px-5 py-2 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white text-sm font-medium transition shadow-lg shadow-indigo-600/20"
+            >
+              {t('nav.contact')}
+            </Link>
+          </li>
+        </ul>
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-4 md:hidden">
@@ -99,21 +108,19 @@ export default function Navbar() {
           >
             <div className="px-4 py-6 space-y-4 flex flex-col items-center">
               {navLinks.map((link) => (
-                <NavLink
+                <Link
                   key={link.path}
                   to={link.path}
-                  className={({ isActive }) =>
-                    `text-lg font-medium transition-colors ${
-                      isActive ? 'text-indigo-400' : 'text-neutral-300'
-                    }`
-                  }
+                  className="text-lg font-medium text-neutral-300 hover:text-white"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
-                </NavLink>
+                </Link>
               ))}
-              <Link
-                to="/contact"
-                className="w-full text-center px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-medium transition mt-4"
+               <Link
+                to={contactLink}
+                className="px-8 py-3 rounded-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold transition shadow-lg w-full text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('nav.start')}
               </Link>
