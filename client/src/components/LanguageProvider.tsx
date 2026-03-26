@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useRef, useMemo } from 'react';
+import { useEffect, useState, useCallback, useMemo } from 'react';
 import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
@@ -38,6 +38,7 @@ function clearAllLangStorage(): void {
     localStorage.removeItem(MANUAL_LANG_KEY);
     localStorage.removeItem('i18nextLng');
     localStorage.removeItem('soleontech_geo_lang');
+    localStorage.removeItem('soleontech_geo_country');
     document.cookie = 'i18next=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
   } catch { /* noop */ }
 }
@@ -107,9 +108,13 @@ export async function detectLanguageByIP(): Promise<GeoResult | null> {
   export default function LanguageProvider({ children }: Props) {
     const { i18n } = useTranslation();
     const [isManuallySet, setIsManuallySet] = useState(() => getManualLanguage() !== null);
-    
-    // We only expose methods, we do NOT change language automatically anymore
-    // except perhaps on very first load if needed, but App.tsx handles routing.
+    const [detectedCountry, setDetectedCountry] = useState(() => {
+      try {
+        return localStorage.getItem('soleontech_geo_country') || '';
+      } catch {
+        return '';
+      }
+    });
     
     const changeLanguage = useCallback((lang: string) => {
       // This is now mostly used by the LanguageSelector to redirect URL
@@ -125,15 +130,36 @@ export async function detectLanguageByIP(): Promise<GeoResult | null> {
       setIsManuallySet(false);
     }, []);
 
+    const forceRefreshGeo = useCallback(async () => {
+      const result = await detectLanguageByIP().catch(() => null);
+      if (!result) return;
+
+      setDetectedCountry(result.country);
+      try {
+        localStorage.setItem('soleontech_geo_country', result.country);
+      } catch {
+        // noop
+      }
+
+      if (!getManualLanguage()) {
+        i18n.changeLanguage(result.lang);
+      }
+    }, [i18n]);
+
+    useEffect(() => {
+      if (detectedCountry) return;
+      void forceRefreshGeo();
+    }, [detectedCountry, forceRefreshGeo]);
+
     const value: LanguageDetectionValue = useMemo(() => ({
       currentLanguage: i18n.language,
-      detectedCountry: '', // Disabled auto-detect for now
+      detectedCountry,
       changeLanguage,
       resetToAutoDetect,
-      forceRefreshGeo: () => {},
+      forceRefreshGeo,
       supportedLanguages: SUPPORTED_LANGUAGES,
       isManuallySet,
-    }), [i18n.language, changeLanguage, resetToAutoDetect, isManuallySet]);
+    }), [i18n.language, detectedCountry, changeLanguage, resetToAutoDetect, forceRefreshGeo, isManuallySet]);
 
     return (
       <LanguageDetectionContext.Provider value={value}>

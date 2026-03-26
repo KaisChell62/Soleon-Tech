@@ -27,7 +27,7 @@ const getFlagUrl = (code: string) => {
 };
 
 export default function LanguageSelector() {
-  const { currentLanguage, changeLanguage, resetToAutoDetect, isManuallySet } = useLanguageDetection();
+  const { currentLanguage, detectedCountry, changeLanguage, resetToAutoDetect, isManuallySet } = useLanguageDetection();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
@@ -110,7 +110,7 @@ export default function LanguageSelector() {
                 }`}
               >
                 <Globe size={16} className="text-current" />
-                <span>Auto</span>
+                <span>{detectedCountry ? `Auto (${detectedCountry})` : 'Auto'}</span>
                 {!isManuallySet && <span className="ml-auto text-xs opacity-75">✓</span>}
               </button>
               
