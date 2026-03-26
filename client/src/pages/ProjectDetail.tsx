@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { projects } from '../data/projects';
+import { getRoute } from '../routes/config';
 // Added new icons
 import { ArrowLeft, ExternalLink, Calendar, Code, Target, CheckCircle2, Layers, Smartphone, Monitor, Palette, Map, MousePointer2 } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -49,7 +50,7 @@ export default function ProjectDetail() {
              
              <div className="absolute bottom-0 left-0 w-full px-4 sm:px-6 lg:px-8 pb-16">
                  <div className="max-w-7xl mx-auto">
-                    <Link to="/portfolio" className="inline-flex items-center gap-2 text-indigo-300 mb-6 hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider backdrop-blur-md px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10">
+                    <Link to={getRoute('portfolio', currentLang)} className="inline-flex items-center gap-2 text-indigo-300 mb-6 hover:text-white transition-colors text-sm font-semibold uppercase tracking-wider backdrop-blur-md px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10">
                         <ArrowLeft size={16} /> {t('portfolio.project.back')}
                     </Link>
                     
@@ -400,10 +401,10 @@ export default function ProjectDetail() {
                 <h2 className="text-4xl font-bold mb-6">{t('portfolio.project.cta.title')}</h2>
                 <p className="text-xl text-neutral-300 mb-8">{t('portfolio.project.cta.subtitle')}</p>
                 <div className="flex flex-wrap justify-center gap-4">
-                    <Link to="/contact" className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-200 transition">
+                    <Link to={getRoute('contact', currentLang)} className="px-8 py-4 bg-white text-black font-bold rounded-full hover:bg-neutral-200 transition">
                         {t('portfolio.project.cta.startProject')}
                     </Link>
-                    <Link to="/portfolio" className="px-8 py-4 bg-transparent border border-white text-white font-bold rounded-full hover:bg-white/10 transition">
+                    <Link to={getRoute('portfolio', currentLang)} className="px-8 py-4 bg-transparent border border-white text-white font-bold rounded-full hover:bg-white/10 transition">
                         {t('portfolio.project.cta.seeMore')}
                     </Link>
                 </div>

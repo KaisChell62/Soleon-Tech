@@ -2,11 +2,13 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { getRoute } from '../../routes/config';
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export default function Hero() {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
+  const lang = i18n.language;
 
   return (
     <section className="relative min-h-[95vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
@@ -85,7 +87,7 @@ export default function Hero() {
           >
             <motion.div whileHover={{ scale: 1.04, y: -2 }} whileTap={{ scale: 0.97 }}>
               <Link
-                to="/services"
+                to={getRoute('services', lang)}
                 className="group px-8 py-4 rounded-full bg-white text-black font-bold text-lg hover:bg-neutral-100 transition flex items-center gap-2 shadow-xl shadow-indigo-500/20"
               >
                 {t('home.hero.cta_primary') || t('home.cta_project')}
@@ -94,7 +96,7 @@ export default function Hero() {
             </motion.div>
             <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.97 }}>
               <Link
-                to="/contact"
+                to={getRoute('contact', lang)}
                 className="px-8 py-4 rounded-full bg-neutral-900 text-white font-bold text-lg border border-neutral-800 hover:border-neutral-600 hover:bg-neutral-800 transition"
               >
                 {t('home.hero.cta_secondary') || t('home.cta_contact')}

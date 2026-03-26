@@ -2,11 +2,13 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { getRoute } from '../../routes/config';
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 export default function CallToAction() {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
+  const lang = i18n.language;
 
   return (
     <section className="py-24 md:py-32 bg-gradient-to-b from-neutral-950 to-indigo-950/20 relative overflow-hidden">
@@ -67,7 +69,7 @@ export default function CallToAction() {
         >
           <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.97 }}>
             <Link
-              to="/contact"
+              to={getRoute('contact', lang)}
               className="inline-flex items-center gap-2 px-10 py-4 bg-white text-black rounded-full font-bold text-lg shadow-xl shadow-white/10 hover:shadow-white/20 transition-shadow"
             >
               {t('home.cta_final.button')}
