@@ -316,7 +316,14 @@
       "success_title": "Message sent!",
       "success_desc": "We'll get back to you within 24 hours.",
       "language": "Your language *",
-      "required_fields": "All fields are required"
+      "required_fields": "All fields are required",
+      "validation": {
+        "name_length": "Name must be 2-100 characters",
+        "email_invalid": "Invalid email format",
+        "language_required": "Language is required",
+        "subject_length": "Subject must be 3-200 characters",
+        "message_length": "Message must be 10-5000 characters"
+      }
     },
     "steps": {
       "info": "Info",

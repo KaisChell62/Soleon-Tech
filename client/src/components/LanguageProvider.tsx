@@ -47,6 +47,22 @@ function clearAllLangStorage(): void {
 
 type GeoResult = { lang: SupportedLanguage; country: string };
 
+function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
+  return new Promise<T>((resolve, reject) => {
+    const id = setTimeout(() => reject(new Error('timeout')), ms);
+    promise.then(
+      (value) => {
+        clearTimeout(id);
+        resolve(value);
+      },
+      (err) => {
+        clearTimeout(id);
+        reject(err);
+      },
+    );
+  });
+}
+
 /** Primary: api.country.is — ultra-lightweight, HTTPS, free, no key */
 async function detectViaCountryIs(signal: AbortSignal): Promise<GeoResult | null> {
   try {
@@ -83,17 +99,32 @@ async function detectViaIpWhoIs(signal: AbortSignal): Promise<GeoResult | null> 
 }
 
 export async function detectLanguageByIP(): Promise<GeoResult | null> {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 8000);
+  const c1 = new AbortController();
+  const c2 = new AbortController();
+
   try {
-    const r1 = await detectViaCountryIs(controller.signal);
-    if (r1) { console.log('[Geo] api.country.is →', r1.country, '→', r1.lang); return r1; }
-    const r2 = await detectViaIpWhoIs(controller.signal);
-    if (r2) { console.log('[Geo] ipwho.is →', r2.country, '→', r2.lang); return r2; }
+    const [r1, r2] = await Promise.allSettled([
+      withTimeout(detectViaCountryIs(c1.signal), 2200),
+      withTimeout(detectViaIpWhoIs(c2.signal), 3000),
+    ]);
+
+    const countryIs = r1.status === 'fulfilled' ? r1.value : null;
+    if (countryIs) {
+      console.log('[Geo] api.country.is →', countryIs.country, '→', countryIs.lang);
+      return countryIs;
+    }
+
+    const ipWho = r2.status === 'fulfilled' ? r2.value : null;
+    if (ipWho) {
+      console.log('[Geo] ipwho.is →', ipWho.country, '→', ipWho.lang);
+      return ipWho;
+    }
+
     console.warn('[Geo] Both APIs failed');
     return null;
   } finally {
-    clearTimeout(timeout);
+    c1.abort();
+    c2.abort();
   }
 }
 
@@ -125,11 +156,6 @@ export async function detectLanguageByIP(): Promise<GeoResult | null> {
       i18n.changeLanguage(n);
     }, [i18n]);
 
-    const resetToAutoDetect = useCallback(() => {
-      clearAllLangStorage();
-      setIsManuallySet(false);
-    }, []);
-
     const forceRefreshGeo = useCallback(async () => {
       const result = await detectLanguageByIP().catch(() => null);
 
@@ -154,12 +180,41 @@ export async function detectLanguageByIP(): Promise<GeoResult | null> {
       }
     }, [i18n]);
 
+    const resetToAutoDetect = useCallback(() => {
+      clearAllLangStorage();
+      setDetectedCountry('');
+      setIsManuallySet(false);
+      // Immediately re-detect so the user gets the right language without waiting.
+      void forceRefreshGeo();
+    }, [forceRefreshGeo]);
+
     const geoInitialized = useRef(false);
     useEffect(() => {
       if (geoInitialized.current) return;
       geoInitialized.current = true;
       void forceRefreshGeo();
     }, [forceRefreshGeo]);
+
+    useEffect(() => {
+      if (isManuallySet) return;
+
+      const intervalId = setInterval(() => {
+        void forceRefreshGeo();
+      }, 15_000);
+
+      const handleFocus = () => {
+        void forceRefreshGeo();
+      };
+
+      window.addEventListener('focus', handleFocus);
+      document.addEventListener('visibilitychange', handleFocus);
+
+      return () => {
+        clearInterval(intervalId);
+        window.removeEventListener('focus', handleFocus);
+        document.removeEventListener('visibilitychange', handleFocus);
+      };
+    }, [isManuallySet, forceRefreshGeo]);
 
     const value: LanguageDetectionValue = useMemo(() => ({
       currentLanguage: i18n.language,

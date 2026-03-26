@@ -233,7 +233,14 @@
       "success_title": "消息已发送！",
       "success_desc": "我们将在24小时内回复您。",
       "language": "您的语言 *",
-      "required_fields": "所有字段都是必填项"
+      "required_fields": "所有字段都是必填项",
+      "validation": {
+        "name_length": "姓名长度必须在 2 到 100 个字符之间",
+        "email_invalid": "邮箱格式无效",
+        "language_required": "语言为必填项",
+        "subject_length": "主题长度必须在 3 到 200 个字符之间",
+        "message_length": "消息长度必须在 10 到 5000 个字符之间"
+      }
     },
     "steps": {
       "info": "信息",

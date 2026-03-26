@@ -233,7 +233,14 @@
       "success_title": "¡Mensaje enviado!",
       "success_desc": "Le responderemos dentro de 24 horas.",
       "language": "Tu idioma *",
-      "required_fields": "Todos los campos son obligatorios"
+      "required_fields": "Todos los campos son obligatorios",
+      "validation": {
+        "name_length": "El nombre debe tener entre 2 y 100 caracteres",
+        "email_invalid": "Formato de correo electrónico no válido",
+        "language_required": "El idioma es obligatorio",
+        "subject_length": "El asunto debe tener entre 3 y 200 caracteres",
+        "message_length": "El mensaje debe tener entre 10 y 5000 caracteres"
+      }
     },
     "steps": {
       "info": "Info",

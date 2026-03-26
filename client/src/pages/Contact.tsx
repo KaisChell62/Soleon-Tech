@@ -11,13 +11,16 @@ import StepIndicator from '../components/contact/StepIndicator';
 import LanguageBadge from '../components/contact/LanguageBadge';
 import { LANGUAGE_INFO, SORTED_LANGUAGES } from '../data/languages';
 
-function validateForm(data: { name: string; email: string; language: string; subject: string; message: string }) {
+function validateForm(
+  data: { name: string; email: string; language: string; subject: string; message: string },
+  t: (key: string) => string,
+) {
   const errors: string[] = [];
-  if (data.name.length < 2 || data.name.length > 100) errors.push('Name must be 2-100 characters');
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.push('Invalid email format');
-  if (!data.language) errors.push('Language is required');
-  if (data.subject.length < 3 || data.subject.length > 200) errors.push('Subject must be 3-200 characters');
-  if (data.message.length < 10 || data.message.length > 5000) errors.push('Message must be 10-5000 characters');
+  if (data.name.length < 2 || data.name.length > 100) errors.push(t('contact.form.validation.name_length'));
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) errors.push(t('contact.form.validation.email_invalid'));
+  if (!data.language) errors.push(t('contact.form.validation.language_required'));
+  if (data.subject.length < 3 || data.subject.length > 200) errors.push(t('contact.form.validation.subject_length'));
+  if (data.message.length < 10 || data.message.length > 5000) errors.push(t('contact.form.validation.message_length'));
   return errors;
 }
 
@@ -91,7 +94,7 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault(); setStatus('submitting'); setErrorMessage('');
     if (honeypot) { setStatus('success'); return; }
-    const errors = validateForm(formData);
+    const errors = validateForm(formData, t);
     if (errors.length > 0) { setErrorMessage(errors[0]); setStatus('error'); return; }
     try {
       await sendContactMessage({ ...formData, timestamp: formLoadTime.current, website: honeypot });

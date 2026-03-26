@@ -233,7 +233,14 @@
       "success_title": "Nachricht gesendet!",
       "success_desc": "Wir melden uns innerhalb von 24 Stunden.",
       "language": "Ihre Sprache *",
-      "required_fields": "Alle Felder sind erforderlich"
+      "required_fields": "Alle Felder sind erforderlich",
+      "validation": {
+        "name_length": "Der Name muss zwischen 2 und 100 Zeichen lang sein",
+        "email_invalid": "Ungültiges E-Mail-Format",
+        "language_required": "Sprache ist erforderlich",
+        "subject_length": "Der Betreff muss zwischen 3 und 200 Zeichen lang sein",
+        "message_length": "Die Nachricht muss zwischen 10 und 5000 Zeichen lang sein"
+      }
     },
     "steps": {
       "info": "Info",

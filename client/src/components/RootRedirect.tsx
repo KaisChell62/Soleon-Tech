@@ -14,8 +14,11 @@ export default function RootRedirect() {
         return;
       }
 
-      // 2. Try detection (async)
-      const result = await detectLanguageByIP().catch(() => null);
+      // 2. Try detection (async) with an upper bound to avoid long blank waits
+      const result = await Promise.race([
+        detectLanguageByIP().catch(() => null),
+        new Promise<null>((resolve) => setTimeout(() => resolve(null), 3000)),
+      ]);
       if (result && result.lang) {
            navigate(`/${result.lang}`, { replace: true });
            return;

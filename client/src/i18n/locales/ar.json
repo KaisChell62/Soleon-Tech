@@ -233,7 +233,14 @@
       "success_title": "تم إرسال الرسالة!",
       "success_desc": "سنعود إليك خلال 24 ساعة.",
       "language": "لغتك *",
-      "required_fields": "جميع الحقول إلزامية"
+      "required_fields": "جميع الحقول إلزامية",
+      "validation": {
+        "name_length": "يجب أن يكون الاسم بين 2 و100 حرف",
+        "email_invalid": "صيغة البريد الإلكتروني غير صحيحة",
+        "language_required": "اللغة مطلوبة",
+        "subject_length": "يجب أن يكون الموضوع بين 3 و200 حرف",
+        "message_length": "يجب أن تكون الرسالة بين 10 و5000 حرف"
+      }
     },
     "steps": {
       "info": "معلومات",
