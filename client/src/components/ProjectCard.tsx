@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import BrandLogo from './BrandLogo';
+import { getProjectRoute } from '../routes/config';
 import type { Project } from '../types';
 
 interface ProjectCardProps {
@@ -125,7 +126,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                  {project.year || '2025'}
              </span>
              <Link 
-                to={`/portfolio/${project.id}`}
+                to={getProjectRoute(i18n.language.split('-')[0], project.id)}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-white group-hover:text-indigo-400 transition-colors"
              >
                 View Case Study

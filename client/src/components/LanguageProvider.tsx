@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback, useMemo } from 'react';
+import { useEffect, useState, useCallback, useMemo, useRef } from 'react';
 import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
@@ -132,13 +132,21 @@ export async function detectLanguageByIP(): Promise<GeoResult | null> {
 
     const forceRefreshGeo = useCallback(async () => {
       const result = await detectLanguageByIP().catch(() => null);
-      if (!result) return;
+
+      if (!result) {
+        // Both geo APIs failed — fall back to browser language
+        if (!getManualLanguage()) {
+          const browserLang = normalizeLanguage(navigator.language);
+          i18n.changeLanguage(browserLang);
+        }
+        return;
+      }
 
       setDetectedCountry(result.country);
       try {
         localStorage.setItem('soleontech_geo_country', result.country);
       } catch {
-        // noop
+        // noop — storage may be blocked by privacy settings
       }
 
       if (!getManualLanguage()) {
@@ -146,10 +154,12 @@ export async function detectLanguageByIP(): Promise<GeoResult | null> {
       }
     }, [i18n]);
 
+    const geoInitialized = useRef(false);
     useEffect(() => {
-      if (detectedCountry) return;
+      if (geoInitialized.current) return;
+      geoInitialized.current = true;
       void forceRefreshGeo();
-    }, [detectedCountry, forceRefreshGeo]);
+    }, [forceRefreshGeo]);
 
     const value: LanguageDetectionValue = useMemo(() => ({
       currentLanguage: i18n.language,

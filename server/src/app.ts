@@ -87,46 +87,58 @@ app.use(blockDangerousPatterns);
 app.use('/api/contact', contactRoutes);
 app.use('/api/geo', geoRoutes);
 
-app.get('/api/ip', async (_req: Request, res: Response) => {
-  try {
+app.get('/api/ip', async (req: Request, res: Response) => {
+  const GEO_TIMEOUT = 5000;
+
+  async function tryFetch(url: string): Promise<Record<string, unknown> | null> {
     const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 5000);
+    const tid = setTimeout(() => controller.abort(), GEO_TIMEOUT);
+    try {
+      const r = await fetch(url, { signal: controller.signal, headers: { Accept: 'application/json' } });
+      clearTimeout(tid);
+      if (!r.ok) return null;
+      return await r.json() as Record<string, unknown>;
+    } catch {
+      clearTimeout(tid);
+      return null;
+    }
+  }
 
-    const response = await fetch('https://ipwho.is/', {
-      signal: controller.signal,
-      headers: {
-        Accept: 'application/json',
-      },
-    });
+  try {
+    // 1st: ipwho.is
+    let data = await tryFetch('https://ipwho.is/');
+    if (data && data['success']) {
+      res.json({ success: true, data });
+      return;
+    }
 
-    clearTimeout(timeoutId);
-
-    if (!response.ok) {
-      res.status(502).json({
-        success: false,
-        error: {
-          message: 'Upstream geolocation service failed',
-          code: 'GEO_UPSTREAM_ERROR',
-        },
+    // 2nd: ipapi.co
+    data = await tryFetch('https://ipapi.co/json/');
+    if (data && !data['error']) {
+      res.json({
+        success: true,
+        data: { success: true, country_code: data['country_code'], country: data['country_name'], ip: data['ip'] },
       });
       return;
     }
 
-    const data = await response.json();
+    // 3rd: freeipapi.com (forward client IP if available)
+    const clientIp = ((req.headers['x-forwarded-for'] as string) || '').split(',')[0].trim() || req.ip || '';
+    const ipSegment = clientIp && !clientIp.startsWith('::') ? `/${clientIp}` : '';
+    data = await tryFetch(`https://freeipapi.com/api/json${ipSegment}`);
+    if (data && data['countryCode']) {
+      res.json({
+        success: true,
+        data: { success: true, country_code: data['countryCode'], country: data['countryName'], ip: data['ipAddress'] },
+      });
+      return;
+    }
 
-    res.json({
-      success: true,
-      data,
-    });
+    // All APIs failed
+    res.status(502).json({ success: false, error: { message: 'All geolocation services unavailable', code: 'GEO_ALL_FAILED' } });
   } catch (error) {
-    console.error('[IP_PROXY] Failed to fetch ipwho.is:', error);
-    res.status(502).json({
-      success: false,
-      error: {
-        message: 'Unable to fetch geolocation data',
-        code: 'GEO_PROXY_ERROR',
-      },
-    });
+    console.error('[IP_PROXY] Geolocation error:', error);
+    res.status(502).json({ success: false, error: { message: 'Unable to fetch geolocation data', code: 'GEO_PROXY_ERROR' } });
   }
 });
 

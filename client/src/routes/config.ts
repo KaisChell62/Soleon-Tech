@@ -17,6 +17,16 @@ export const routePaths: Record<string, Record<SupportedLanguage, string>> = {
     en: 'portfolio', fr: 'realisations', es: 'portafolio', zh: 'portfolio',
     de: 'referenzen', ar: 'portfolio', pt: 'portfolio', ru: 'portfolio'
   },
+  projectDetail: {
+    en: 'portfolio/:id',
+    fr: 'realisations/:id',
+    es: 'portafolio/:id',
+    zh: 'portfolio/:id',
+    de: 'referenzen/:id',
+    ar: 'portfolio/:id',
+    pt: 'portfolio/:id',
+    ru: 'portfolio/:id',
+  },
   contact: {
     en: 'contact', fr: 'contact', es: 'contacto', zh: 'contact',
     de: 'kontakt', ar: 'contact', pt: 'contato', ru: 'contact'
@@ -96,5 +106,12 @@ export function getRouteKeyFromPath(pathname: string): string {
   }
 
   return 'home';
+}
+
+// Generate a URL to a specific project detail page.
+export function getProjectRoute(lang: string, projectId: string): string {
+  const l = (SUPPORTED_LANGUAGES.includes(lang as SupportedLanguage) ? lang : 'en') as SupportedLanguage;
+  const pattern = routePaths['projectDetail']?.[l] || 'portfolio/:id';
+  return `/${l}/${pattern.replace(':id', projectId)}`;
 }
 
